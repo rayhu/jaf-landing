@@ -381,3 +381,10 @@ a[href$="/zh/donate/"] {
     border-right: none;
   }
 }
+
+/* Typeform Live embed — reserve vertical space before iframe loads */
+.jaf-typeform {
+  min-height: 520px;
+  width: 100%;
+  margin-top: 1rem;
+}
