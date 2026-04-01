@@ -9,7 +9,7 @@ enableSearch      = false
 enableCodeCopy    = false
 # ─── Header ───────────────────────────────────────────────────────────────────
 [header]
-  layout    = "basic"   # Clean horizontal nav; no hamburger
+  layout    = "hybrid"   # Hamburger + overlay on small screens; horizontal nav from sm breakpoint up
   showTitle = false     # Logo SVG already contains the organization name
   logo      = "img/logo.svg"
   logoDark  = "img/logo-dark.svg"
