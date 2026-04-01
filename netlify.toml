@@ -5,9 +5,20 @@
   publish   = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.128.0"
+  # Congo v2.13+ stores partials under layouts/_partials/ — requires Hugo ≥ 0.146 (new template system).
+  # 0.128 fails with: partial "functions/warnings.html" not found.
+  HUGO_VERSION = "0.155.3"
   HUGO_ENV     = "production"
   GO_VERSION   = "1.22"
+
+# Deploy previews / branch deploys must use this deploy's URL as baseURL. Otherwise
+# Hugo keeps hugo.toml's production baseURL, styles load from the apex domain, and
+# CSP (style-src 'self' on the *.netlify.app document) blocks them → broken layout.
+[context.deploy-preview]
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/"
 
 # ─── Dev server (netlify dev) ─────────────────────────────────────────────────
 

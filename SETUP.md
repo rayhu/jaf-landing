@@ -4,7 +4,7 @@
 
 | Tool            | Version   | Install                |
 | --------------- | --------- | ---------------------- |
-| Hugo (extended) | ≥ 0.120.0 | `brew install hugo`    |
+| Hugo (extended) | ≥ 0.146.0 (Congo v2 uses `layouts/_partials/`) | `brew install hugo`    |
 | Go              | ≥ 1.21    | `brew install go`      |
 | Git             | any       | pre-installed on macOS |
 
@@ -63,32 +63,7 @@ Output lands in `public/`. This folder contains the complete static website read
 
 ### Option A — Netlify (recommended, free tier)
 
-1. Push this repo to GitHub.
-2. Go to https://netlify.com → New site from Git.
-3. Build command: `hugo --minify`
-4. Publish directory: `public`
-5. Set environment variable: `HUGO_VERSION = 0.120.4`
-6. Done. Netlify auto-deploys on every `git push`.
-
-Add a `netlify.toml` in the project root for pinned config:
-
-```toml
-[build]
-  command = "hugo --minify"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION        = "0.120.4"
-  HUGO_ENVIRONMENT    = "production"
-  GO_VERSION          = "1.21"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options       = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy       = "strict-origin-when-cross-origin"
-```
+This repo already includes `netlify.toml` (build command, `HUGO_VERSION`, deploy-preview `baseURL`, headers, and redirects). **Connect GitHub once** so every PR gets a Deploy Preview URL and every merge to `main` updates production — see **§9 GitHub + Netlify (PR previews & production)** below.
 
 ### Option B — GitHub Pages
 
@@ -169,7 +144,61 @@ All content is plain Markdown. To update a page:
 
 ---
 
-## 9. Theme Updates
+## 9. GitHub + Netlify (PR previews & production)
+
+**How it works:** Netlify’s **Git integration** builds on Netlify’s servers (so `DEPLOY_PRIME_URL` and `netlify.toml` deploy-preview settings apply). GitHub Actions in this repo only run **Hugo CI** (`.github/workflows/hugo-ci.yml`) to verify the build; they do not replace Netlify deploys.
+
+### 9.1 One-time: connect the repository
+
+1. Push this repo to GitHub (if it is not there yet).
+2. In [Netlify](https://app.netlify.com) → **Add new site** → **Import an existing project** → **GitHub** → authorize the Netlify GitHub App when asked.
+3. Select this repository, then confirm build settings:
+   - Netlify reads **`netlify.toml`** at the repo root (build command, publish directory `public`, `HUGO_VERSION`, etc.).
+4. Under **Site configuration** → **Build & deploy** → **Continuous deployment** → **Deploy contexts**:
+   - **Production branch:** `main` (or your default branch).
+   - **Deploy Previews:** enable for **Pull requests** (Netlify builds a preview per PR and comments with a preview URL if the GitHub integration is allowed to post comments).
+
+After this, **opening a PR** triggers a **Deploy Preview** (unique `https://<deploy-id>--<site>.netlify.app` URL). **Merging to `main`** triggers a **production** deploy to your primary domain (and the Netlify subdomain).
+
+### 9.2 GitHub Actions CI (automatic)
+
+On every PR targeting `main` and every push to `main`, **Hugo CI** runs `hugo --gc --minify` so broken builds are caught before or alongside Netlify.
+
+### 9.3 Optional: store Netlify credentials on GitHub (`gh` CLI)
+
+This is **not required** for normal PR previews and production deploys (those use Netlify’s OAuth to GitHub). Add secrets only if you want to use the optional **Netlify manual deploy** workflow (`.github/workflows/netlify-manual-deploy.yml`) or other API/CLI automation.
+
+Prerequisites: [GitHub CLI](https://cli.github.com) installed and logged in (`gh auth login`).
+
+1. Create a Netlify **personal access token**: Netlify → **User settings** → **Applications** → **Personal access tokens** → generate a token with permission to deploy (follow Netlify’s current scope labels).
+2. Copy the **Site ID**: Netlify → your site → **Site configuration** → **Site details** → **Site ID**.
+3. From your machine, in the repo root:
+
+```bash
+chmod +x scripts/gh-netlify-secrets.sh
+./scripts/gh-netlify-secrets.sh
+```
+
+Or set secrets directly:
+
+```bash
+gh secret set NETLIFY_AUTH_TOKEN
+gh secret set NETLIFY_SITE_ID
+```
+
+(paste values when prompted)
+
+4. Verify: `gh secret list`
+
+5. Optional: **Actions** → **Netlify manual deploy** → **Run workflow** (draft vs production). Avoid turning this on for every push if Netlify Git is already connected, or you may double-deploy production.
+
+### 9.4 Avoid duplicate production deploys
+
+Use **either** Netlify’s continuous deployment from Git **or** a custom always-on Actions deploy — not both firing on every `main` push — unless you intend to deploy twice.
+
+---
+
+## 10. Theme Updates
 
 ```bash
 hugo mod get -u github.com/jpanther/congo/v2
@@ -178,7 +207,7 @@ hugo mod tidy
 
 ---
 
-## Theme Attribution
+## 11. Theme Attribution
 
 This site uses [Congo](https://github.com/jpanther/congo) by JP Anther, MIT License.
 Congo attribution in the footer is disabled in `params.toml` per JAF's institutional style.

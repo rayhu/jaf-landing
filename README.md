@@ -1,5 +1,7 @@
 # Justice Access Foundation — Trilingual Website Content Package
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc7f9169-6603-4d9a-9238-0038b2b48ba0/deploy-status)](https://app.netlify.com/projects/justice-access-foundation/deploys)
+
 **Organization:** Justice Access Foundation (JAF)
 **Legal Status:** California Nonprofit Public Benefit Corporation · IRS 501(c)(3) Public Charity
 **Classification:** 509(a)(1) / 170(b)(1)(A)(vi)
