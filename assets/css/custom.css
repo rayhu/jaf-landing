@@ -388,3 +388,48 @@ a[href$="/zh/donate/"] {
   width: 100%;
   margin-top: 1rem;
 }
+
+/* ─── Footer: scroll-to-top (#to-top) vs language switcher — all viewports ───
+   Reserve space so the locale block sits left of the sticky button; nudge button toward the edge. */
+
+footer > div.flex.items-center.justify-between > div:last-child {
+  padding-inline-end: 4rem;
+}
+
+footer > div.flex.items-center.justify-between {
+  column-gap: 0.75rem;
+}
+
+#to-top {
+  width: 3rem;
+  padding-inline-end: 0.25rem;
+}
+
+/* Desktop: a touch more separation on wide screens */
+@media (min-width: 640px) {
+  footer > div.flex.items-center.justify-between > div:last-child {
+    padding-inline-end: 4.5rem;
+  }
+
+  #to-top {
+    padding-inline-end: 0.5rem;
+  }
+}
+
+/* ─── Mobile only: footer links row + wrap (Congo uses flex-col below sm) ─── */
+
+@media (max-width: 639px) {
+  footer nav:first-of-type ul.flex.list-none {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.85rem;
+    row-gap: 0.35rem;
+  }
+
+  footer nav:first-of-type ul.flex.list-none > li {
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+}
