@@ -1,13 +1,21 @@
 {{/*
-  Typeform Live embed (Next). The form loads in-page via embed.js; the response UI is typically iframe-based.
+  Typeform Live embed — dimensions should match what you set under Share → Embed → Design
+  (e.g. width 100%, height 500px fixed). Hidden UTM: data-tf-hidden before embed.js loads.
 
-  In the Typeform editor, add Hidden fields with these exact names so URL → form mapping works:
-  utm_source, utm_medium, utm_campaign, utm_content (optional: utm_term, utm_id)
-
-  QR / links: https://justiceaccessfoundation.org/contact?utm_source=campus_posters&utm_medium=poster_qr&...
+  Optional: {{< typeform-embed height="600" >}}
 */}}
 {{- $id := .Get "id" | default "01KN5BAR1DGSR69TEAKK1JMEKK" -}}
-<div id="jaf-typeform" class="jaf-typeform" data-tf-live="{{ $id }}"></div>
+{{- $h := .Get "height" | default "500" -}}
+<div class="not-prose jaf-typeform-outer w-full max-w-none" style="--jaf-tf-h: {{ $h }}px">
+  <div
+    id="jaf-typeform"
+    class="jaf-typeform"
+    data-tf-live="{{ $id }}"
+    data-tf-width="100%"
+    data-tf-height="{{ $h }}"
+    data-tf-inline-on-mobile
+  ></div>
+</div>
 <script>
   (function () {
     var el = document.getElementById("jaf-typeform");
