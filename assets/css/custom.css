@@ -382,11 +382,30 @@ a[href$="/zh/donate/"] {
   }
 }
 
-/* Typeform Live embed — reserve vertical space before iframe loads */
-.jaf-typeform {
-  min-height: 520px;
-  width: 100%;
+/* Typeform Live embed — match Share → Embed → Design (e.g. 100% × 500px fixed).
+   prose/typography can shrink iframes; .not-prose + explicit iframe rules fix tiny embeds. */
+
+.jaf-typeform-outer {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.jaf-typeform {
+  width: 100%;
+  min-height: var(--jaf-tf-h, 500px);
+}
+
+/* SDK often sets small inline width/height on the iframe — override */
+.jaf-typeform iframe {
+  width: 100% !important;
+  min-height: var(--jaf-tf-h, 500px) !important;
+  height: var(--jaf-tf-h, 500px) !important;
+  max-width: 100% !important;
+  border: 0;
+}
+
+.prose .jaf-typeform-outer {
+  max-width: none;
 }
 
 /* ─── Footer: scroll-to-top (#to-top) vs language switcher — all viewports ───

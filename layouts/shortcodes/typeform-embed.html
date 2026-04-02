@@ -1,19 +1,21 @@
 {{/*
-  Typeform Live embed (Next) — same as official snippet:
-    <div data-tf-live="FORM_ID"></div>
-    <script src="https://embed.typeform.com/next/embed.js"></script>
-  We use https for the script. Hidden UTM fields: set data-tf-hidden before embed.js runs.
+  Typeform Live embed — dimensions should match what you set under Share → Embed → Design
+  (e.g. width 100%, height 500px fixed). Hidden UTM: data-tf-hidden before embed.js loads.
 
-  In Typeform: add hidden fields utm_source, utm_medium, utm_campaign, utm_content (optional: utm_term, utm_id).
+  Optional: {{< typeform-embed height="600" >}}
 */}}
 {{- $id := .Get "id" | default "01KN5BAR1DGSR69TEAKK1JMEKK" -}}
-<div
-  id="jaf-typeform"
-  class="jaf-typeform"
-  data-tf-live="{{ $id }}"
-  data-tf-width="100%"
-  data-tf-auto-resize
-></div>
+{{- $h := .Get "height" | default "500" -}}
+<div class="not-prose jaf-typeform-outer w-full max-w-none" style="--jaf-tf-h: {{ $h }}px">
+  <div
+    id="jaf-typeform"
+    class="jaf-typeform"
+    data-tf-live="{{ $id }}"
+    data-tf-width="100%"
+    data-tf-height="{{ $h }}"
+    data-tf-inline-on-mobile
+  ></div>
+</div>
 <script>
   (function () {
     var el = document.getElementById("jaf-typeform");
