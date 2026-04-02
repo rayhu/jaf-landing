@@ -1,13 +1,19 @@
 {{/*
-  Typeform Live embed (Next). The form loads in-page via embed.js; the response UI is typically iframe-based.
+  Typeform Live embed (Next) — same as official snippet:
+    <div data-tf-live="FORM_ID"></div>
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+  We use https for the script. Hidden UTM fields: set data-tf-hidden before embed.js runs.
 
-  In the Typeform editor, add Hidden fields with these exact names so URL → form mapping works:
-  utm_source, utm_medium, utm_campaign, utm_content (optional: utm_term, utm_id)
-
-  QR / links: https://justiceaccessfoundation.org/contact?utm_source=campus_posters&utm_medium=poster_qr&...
+  In Typeform: add hidden fields utm_source, utm_medium, utm_campaign, utm_content (optional: utm_term, utm_id).
 */}}
 {{- $id := .Get "id" | default "01KN5BAR1DGSR69TEAKK1JMEKK" -}}
-<div id="jaf-typeform" class="jaf-typeform" data-tf-live="{{ $id }}"></div>
+<div
+  id="jaf-typeform"
+  class="jaf-typeform"
+  data-tf-live="{{ $id }}"
+  data-tf-width="100%"
+  data-tf-auto-resize
+></div>
 <script>
   (function () {
     var el = document.getElementById("jaf-typeform");
