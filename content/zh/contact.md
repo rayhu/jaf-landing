@@ -7,4 +7,6 @@ layout: "simple"
 
 **电子邮件：** [thejusticeaccessfoundation@gmail.com](mailto:thejusticeaccessfoundation@gmail.com)
 
+本问卷由 Justice Access Foundation 发起，用于了解学生法律需求和获得法律帮助时遇到的障碍。如果你希望后续联系，在你同意的情况下，你的信息可能会被分享给 Accessible Justice Inc. 或经过认可的合作机构。
+
 {{< typeform-embed >}}

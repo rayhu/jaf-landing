@@ -56,6 +56,11 @@
   weight = 25
 
 [[footer]]
+  name   = "使用条款"
+  url    = "/zh/terms/"
+  weight = 26
+
+[[footer]]
   name   = "联系我们"
   url    = "/zh/contact/"
   weight = 27

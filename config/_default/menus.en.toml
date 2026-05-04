@@ -56,6 +56,11 @@
   weight = 25
 
 [[footer]]
+  name   = "Terms"
+  url    = "/terms/"
+  weight = 26
+
+[[footer]]
   name   = "Contact"
   url    = "/contact/"
   weight = 27

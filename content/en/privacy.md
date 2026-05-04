@@ -21,7 +21,7 @@ JAF does not sell, rent, or share personal information with third parties for co
 
 **Information You Provide Voluntarily**
 
-When you submit a contact form, donation inquiry form, or other inquiry through this website, we collect:
+When you submit a contact form, survey, donation inquiry form, or other inquiry through this website via Typeform, we collect:
 
 - Your name
 - Your email address
@@ -42,9 +42,12 @@ We do not use tracking pixels, third-party advertising networks, or behavioral a
 Information submitted through this website is used solely to:
 
 - Respond to your inquiry
+- Understand students' legal needs and barriers to accessing legal help
 - Process and acknowledge charitable contributions
 - Provide written acknowledgment of donations as required by IRC Section 170(f)(8)
 - Maintain organizational records as required by applicable law
+
+If you request follow-up, we may share your information with Accessible Justice Inc. or approved partner organizations with your consent.
 
 ---
 
@@ -77,7 +80,7 @@ JAF implements reasonable technical and organizational measures to protect infor
 
 ## Third-Party Services
 
-This website is hosted on Netlify. Form submissions are processed through Netlify Forms. Netlify's privacy practices are governed by Netlify's Privacy Policy, available at netlify.com.
+This website is hosted on Netlify. Contact and survey form submissions are collected through Typeform and then reviewed by JAF. Typeform's privacy practices are governed by Typeform's Privacy Policy, and Netlify's hosting-related practices are governed by Netlify's Privacy Policy.
 
 JAF does not embed third-party social media widgets, advertising trackers, or analytics services on this website.
 
