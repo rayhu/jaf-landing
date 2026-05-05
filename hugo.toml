@@ -1,6 +1,9 @@
 baseURL = "https://justiceaccessfoundation.org/"
 title   = "Justice Access Foundation"
 
+[author]
+  name = "Justice Access Foundation"
+
 enableRobotsTXT = true
 summaryLength   = 0
 

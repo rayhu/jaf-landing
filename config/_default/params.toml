@@ -19,7 +19,7 @@ enableCodeCopy    = false
   showCopyright          = true
   showThemeAttribution   = false
   showScrollToTop        = true
-  showAppearanceSwitcher = false
+  showAppearanceSwitcher = true
 
 # ─── Homepage ─────────────────────────────────────────────────────────────────
 [homepage]
