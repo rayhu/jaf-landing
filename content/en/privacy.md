@@ -5,7 +5,7 @@ slug: "privacy"
 layout: "simple"
 ---
 
-_Effective Date: [TBD upon launch]_
+_Effective Date: [May4， 2026]_
 
 ---
 
@@ -42,7 +42,7 @@ We do not use tracking pixels, third-party advertising networks, or behavioral a
 Information submitted through this website is used solely to:
 
 - Respond to your inquiry
-- Understand students' legal needs and barriers to accessing legal help
+- Understand legal needs and barriers to accessing legal help
 - Process and acknowledge charitable contributions
 - Provide written acknowledgment of donations as required by IRC Section 170(f)(8)
 - Maintain organizational records as required by applicable law
@@ -103,8 +103,8 @@ JAF may update this Privacy Policy from time to time. The effective date at the 
 For privacy-related inquiries or to exercise your California privacy rights, contact Justice Access Foundation at:
 
 Justice Access Foundation
-[Principal Office Address — TBD]
-[Contact Email — TBD]
+[Principal Office Address — 700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025]
+[Contact Email — thejusticeaccessfoundation@gmail.com]
 
 ---
 

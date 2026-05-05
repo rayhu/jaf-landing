@@ -5,8 +5,8 @@ slug: "contact"
 layout: "simple"
 ---
 
-**电子邮件：** [thejusticeaccessfoundation@gmail.com](mailto:thejusticeaccessfoundation@gmail.com)
+如需咨询一般事宜、董事会招聘、捐赠相关问题或媒体联络，请使用下方表格。我们将在五个工作日内予以回复。提交此表格并不构成律师-客户关系，亦不构成法律建议。
 
-本问卷由 Justice Access Foundation 发起，用于了解学生法律需求和获得法律帮助时遇到的障碍。如果你希望后续联系，在你同意的情况下，你的信息可能会被分享给 Accessible Justice Inc. 或经过认可的合作机构。
+如需填写学生住房纠纷相关问卷，请访问[校园研究页面](/zh/campus-study/)。
 
-{{< typeform-embed >}}
+{{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}

@@ -4,9 +4,8 @@ description: "Contáctenos con consultas generales, preguntas de reclutamiento d
 slug: "contact"
 layout: "simple"
 ---
+Use el formulario a continuacion para consultas generales, preguntas sobre reclutamiento de la junta, consultas sobre donaciones o relaciones con medios. Respondemos dentro de cinco dias habiles. El envio de este formulario no crea una relacion abogado-cliente y no constituye asesoramiento legal.
 
-**Correo electrónico:** [thejusticeaccessfoundation@gmail.com](mailto:thejusticeaccessfoundation@gmail.com)
+Si desea completar nuestro formulario anterior sobre vivienda estudiantil, visite la [pagina de Estudio del Campus](/es/campus-study/).
 
-Esta encuesta es realizada por Justice Access Foundation para comprender las necesidades legales de los estudiantes y las barreras para acceder a ayuda legal. Si solicita seguimiento, su informacion puede compartirse con Accessible Justice Inc. o con organizaciones asociadas aprobadas con su consentimiento.
-
-{{< typeform-embed >}}
+{{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}

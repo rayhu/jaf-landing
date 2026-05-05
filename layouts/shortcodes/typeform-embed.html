@@ -6,11 +6,16 @@
 */}}
 {{- $id := .Get "id" | default "01KN5BAR1DGSR69TEAKK1JMEKK" -}}
 {{- $h := .Get "height" | default "500" -}}
+{{- $isLive := ge (len $id) 20 -}}
 <div class="not-prose jaf-typeform-outer w-full max-w-none" style="--jaf-tf-h: {{ $h }}px">
   <div
     id="jaf-typeform"
     class="jaf-typeform"
+    {{- if $isLive }}
     data-tf-live="{{ $id }}"
+    {{- else }}
+    data-tf-widget="{{ $id }}"
+    {{- end }}
     data-tf-width="100%"
     data-tf-height="{{ $h }}"
     data-tf-inline-on-mobile

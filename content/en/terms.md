@@ -5,7 +5,7 @@ slug: "terms"
 layout: "simple"
 ---
 
-_Effective Date: [TBD upon launch]_
+_Effective Date: [May 4, 2026]_
 
 ---
 
@@ -26,7 +26,7 @@ All content on this website is provided for informational and educational purpos
 Our contact and survey forms are provided through Typeform. When you submit information through these forms, you agree that JAF may use your submission to:
 
 - Respond to your request
-- Understand students' legal needs and barriers to accessing legal help
+- Understand legal needs and barriers to accessing legal help
 - Coordinate follow-up support when requested
 
 If you request follow-up, your information may be shared with Accessible Justice Inc. or approved partner organizations with your consent.
@@ -62,5 +62,5 @@ JAF may update these Terms of Use from time to time. The effective date at the t
 Questions about these Terms of Use may be directed to:
 
 Justice Access Foundation
-[Principal Office Address — TBD]
-[Contact Email — TBD]
+[Principal Office Address — 700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025]
+[Contact Email — thejusticeaccessfoundation@gmail.com]
