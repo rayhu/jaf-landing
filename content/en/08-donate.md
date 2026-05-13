@@ -1,6 +1,6 @@
 ---
 title: "Donate"
-description: "Support charitable access to justice in California. Tax-deductible contributions to JAF's 501(c)(3) programs."
+description: "Support charitable access to justice in California. JAF's 501(c)(3) application is pending IRS review; contributions during the pending period are intended to be tax-deductible if recognition is granted."
 slug: "donate"
 layout: "simple"
 ---
@@ -55,7 +55,7 @@ All donations of $250 or more will receive a written acknowledgment from JAF in 
 - A description of any goods or services provided in exchange (for quid pro quo contributions above $75, a good faith fair market value estimate will be provided)
 - Confirmation that no goods or services were provided in exchange, where applicable
 
-JAF's federal Employer Identification Number (EIN) is [TBD]. Donors should retain their acknowledgment for tax purposes. JAF does not provide tax advice. Donors are encouraged to consult their own tax advisors regarding the deductibility of their contributions.
+JAF's federal Employer Identification Number (EIN) is **42-2498493**. JAF has applied to the IRS for recognition as a 501(c)(3) tax-exempt public charity; the application is currently pending IRS review. If recognition is granted, exempt status generally applies retroactively to JAF's date of incorporation, and contributions made during the pending period are intended to be tax-deductible. If recognition is denied, contributions made during the pending period may not be deductible. Donors should retain their acknowledgment for tax purposes. JAF does not provide tax advice; donors are encouraged to consult their own tax advisors regarding the deductibility of their contributions.
 
 ---
 

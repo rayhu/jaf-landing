@@ -60,6 +60,6 @@ JAF is governed by an independent volunteer Board of Directors. No director rece
 
 ## Support Our Work
 
-Your contribution supports charitable programs serving Californians in need of civil legal access. JAF is seeking 501(c)(3) public charity status (EIN: [TBD]). Donations are tax-deductible to the extent permitted by law. No donor contribution confers any right to influence organizational governance or program decisions.
+Your contribution supports charitable programs serving Californians in need of civil legal access. JAF has applied for 501(c)(3) public charity recognition (EIN: 42-2498493); the application is currently pending IRS review. Contributions during the pending period are intended to be tax-deductible if recognition is granted, generally retroactive to JAF's date of incorporation. No donor contribution confers any right to influence organizational governance or program decisions.
 
 [Donate →](/donate/)

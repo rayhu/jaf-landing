@@ -11,7 +11,7 @@ _Effective Date: [May4， 2026]_
 
 ## Overview
 
-Justice Access Foundation ("JAF," "we," "our," or "us") is a California nonprofit public benefit corporation and 501(c)(3) public charity. This Privacy Policy describes how JAF collects, uses, retains, and protects information submitted through this website (justiceaccessfoundation.org).
+Justice Access Foundation ("JAF," "we," "our," or "us") is a California nonprofit public benefit corporation with a 501(c)(3) public charity application pending IRS review. This Privacy Policy describes how JAF collects, uses, retains, and protects information submitted through this website (justiceaccessfoundation.org).
 
 JAF does not sell, rent, or share personal information with third parties for commercial purposes.
 
@@ -103,8 +103,8 @@ JAF may update this Privacy Policy from time to time. The effective date at the 
 For privacy-related inquiries or to exercise your California privacy rights, contact Justice Access Foundation at:
 
 Justice Access Foundation
-[Principal Office Address — 700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025]
-[Contact Email — thejusticeaccessfoundation@gmail.com]
+700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025
+hello@justiceaccessfoundation.org
 
 ---
 

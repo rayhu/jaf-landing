@@ -7,19 +7,23 @@ layout: "simple"
 
 ## Reconocimiento 501(c)(3)
 
-Justice Access Foundation ha obtenido el reconocimiento del Servicio de Impuestos Internos como organización exenta de impuestos federales sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas. Este reconocimiento se otorga a través de una carta de determinación formal emitida por el IRS luego de la revisión de la solicitud del Formulario 1023 de la organización y sus documentos de gobernanza.
+Justice Access Foundation ha presentado una solicitud al Servicio de Impuestos Internos para el reconocimiento como organización exenta de impuestos federales sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas. La solicitud se presentó mediante el Formulario 1023 del IRS junto con los documentos de gobernanza correspondientes. La solicitud se encuentra actualmente bajo revisión del IRS.
 
-El estado 501(c)(3) significa:
+El Número de Identificación del Empleador (EIN) federal de JAF es **42-2498493**.
+
+Si se otorga el reconocimiento, el IRS emitirá una carta de determinación formal. El estado 501(c)(3) significará:
 
 - JAF está exenta de impuestos federales sobre la renta derivada de sus actividades caritativas
-- Las contribuciones a JAF son deducibles para los donantes como contribuciones caritativas, sujetas a las limitaciones aplicables
+- Las contribuciones a JAF son deducibles para los donantes como contribuciones caritativas, sujetas a las limitaciones aplicables, generalmente con efecto retroactivo a la fecha de incorporación de JAF
 - JAF está sujeta a requisitos regulatorios sobre beneficio privado, enriquecimiento privado, actividad política y cabildeo
+
+Durante el período pendiente, JAF opera en conformidad con todos los requisitos 501(c)(3). Si la solicitud es denegada, las contribuciones realizadas durante el período pendiente pueden no ser deducibles. Los donantes deben consultar a sus propios asesores fiscales con respecto a la deducibilidad de sus contribuciones.
 
 ---
 
 ## Caridad Pública vs. Fundación Privada
 
-JAF está clasificada como una **organización de caridad pública**, no como una fundación privada. Esta distinción es legalmente significativa:
+JAF ha solicitado la clasificación como **organización de caridad pública**, no como una fundación privada. Esta distinción, una vez reconocida por el IRS, es legalmente significativa:
 
 | Característica                       | Caridad Pública (JAF)              | Fundación Privada                                        |
 | ------------------------------------ | ---------------------------------- | -------------------------------------------------------- |
@@ -56,7 +60,7 @@ JAF presentó el Formulario 1023 del IRS, Solicitud de Reconocimiento de Exenci�
 - Documentación de gobernanza, incluyendo la Política de Conflicto de Intereses
 - Una declaración de la clase caritativa y la misión organizacional
 
-La carta de determinación del IRS que confirma el estado 501(c)(3) de JAF está disponible para inspección pública a solicitud en la oficina principal de JAF.
+Una vez emitida, la carta de determinación del IRS que confirme el estado 501(c)(3) de JAF estará disponible para inspección pública de conformidad con la Sección 6104 del IRC.
 
 ---
 

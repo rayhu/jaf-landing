@@ -7,19 +7,23 @@ layout: "simple"
 
 ## 501(c)(3) Recognition
 
-Justice Access Foundation has obtained recognition from the Internal Revenue Service as an organization exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. This recognition is granted through a formal determination letter issued by the IRS following review of the organization's Form 1023 application and governing documents.
+Justice Access Foundation has applied to the Internal Revenue Service for recognition as an organization exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. The application was submitted on IRS Form 1023 along with supporting governing documents. The application is currently pending IRS review.
 
-Section 501(c)(3) status means:
+JAF's federal Employer Identification Number (EIN) is **42-2498493**.
+
+If recognition is granted, the IRS will issue a formal determination letter. Section 501(c)(3) status will mean:
 
 - JAF is exempt from federal income tax on income derived from its charitable activities
-- Contributions to JAF are deductible to donors as charitable contributions, subject to applicable limitations
+- Contributions to JAF are deductible to donors as charitable contributions, subject to applicable limitations, generally retroactive to JAF's date of incorporation
 - JAF is subject to regulatory requirements concerning private benefit, private inurement, political activity, and lobbying
+
+During the pending period, JAF operates in conformity with all 501(c)(3) requirements. If the application is denied, contributions made during the pending period may not be deductible. Donors should consult their own tax advisors regarding the deductibility of their contributions.
 
 ---
 
 ## Public Charity vs. Private Foundation
 
-JAF is classified as a **public charity**, not a private foundation. This distinction is legally significant:
+JAF has applied for classification as a **public charity**, not a private foundation. This distinction, once recognized by the IRS, is legally significant:
 
 | Characteristic             | Public Charity (JAF)        | Private Foundation                           |
 | -------------------------- | --------------------------- | -------------------------------------------- |
@@ -56,7 +60,7 @@ JAF filed IRS Form 1023, Application for Recognition of Exemption Under Section 
 - Governance documentation, including the Conflict of Interest Policy
 - A statement of the charitable class and organizational mission
 
-The IRS determination letter confirming JAF's 501(c)(3) status is available for public inspection upon request at JAF's principal office.
+Once issued, the IRS determination letter confirming JAF's 501(c)(3) status will be made available for public inspection in accordance with IRC Section 6104.
 
 ---
 

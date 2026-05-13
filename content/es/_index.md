@@ -60,6 +60,6 @@ JAF está gobernada por una Junta Directiva voluntaria e independiente. Ningún 
 
 ## Apoye Nuestro Trabajo
 
-Su contribución apoya programas caritativos que sirven a los californianos que necesitan acceso legal civil. JAF es una organización de caridad pública registrada bajo 501(c)(3) (EIN: [Por Determinar]). Las donaciones son deducibles de impuestos en la medida permitida por la ley. Ninguna contribución otorga derecho alguno a influir en las decisiones de gobernanza o programa de la organización.
+Su contribución apoya programas caritativos que sirven a los californianos que necesitan acceso legal civil. JAF ha solicitado el reconocimiento como organización de caridad pública bajo 501(c)(3) (EIN: 42-2498493); la solicitud se encuentra actualmente bajo revisión del IRS. Las contribuciones realizadas durante el período pendiente están destinadas a ser deducibles de impuestos si se otorga el reconocimiento, generalmente con efecto retroactivo a la fecha de incorporación de JAF. Ninguna contribución otorga derecho alguno a influir en las decisiones de gobernanza o programa de la organización.
 
 [Donar →](/es/donate/)

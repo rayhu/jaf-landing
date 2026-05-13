@@ -1,6 +1,6 @@
 ---
 title: "Donar"
-description: "Apoye el acceso caritativo a la justicia en California. Contribuciones deducibles de impuestos a los programas 501(c)(3) de JAF."
+description: "Apoye el acceso caritativo a la justicia en California. La solicitud 501(c)(3) de JAF se encuentra bajo revisión del IRS; las contribuciones durante el período pendiente están destinadas a ser deducibles si se otorga el reconocimiento."
 slug: "donate"
 layout: "simple"
 ---
@@ -55,7 +55,7 @@ Todas las donaciones de $250 o más recibirán un reconocimiento escrito de JAF 
 - Una descripción de cualquier bien o servicio proporcionado a cambio (para contribuciones quid pro quo superiores a $75, se proporcionará una estimación de buena fe del valor justo de mercado)
 - Confirmación de que no se proporcionaron bienes o servicios a cambio, cuando corresponda
 
-El Número de Identificación del Empleador (EIN) federal de JAF es [Por Determinar]. Los donantes deben conservar su reconocimiento con fines fiscales. JAF no proporciona asesoramiento fiscal. Se alienta a los donantes a consultar a sus propios asesores fiscales con respecto a la deducibilidad de sus contribuciones.
+El Número de Identificación del Empleador (EIN) federal de JAF es **42-2498493**. JAF ha presentado al IRS una solicitud de reconocimiento como organización de caridad pública exenta de impuestos bajo 501(c)(3); la solicitud se encuentra actualmente bajo revisión del IRS. Si se otorga el reconocimiento, el estado de exención generalmente se aplica retroactivamente a la fecha de incorporación de JAF, y las contribuciones realizadas durante el período pendiente están destinadas a ser deducibles de impuestos. Si se deniega el reconocimiento, las contribuciones realizadas durante el período pendiente pueden no ser deducibles. Los donantes deben conservar su reconocimiento con fines fiscales. JAF no proporciona asesoramiento fiscal; se alienta a los donantes a consultar a sus propios asesores fiscales con respecto a la deducibilidad de sus contribuciones.
 
 ---
 

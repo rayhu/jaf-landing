@@ -62,5 +62,5 @@ JAF puede actualizar estos Terminos de Uso ocasionalmente. La fecha de vigencia 
 Las preguntas sobre estos Terminos de Uso pueden dirigirse a:
 
 Justice Access Foundation
-[Direccion de Oficina Principal — Por Determinar]
-[Correo Electronico de Contacto — Por Determinar]
+700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025
+hello@justiceaccessfoundation.org

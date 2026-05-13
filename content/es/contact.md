@@ -6,6 +6,8 @@ layout: "simple"
 ---
 Use el formulario a continuacion para consultas generales, preguntas sobre reclutamiento de la junta, consultas sobre donaciones o relaciones con medios. Respondemos dentro de cinco dias habiles. El envio de este formulario no crea una relacion abogado-cliente y no constituye asesoramiento legal.
 
+También puede escribirnos directamente a [hello@justiceaccessfoundation.org](mailto:hello@justiceaccessfoundation.org).
+
 Si desea completar nuestro formulario anterior sobre vivienda estudiantil, visite la [pagina de Estudio del Campus](/es/campus-study/).
 
 {{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}

@@ -62,5 +62,5 @@ JAF may update these Terms of Use from time to time. The effective date at the t
 Questions about these Terms of Use may be directed to:
 
 Justice Access Foundation
-[Principal Office Address — 700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025]
-[Contact Email — thejusticeaccessfoundation@gmail.com]
+700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025
+hello@justiceaccessfoundation.org

@@ -13,10 +13,10 @@ Justice Access Foundation (JAF) is organized and operates under three distinct l
 JAF is incorporated as a California Nonprofit Public Benefit Corporation under the California Nonprofit Corporation Law (Cal. Corp. Code §§ 5110 et seq.). The organization is registered with the California Secretary of State and the California Attorney General's Registry of Charitable Trusts.
 
 **2. Federal Tax Law**
-JAF has obtained recognition from the Internal Revenue Service as a tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code.
+JAF has applied to the Internal Revenue Service for recognition as a tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code (EIN: 42-2498493). The application (IRS Form 1023) is currently pending IRS review. If recognition is granted, exempt status under federal law generally applies retroactively to JAF's date of incorporation.
 
 **3. Public Charity Classification**
-JAF is classified as a public charity — not a private foundation — under Internal Revenue Code Section 509(a)(1) in conjunction with Section 170(b)(1)(A)(vi). This classification reflects JAF's broad public support base and ongoing compliance with the IRS public support test.
+JAF has applied for classification as a public charity — not a private foundation — under Internal Revenue Code Section 509(a)(1) in conjunction with Section 170(b)(1)(A)(vi). This classification, when granted, will reflect JAF's broad public support base and ongoing compliance with the IRS public support test.
 
 ---
 

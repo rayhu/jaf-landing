@@ -13,10 +13,10 @@ Justice Access Foundation (JAF) está organizada y opera bajo tres marcos legale
 JAF está incorporada como una Corporación Pública Sin Fines de Lucro de California bajo la Ley de Corporaciones Sin Fines de Lucro de California (Cal. Corp. Code §§ 5110 y siguientes). La organización está registrada ante el Secretario de Estado de California y el Registro de Fideicomisos de Caridad del Procurador General de California.
 
 **2. Ley Fiscal Federal**
-JAF ha obtenido el reconocimiento del Servicio de Impuestos Internos como organización exenta de impuestos federales sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas.
+JAF ha presentado una solicitud al Servicio de Impuestos Internos para el reconocimiento como organización exenta de impuestos federales sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas (EIN: 42-2498493). La solicitud (Formulario 1023 del IRS) se encuentra actualmente bajo revisión del IRS. Si se otorga el reconocimiento, el estado de exención bajo la ley federal generalmente se aplica retroactivamente a la fecha de incorporación de JAF.
 
 **3. Clasificación de Caridad Pública**
-JAF está clasificada como una organización de caridad pública — no como una fundación privada — bajo la Sección 509(a)(1) del Código de Rentas Internas en conjunto con la Sección 170(b)(1)(A)(vi). Esta clasificación refleja la amplia base de apoyo público de JAF y el cumplimiento continuo con la prueba de apoyo público del IRS.
+JAF ha solicitado la clasificación como organización de caridad pública — no como una fundación privada — bajo la Sección 509(a)(1) del Código de Rentas Internas en conjunto con la Sección 170(b)(1)(A)(vi). Esta clasificación, cuando se otorgue, reflejará la amplia base de apoyo público de JAF y el cumplimiento continuo con la prueba de apoyo público del IRS.
 
 ---
 

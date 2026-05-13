@@ -7,12 +7,12 @@
   "alternateName": "JAF",
   "url": "https://justiceaccessfoundation.org/",
   "logo": "https://justiceaccessfoundation.org/img/logo.svg",
-  "description": "California 501(c)(3) public charity expanding access to the civil justice system for individuals and families who lack adequate legal resources.",
+  "description": "California nonprofit public benefit corporation expanding access to the civil justice system for individuals and families who lack adequate legal resources. 501(c)(3) application pending IRS review.",
   "foundingLocation": {
     "@type": "Place",
     "name": "California, USA"
   },
-  "nonprofitStatus": "Nonprofit501c3",
+  "taxID": "42-2498493",
   "areaServed": {
     "@type": "State",
     "name": "California"
@@ -20,7 +20,7 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "General Inquiry",
-    "email": "mailto:thejusticeaccessfoundation@gmail.com",
+    "email": "mailto:hello@justiceaccessfoundation.org",
     "url": "https://justiceaccessfoundation.org/contact/"
   },
   "sameAs": []
@@ -30,8 +30,8 @@
 {{- /* ── Open Graph / social preview ────────────────────────────────────────── */}}
 <meta property="og:site_name" content="Justice Access Foundation">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-<meta property="og:title" content="{{ if .IsHome }}Justice Access Foundation — California 501(c)(3) Public Charity{{ else }}{{ .Title }} — Justice Access Foundation{{ end }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}California 501(c)(3) public charity expanding access to the civil justice system.{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}Justice Access Foundation — California Civil Justice Nonprofit{{ else }}{{ .Title }} — Justice Access Foundation{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}California nonprofit public benefit corporation expanding access to the civil justice system. 501(c)(3) application pending.{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 {{- /* NOTE: Export static/img/og.svg to static/img/og.png (1200×630) for */}}
 {{- /* maximum social platform compatibility before launch.               */}}
@@ -43,7 +43,7 @@
 {{- /* ── Twitter card ───────────────────────────────────────────────────────── */}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}Justice Access Foundation{{ else }}{{ .Title }} — JAF{{ end }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}California 501(c)(3) public charity expanding access to the civil justice system.{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}California nonprofit public benefit corporation expanding access to the civil justice system. 501(c)(3) application pending.{{ end }}">
 <meta name="twitter:image" content="{{ "img/og.png" | absURL }}">
 
 {{- /* ── Google Search Console verification ────────────────────────────────── */}}

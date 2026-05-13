@@ -62,5 +62,5 @@ JAF 可能不时更新本《使用条款》。本页面顶部的生效日期将�
 如对本《使用条款》有任何问题，请联系：
 
 美国司法可及基金会
-[主要办公地址 — 待定]
-[联系邮箱 — 待定]
+700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025
+hello@justiceaccessfoundation.org

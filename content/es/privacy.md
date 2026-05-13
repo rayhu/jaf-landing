@@ -101,8 +101,8 @@ JAF puede actualizar esta Política de Privacidad ocasionalmente. La fecha de vi
 Para consultas relacionadas con la privacidad o para ejercer sus derechos de privacidad de California, contáctenos en:
 
 Justice Access Foundation
-[Dirección de Oficina Principal — Por Determinar]
-[Correo Electrónico de Contacto — Por Determinar]
+700 El Camino Real, STE 120 #1304, Menlo Park, CA 94025
+hello@justiceaccessfoundation.org
 
 ---
 
