@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Store Netlify credentials as GitHub Actions secrets (for optional manual Netlify deploy workflow).
-# PR previews and production deploys from normal git push are handled by Netlify’s Git integration;
-# secrets are only required if you use .github/workflows/netlify-manual-deploy.yml.
+# Store Netlify credentials as GitHub Actions secrets.
+# Required by .github/workflows/netlify-deploy.yml, which deploys PR previews and
+# production via the Netlify CLI. Run once; re-run any time to rotate the values.
 set -euo pipefail
 
 if ! command -v gh &>/dev/null; then
@@ -28,4 +28,4 @@ printf '%s' "$SITE_ID" | gh secret set NETLIFY_SITE_ID
 
 echo ""
 echo "Done. Verify with: gh secret list"
-echo "Optional: run workflow 'Netlify manual deploy' from the Actions tab (workflow_dispatch)."
+echo "Now open a PR for a preview, or merge to main to deploy production."

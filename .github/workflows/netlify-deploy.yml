@@ -1,0 +1,122 @@
+# Auto-deploy to Netlify with the Netlify CLI (mirrors a local `netlify deploy`).
+#
+#   • Pull request to main  → Deploy Preview (unique URL, posted as a PR comment)
+#   • Push / merge to main   → Production deploy (the live site)
+#   • Manual run (Actions tab → "Run workflow") → choose preview or production
+#
+# ── Required repository secrets ───────────────────────────────────────────────
+# Settings → Secrets and variables → Actions → New repository secret
+#   NETLIFY_AUTH_TOKEN  Netlify personal access token
+#                       (Netlify → User settings → Applications → Personal access tokens)
+#   NETLIFY_SITE_ID     Netlify site ID
+#                       (Netlify → Site configuration → Site details → Site ID)
+# Step-by-step: see SETUP.md §9.
+#
+# ── Heads up (avoid double production deploys) ────────────────────────────────
+# If this same repo is ALSO connected to Netlify's Git integration, every push to
+# main would deploy twice. Use one or the other: either keep this workflow, or
+# turn off "Continuous deployment" in the Netlify dashboard. See SETUP.md §9.4.
+
+name: Netlify deploy
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      production:
+        description: "Deploy to production (live site) instead of a preview"
+        type: boolean
+        default: false
+
+concurrency:
+  group: netlify-deploy-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write # to post the preview URL as a PR comment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache-dependency-path: go.sum
+
+      - name: Setup Hugo (extended)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.155.3" # keep in sync with netlify.toml HUGO_VERSION
+          extended: true
+
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
+      # Figure out whether this run is production or a preview, and (for previews)
+      # the deploy alias that gives us a predictable URL.
+      - name: Determine deploy context
+        id: ctx
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.production }}" = "true" ]; then
+            echo "prod=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "prod=false" >> "$GITHUB_OUTPUT"
+            if [ "${{ github.event_name }}" = "pull_request" ]; then
+              echo "alias=pr-${{ github.event.pull_request.number }}" >> "$GITHUB_OUTPUT"
+            else
+              echo "alias=manual-${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      # PRODUCTION — build with hugo.toml's baseURL, publish to the live site.
+      - name: Build and deploy (production)
+        if: steps.ctx.outputs.prod == 'true'
+        run: |
+          hugo --gc --minify
+          netlify deploy --dir=public --prod --message="Actions ${{ github.sha }}"
+          echo "Deployed to production from ${{ github.sha }}" >> "$GITHUB_STEP_SUMMARY"
+
+      # PREVIEW — the prebuilt dir is uploaded as-is, so netlify.toml's deploy-preview
+      # baseURL override does NOT run. We must bake the preview host into Hugo's baseURL
+      # ourselves, or assets resolve to the apex domain and CSP blocks them. We resolve
+      # the site's *.netlify.app name from the API, build against the alias URL, then
+      # deploy to that same alias so the URL is deterministic.
+      - name: Build and deploy (preview)
+        if: steps.ctx.outputs.prod == 'false'
+        id: preview
+        run: |
+          SITE_NAME=$(netlify api getSite --data "{\"site_id\":\"$NETLIFY_SITE_ID\"}" | jq -r '.name')
+          ALIAS="${{ steps.ctx.outputs.alias }}"
+          PREVIEW_URL="https://${ALIAS}--${SITE_NAME}.netlify.app"
+          echo "Building preview for ${PREVIEW_URL}"
+          hugo --gc --minify --baseURL "${PREVIEW_URL}/"
+          netlify deploy --dir=public --alias="$ALIAS" --message="Actions preview ${{ github.sha }}"
+          echo "url=${PREVIEW_URL}" >> "$GITHUB_OUTPUT"
+          echo "Preview URL: ${PREVIEW_URL}" >> "$GITHUB_STEP_SUMMARY"
+
+      # Post (or update) the preview URL as a comment on the PR.
+      - name: Comment preview URL on PR
+        if: steps.ctx.outputs.prod == 'false' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          URL: ${{ steps.preview.outputs.url }}
+          SHA: ${{ github.sha }}
+        run: |
+          BODY=$(printf '**Deploy Preview** is ready.\n\n%s\n\nBuilt from `%s` — refreshes on every push to this PR.' "$URL" "$SHA")
+          gh pr comment "$PR" --edit-last --body "$BODY" || gh pr comment "$PR" --body "$BODY"

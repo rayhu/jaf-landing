@@ -63,7 +63,7 @@ Output lands in `public/`. This folder contains the complete static website read
 
 ### Option A — Netlify (recommended, free tier)
 
-This repo already includes `netlify.toml` (build command, `HUGO_VERSION`, deploy-preview `baseURL`, headers, and redirects). **Connect GitHub once** so every PR gets a Deploy Preview URL and every merge to `main` updates production — see **§9 GitHub + Netlify (PR previews & production)** below.
+This repo already includes `netlify.toml` (build command, `HUGO_VERSION`, deploy-preview `baseURL`, headers, and redirects) and a GitHub Actions workflow that deploys via the Netlify CLI: every PR gets a Deploy Preview URL and every merge to `main` updates production. **Set two secrets once** — see **§9 GitHub Actions → Netlify (PR previews & production)** below.
 
 ### Option B — GitHub Pages
 
@@ -140,38 +140,28 @@ All content is plain Markdown. To update a page:
 1. Open the relevant file in `content/en/`, `content/es/`, or `content/zh/`.
 2. Edit the text below the `---` front matter block.
 3. Run `hugo server` to preview.
-4. Commit and push — Netlify rebuilds automatically.
+4. Open a PR for a Deploy Preview, or merge to `main` to publish — GitHub Actions builds and deploys automatically (§9).
 
 ---
 
-## 9. GitHub + Netlify (PR previews & production)
+## 9. GitHub Actions → Netlify (PR previews & production)
 
-**How it works:** Netlify’s **Git integration** builds on Netlify’s servers (so `DEPLOY_PRIME_URL` and `netlify.toml` deploy-preview settings apply). GitHub Actions in this repo only run **Hugo CI** (`.github/workflows/hugo-ci.yml`) to verify the build; they do not replace Netlify deploys.
+**How it works:** GitHub Actions builds the site and ships it to Netlify with the Netlify CLI — the same `netlify deploy` you run locally, just automated. Two workflows:
 
-### 9.1 One-time: connect the repository
+- **Hugo CI** (`.github/workflows/hugo-ci.yml`) — build-only check; needs no secrets, so it stays green even on forks.
+- **Netlify deploy** (`.github/workflows/netlify-deploy.yml`) — the deployer:
+  - **Pull request to `main`** → **Deploy Preview** at `https://pr-<number>--<site>.netlify.app`, posted as a comment on the PR.
+  - **Push / merge to `main`** → **production** deploy to the live site.
+  - **Manual** (Actions tab → _Run workflow_) → pick preview or production.
 
-1. Push this repo to GitHub (if it is not there yet).
-2. In [Netlify](https://app.netlify.com) → **Add new site** → **Import an existing project** → **GitHub** → authorize the Netlify GitHub App when asked.
-3. Select this repository, then confirm build settings:
-   - Netlify reads **`netlify.toml`** at the repo root (build command, publish directory `public`, `HUGO_VERSION`, etc.).
-4. Under **Site configuration** → **Build & deploy** → **Continuous deployment** → **Deploy contexts**:
-   - **Production branch:** `main` (or your default branch).
-   - **Deploy Previews:** enable for **Pull requests** (Netlify builds a preview per PR and comments with a preview URL if the GitHub integration is allowed to post comments).
+### 9.1 One-time: store the two secrets
 
-After this, **opening a PR** triggers a **Deploy Preview** (unique `https://<deploy-id>--<site>.netlify.app` URL). **Merging to `main`** triggers a **production** deploy to your primary domain (and the Netlify subdomain).
-
-### 9.2 GitHub Actions CI (automatic)
-
-On every PR targeting `main` and every push to `main`, **Hugo CI** runs `hugo --gc --minify` so broken builds are caught before or alongside Netlify.
-
-### 9.3 Optional: store Netlify credentials on GitHub (`gh` CLI)
-
-This is **not required** for normal PR previews and production deploys (those use Netlify’s OAuth to GitHub). Add secrets only if you want to use the optional **Netlify manual deploy** workflow (`.github/workflows/netlify-manual-deploy.yml`) or other API/CLI automation.
+The deploy workflow needs two repository secrets. Set them once.
 
 Prerequisites: [GitHub CLI](https://cli.github.com) installed and logged in (`gh auth login`).
 
-1. Create a Netlify **personal access token**: Netlify → **User settings** → **Applications** → **Personal access tokens** → generate a token with permission to deploy (follow Netlify’s current scope labels).
-2. Copy the **Site ID**: Netlify → your site → **Site configuration** → **Site details** → **Site ID**.
+1. Create a Netlify **personal access token**: Netlify → **User settings** → **Applications** → **Personal access tokens** → **New access token**.
+2. Find the **Site ID**: Netlify → your site → **Site configuration** → **Site details** → **Site ID**.
 3. From your machine, in the repo root:
 
 ```bash
@@ -179,22 +169,28 @@ chmod +x scripts/gh-netlify-secrets.sh
 ./scripts/gh-netlify-secrets.sh
 ```
 
-Or set secrets directly:
+Or set them directly (paste each value when prompted):
 
 ```bash
 gh secret set NETLIFY_AUTH_TOKEN
 gh secret set NETLIFY_SITE_ID
 ```
 
-(paste values when prompted)
+4. Verify: `gh secret list` should list `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID`.
 
-4. Verify: `gh secret list`
+That's it — open a PR to get a preview, merge to publish. No Netlify dashboard wiring required.
 
-5. Optional: **Actions** → **Netlify manual deploy** → **Run workflow** (draft vs production). Avoid turning this on for every push if Netlify Git is already connected, or you may double-deploy production.
+### 9.2 Editing the workflow
 
-### 9.4 Avoid duplicate production deploys
+Everything lives in `.github/workflows/netlify-deploy.yml`. Common tweaks:
 
-Use **either** Netlify’s continuous deployment from Git **or** a custom always-on Actions deploy — not both firing on every `main` push — unless you intend to deploy twice.
+- **Change the production branch:** edit the `push:` and `pull_request:` `branches:` lists.
+- **Change the Hugo version:** edit the `hugo-version` line (keep it in sync with `HUGO_VERSION` in `netlify.toml`).
+- **Stop auto-deploying production:** remove the `push:` trigger — pushes to `main` then only run the build check, and you deploy manually from the Actions tab.
+
+### 9.3 Avoid duplicate production deploys
+
+This workflow IS the deploy path. If the repo is **also** connected to Netlify's own Git integration (Netlify dashboard → **Site configuration** → **Build & deploy** → **Continuous deployment**), every push to `main` deploys **twice**. Pick one: keep this workflow (recommended, since it mirrors the local CLI flow), or disable continuous deployment in the Netlify dashboard and delete `netlify-deploy.yml`.
 
 ---
 
