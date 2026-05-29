@@ -2,7 +2,20 @@
 title: "捐款"
 description: "支持加利福尼亚州的慈善性司法获取。基金会 501(c)(3) 认定申请正由 IRS 审核中；如获认定，审核期内的捐款拟享受税务抵扣。"
 slug: "donate"
-layout: "simple"
+lead: "您的捐款支持旨在扩大加利福尼亚州缺乏足够法律资源的个人和家庭获取民事法律体系渠道的慈善项目。"
+toc:
+  - label: "捐款方式"
+    id: "give"
+  - label: "资金用途"
+    id: "use"
+  - label: "透明度承诺"
+    id: "transparency"
+  - label: "税务收据合规"
+    id: "receipt"
+  - label: "治理独立性"
+    id: "independence"
+  - label: "邮寄与遗产捐赠"
+    id: "mail"
 ---
 
 ## 支持慈善性司法获取

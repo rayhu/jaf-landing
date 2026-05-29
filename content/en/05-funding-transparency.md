@@ -2,7 +2,20 @@
 title: "Funding and Transparency"
 description: "Funding structure, donor concentration limits, financial segregation, Form 990 compliance, and governance independence from funding."
 slug: "funding"
-layout: "simple"
+lead: "A structured, multi-stage approach to funding designed to ensure financial stability, broad public support, and compliance with IRS public charity requirements."
+toc:
+  - label: "Stage 1 · Establishment"
+    id: "stage1"
+  - label: "Stage 2 · Public Support"
+    id: "stage2"
+  - label: "Donor Concentration Limits"
+    id: "concentration"
+  - label: "Financial Segregation"
+    id: "segregation"
+  - label: "Form 990 Compliance"
+    id: "form990"
+  - label: "Independence from Funding"
+    id: "independence"
 ---
 
 ## Funding Structure Overview

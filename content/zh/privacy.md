@@ -2,7 +2,26 @@
 title: "隐私政策"
 description: "美国司法可及基金会隐私政策：我们如何收集、使用和保护通过本网站提交的信息。"
 slug: "privacy"
-layout: "simple"
+lead: "美国司法可及基金会如何收集、使用、保留和保护通过本网站提交的信息。"
+toc:
+  - label: "概述"
+    id: "overview"
+  - label: "我们收集的信息"
+    id: "collect"
+  - label: "我们如何使用信息"
+    id: "use"
+  - label: "信息保留"
+    id: "retention"
+  - label: "加州隐私权"
+    id: "ccpa"
+  - label: "安全措施"
+    id: "security"
+  - label: "第三方服务"
+    id: "thirdparty"
+  - label: "儿童隐私"
+    id: "children"
+  - label: "变更与联系"
+    id: "changes"
 ---
 
 _生效日期：[待网站正式上线后确定]_

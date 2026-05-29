@@ -1,0 +1,103 @@
+/* ============================================================
+   JAF Homepage sections — hero, mission, programs, governance, support
+   ============================================================ */
+
+/* ===================== HERO ===================== */
+.hero { position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; }
+#bgVideo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; background:var(--bg); }
+
+/* Static fallback shown until a real bg video loads */
+.hero-fallback {
+  position:absolute; inset:0; z-index:1; background:
+    radial-gradient(62% 70% at 80% 30%, rgba(200,132,42,0.30), transparent 60%),
+    radial-gradient(50% 50% at 18% 86%, rgba(200,132,42,0.10), transparent 60%),
+    linear-gradient(180deg, var(--bg-warm), var(--bg) 55%);
+}
+.hero-fallback img { position:absolute; right:4%; top:50%; transform:translateY(-50%); width:min(40vw,440px); opacity:0.92; filter:drop-shadow(0 20px 44px rgba(60,42,12,0.18)); }
+.hero-fallback::after {
+  content:""; position:absolute; inset:0; opacity:0.5; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='900' fill='none' stroke='%238a7d63' stroke-width='1' opacity='0.5'%3E%3Cpath d='M0 560 C300 540 600 580 900 555 1200 535 1440 570 1440 570'/%3E%3Cpath d='M0 610 C320 590 640 632 960 605 1200 588 1440 620 1440 620'/%3E%3Cpath d='M0 668 C300 650 600 688 920 660 1220 640 1440 678 1440 678'/%3E%3C/svg%3E");
+  background-size:cover; background-position:center bottom;
+}
+.hero.has-video .hero-fallback { display:none; }
+.hero.has-video #bgVideo { opacity:1; }
+#bgVideo { opacity:0; }
+
+.hero::after {
+  content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
+  background:linear-gradient(to right, rgba(232,228,217,0.62) 0%, rgba(232,228,217,0.34) 36%, rgba(232,228,217,0.00) 62%);
+}
+.hero .container { max-width:1320px; }
+.hero-inner { position:relative; z-index:3; max-width:880px; margin-left:-200px; }
+.hero h1 { font-size:clamp(48px,7.4vw,104px); line-height:0.96; letter-spacing:-0.04em; margin-bottom:24px; text-shadow:0 2px 16px rgba(232,228,217,0.5),0 1px 2px rgba(232,228,217,0.6); }
+.hero .lede { font-size:clamp(18px,1.9vw,25px); font-weight:400; line-height:1.4; color:var(--muted); max-width:620px; margin-bottom:34px; letter-spacing:-0.005em; text-shadow:0 1px 6px rgba(232,228,217,0.55); }
+.cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+
+.pillars { display:flex; flex-wrap:wrap; gap:10px; margin-top:36px; padding-top:26px; border-top:1px solid var(--line); max-width:620px; }
+.pill { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:500; padding:6px 13px 6px 11px; border-radius:999px; background:rgba(245,242,233,0.6); border:1px solid var(--line); backdrop-filter:blur(6px); }
+.pill-dot { width:5px; height:5px; border-radius:50%; background:var(--warm); }
+
+.scroll-cue { position:absolute; left:50%; bottom:28px; transform:translateX(-50%); z-index:3; font-family:var(--mono); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--hint); display:flex; flex-direction:column; align-items:center; gap:8px; }
+.scroll-cue .line { width:1px; height:32px; background:var(--hint); animation:cue 2.4s ease-in-out infinite; transform-origin:top; }
+@keyframes cue { 0%,100%{transform:scaleY(0.3);opacity:.4;} 50%{transform:scaleY(1);opacity:1;} }
+
+/* ===================== MISSION ===================== */
+.mission { background:var(--bg); text-align:center; position:relative; overflow:hidden; }
+.mission .container { position:relative; z-index:3; }
+.mission-eyebrow { justify-content:center; }
+.mission-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; background:var(--bg); opacity:0; }
+.mission.has-video .mission-video { opacity:1; }
+.mission.has-video .mission-fallback { display:none; }
+.mission-fallback { position:absolute; inset:0; z-index:1; background:
+  radial-gradient(60% 80% at 50% 40%, rgba(200,132,42,0.12), transparent 70%), var(--bg); }
+.mission-fallback img { position:absolute; left:6%; bottom:-30px; width:min(26vw,300px); opacity:0.5; }
+.mission-wash { position:absolute; inset:0; z-index:2; pointer-events:none; background:radial-gradient(ellipse 56% 60% at 50% 46%, rgba(232,228,217,0.78), rgba(232,228,217,0.30) 60%, rgba(232,228,217,0.05) 100%); }
+.mission-text { padding-left:315px; font-size:clamp(22px,2.6vw,34px); font-weight:600; letter-spacing:-0.02em; line-height:1.4; color:var(--fg); }
+.mission-text .hl { color:var(--warm-deep); }
+.mission-divider { width:46px; height:3px; background:var(--warm); border-radius:2px; margin:0 auto 30px; }
+
+/* ===================== PROGRAMS ===================== */
+.programs { background:var(--bg-alt); }
+.program-grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(244px,1fr)); }
+.program-card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:30px 26px; display:flex; flex-direction:column; transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+.program-card:hover { transform:translateY(-5px); border-color:rgba(200,132,42,0.45); box-shadow:0 22px 50px -28px rgba(60,42,12,0.4); }
+.program-icon { width:54px; height:54px; border-radius:14px; background:var(--bg-warm); color:var(--warm-deep); display:flex; align-items:center; justify-content:center; margin-bottom:22px; }
+.program-card h3 { margin-bottom:10px; }
+.program-card p { font-size:14px; color:var(--muted); line-height:1.6; flex:1; }
+.program-tag { margin-top:18px; font-size:11px; font-weight:600; font-family:var(--mono); letter-spacing:0.08em; color:var(--warm-deep); text-transform:uppercase; }
+
+/* ===================== GOVERNANCE ===================== */
+.governance { background:var(--bg-dark); color:var(--fg-on-dark); }
+.governance .eyebrow { color:var(--gold-soft); }
+.governance .eyebrow::before { background:var(--gold-soft); }
+.governance h2 { color:var(--fg-on-dark); }
+.gov-layout { display:grid; grid-template-columns:1fr 1.1fr; gap:clamp(36px,6vw,80px); align-items:start; }
+.gov-intro p { font-size:clamp(15px,1.3vw,17px); color:var(--muted-on-dark); margin-top:18px; }
+.gov-points { display:flex; flex-direction:column; }
+.gov-point { display:flex; gap:18px; padding:22px 0; border-top:1px solid var(--line-on-dark); }
+.gov-point:first-child { border-top:none; padding-top:0; }
+.gov-point:last-child { padding-bottom:0; }
+.gov-num { font-family:var(--mono); font-size:12px; color:var(--gold-soft); font-weight:500; flex-shrink:0; padding-top:3px; }
+.gov-point h3 { color:var(--fg-on-dark); margin-bottom:6px; }
+.gov-point p { font-size:14px; color:var(--muted-on-dark); line-height:1.6; }
+
+/* ===================== SUPPORT ===================== */
+.support { background:var(--bg-warm); text-align:center; }
+.support .container { max-width:760px; }
+.support h2 { margin-bottom:18px; }
+.support .lead { font-size:clamp(15px,1.4vw,18px); color:var(--muted); margin-bottom:14px; line-height:1.6; }
+.support .fineprint { font-size:13px; color:var(--hint); line-height:1.65; margin:0 auto 32px; max-width:620px; }
+.support .ein { font-family:var(--mono); font-size:12px; color:var(--warm-deep); background:rgba(200,132,42,0.12); padding:3px 8px; border-radius:5px; }
+.support-actions { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1600px){ .hero-inner{margin-left:-120px;} }
+@media (max-width:1320px){ .hero-inner{margin-left:-40px;} }
+@media (max-width:1024px){ .hero-inner{margin-left:0;} }
+@media (max-width:920px){ .gov-layout{grid-template-columns:1fr;gap:32px;} }
+@media (max-width:760px){
+  .hero-fallback img{ opacity:0.4; }
+  .hero::after{ background:linear-gradient(to bottom, rgba(232,228,217,0.55) 0%, rgba(232,228,217,0.30) 42%, rgba(232,228,217,0.05) 100%); }
+  .hero{ align-items:flex-end; padding-bottom:120px; }
+  .scroll-cue{ display:none; }
+}

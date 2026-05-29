@@ -2,7 +2,20 @@
 title: "About Us"
 description: "Legal identity, public charity classification, governance independence, and geographic focus of Justice Access Foundation."
 slug: "about"
-layout: "simple"
+lead: "Legal identity, public charity classification, governance independence, and the geographic focus of Justice Access Foundation."
+toc:
+  - label: "Legal Identity"
+    id: "identity"
+  - label: "Public Charity Classification"
+    id: "classification"
+  - label: "Governance Independence"
+    id: "independence"
+  - label: "Separation from Commercial Entities"
+    id: "separation"
+  - label: "Geographic Focus"
+    id: "geography"
+  - label: "Commitment to Due Process"
+    id: "dueprocess"
 ---
 
 ## Legal Identity

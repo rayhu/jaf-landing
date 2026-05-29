@@ -2,7 +2,22 @@
 title: "Terminos de Uso"
 description: "Terminos que rigen el uso del sitio web de Justice Access Foundation y los envios mediante Typeform."
 slug: "terms"
-layout: "simple"
+lead: "Términos que rigen el uso del sitio web de Justice Access Foundation y los envíos mediante formularios."
+toc:
+  - label: "Aceptación de Términos"
+    id: "acceptance"
+  - label: "Sin Asesoramiento Legal"
+    id: "noadvice"
+  - label: "Propiedad Intelectual"
+    id: "ip"
+  - label: "Servicios de Terceros"
+    id: "thirdparty"
+  - label: "Limitación de Responsabilidad"
+    id: "liability"
+  - label: "Ley Aplicable"
+    id: "law"
+  - label: "Cambios a los Términos"
+    id: "changes"
 ---
 
 _Fecha de vigencia: [Por determinar al momento del lanzamiento]_

@@ -2,7 +2,20 @@
 title: "Sobre Nosotros"
 description: "Identidad legal, clasificación de caridad pública, independencia de gobernanza y enfoque geográfico de Justice Access Foundation."
 slug: "about"
-layout: "simple"
+lead: "Identidad legal, clasificación de caridad pública, independencia de gobernanza y el enfoque geográfico de Justice Access Foundation."
+toc:
+  - label: "Identidad Legal"
+    id: "identity"
+  - label: "Clasificación de Caridad Pública"
+    id: "classification"
+  - label: "Independencia de Gobernanza"
+    id: "independence"
+  - label: "Separación de Entidades Comerciales"
+    id: "separation"
+  - label: "Enfoque Geográfico"
+    id: "geography"
+  - label: "Compromiso con el Debido Proceso"
+    id: "dueprocess"
 ---
 
 ## Identidad Legal

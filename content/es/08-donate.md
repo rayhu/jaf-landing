@@ -2,7 +2,20 @@
 title: "Donar"
 description: "Apoye el acceso caritativo a la justicia en California. La solicitud 501(c)(3) de JAF se encuentra bajo revisión del IRS; las contribuciones durante el período pendiente están destinadas a ser deducibles si se otorga el reconocimiento."
 slug: "donate"
-layout: "simple"
+lead: "Su contribución apoya programas caritativos que amplían el acceso al sistema legal civil para individuos y familias en California que carecen de recursos legales adecuados."
+toc:
+  - label: "Hacer una Donación"
+    id: "give"
+  - label: "Uso de los Fondos"
+    id: "use"
+  - label: "Compromiso de Transparencia"
+    id: "transparency"
+  - label: "Cumplimiento del Recibo Fiscal"
+    id: "receipt"
+  - label: "Independencia de Gobernanza"
+    id: "independence"
+  - label: "Por Correo y Legados"
+    id: "mail"
 ---
 
 ## Apoyar el Acceso Caritativo a la Justicia

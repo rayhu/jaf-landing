@@ -2,7 +2,20 @@
 title: "Governance"
 description: "Board structure, volunteer principle, conflict of interest policy, financial oversight mechanisms, and dissolution clause."
 slug: "governance"
-layout: "simple"
+lead: "Board structure, the volunteer principle, conflict-of-interest policy, financial oversight, and the dissolution clause that keep our charitable mission accountable."
+toc:
+  - label: "Board Structure"
+    id: "structure"
+  - label: "Volunteer Board Principle"
+    id: "volunteer"
+  - label: "Quarterly Meeting Framework"
+    id: "meetings"
+  - label: "Conflict of Interest Policy"
+    id: "coi"
+  - label: "Financial Oversight"
+    id: "oversight"
+  - label: "Dissolution Clause"
+    id: "dissolution"
 ---
 
 ## Board Structure

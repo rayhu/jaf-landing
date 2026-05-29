@@ -2,7 +2,20 @@
 title: "资金与透明度"
 description: "资金结构、捐赠者集中度限制、财务分隔、990表格合规及治理独立于资金来源。"
 slug: "funding"
-layout: "simple"
+lead: "结构化、多阶段的资金管理方式，旨在确保财务稳定性、广泛的公众支持，并符合IRS公共慈善机构分类要求。"
+toc:
+  - label: "第一阶段 · 组织建立"
+    id: "stage1"
+  - label: "第二阶段 · 公众支持"
+    id: "stage2"
+  - label: "捐赠者集中度限制"
+    id: "concentration"
+  - label: "财务分隔"
+    id: "segregation"
+  - label: "990表格合规"
+    id: "form990"
+  - label: "资金独立性"
+    id: "independence"
 ---
 
 ## 资金结构概述

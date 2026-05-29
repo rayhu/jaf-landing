@@ -2,7 +2,7 @@
 title: "Gracias"
 description: "Su consulta ha sido recibida. Justice Access Foundation le responderá en un plazo de cinco días hábiles."
 slug: "gracias"
-layout: "simple"
+hideLighthouse: true
 ---
 
 Su envío ha sido recibido. Un miembro de nuestro equipo le responderá en un plazo de cinco días hábiles.

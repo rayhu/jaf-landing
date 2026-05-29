@@ -2,7 +2,24 @@
 title: "Reclutamiento para la Junta"
 description: "Calificaciones, expectativas de gobernanza, estándares de reputación y cómo expresar interés en la Junta Directiva voluntaria de JAF."
 slug: "board"
-layout: "simple"
+lead: "Calificaciones, expectativas de gobernanza y estándares de reputación para el servicio en la Junta Directiva voluntaria de JAF — un rol de gobernanza, no de defensa."
+toc:
+  - label: "Invitación a Servir"
+    id: "invitation"
+  - label: "Perfil del Candidato Ideal"
+    id: "profile"
+  - label: "Calificaciones"
+    id: "qualifications"
+  - label: "Expectativas de Gobernanza"
+    id: "expectations"
+  - label: "Estándares de Reputación"
+    id: "reputation"
+  - label: "Compromiso de Tiempo"
+    id: "time"
+  - label: "Requisito de Independencia"
+    id: "independence"
+  - label: "Cómo Expresar Interés"
+    id: "interest"
 ---
 
 ## Invitación a Servir

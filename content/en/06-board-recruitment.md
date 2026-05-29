@@ -2,7 +2,24 @@
 title: "Board Recruitment"
 description: "Qualifications, governance expectations, reputation standards, and how to express interest in serving on JAF's volunteer Board of Directors."
 slug: "board"
-layout: "simple"
+lead: "Qualifications, governance expectations, and reputation standards for service on JAF's volunteer Board of Directors — a governance role, not an advocacy role."
+toc:
+  - label: "Invitation to Serve"
+    id: "invitation"
+  - label: "Ideal Candidate Profile"
+    id: "profile"
+  - label: "Qualifications"
+    id: "qualifications"
+  - label: "Governance Expectations"
+    id: "expectations"
+  - label: "Reputation Standards"
+    id: "reputation"
+  - label: "Time Commitment"
+    id: "time"
+  - label: "Independence Requirement"
+    id: "independence"
+  - label: "How to Express Interest"
+    id: "interest"
 ---
 
 ## Invitation to Serve

@@ -1,4 +1,9 @@
 [[main]]
+  name   = "首页"
+  url    = "/zh/"
+  weight = 1
+
+[[main]]
   name   = "关于我们"
   url    = "/zh/about/"
   weight = 10

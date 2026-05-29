@@ -2,7 +2,20 @@
 title: "Donate"
 description: "Support charitable access to justice in California. JAF's 501(c)(3) application is pending IRS review; contributions during the pending period are intended to be tax-deductible if recognition is granted."
 slug: "donate"
-layout: "simple"
+lead: "Your contribution supports charitable programs that expand access to the civil legal system for individuals and families in California who lack adequate legal resources."
+toc:
+  - label: "Make a Gift"
+    id: "give"
+  - label: "Use of Funds"
+    id: "use"
+  - label: "Transparency Commitment"
+    id: "transparency"
+  - label: "Tax Receipt Compliance"
+    id: "receipt"
+  - label: "Governance Independence"
+    id: "independence"
+  - label: "By Mail & Planned Giving"
+    id: "mail"
 ---
 
 ## Support Charitable Access to Justice

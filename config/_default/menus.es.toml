@@ -1,4 +1,9 @@
 [[main]]
+  name   = "Inicio"
+  url    = "/es/"
+  weight = 1
+
+[[main]]
   name   = "Nosotros"
   url    = "/es/about/"
   weight = 10

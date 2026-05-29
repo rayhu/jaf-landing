@@ -2,7 +2,20 @@
 title: "关于我们"
 description: "美国司法可及基金会的法律身份、公共慈善机构认定、治理独立性及地域范围。"
 slug: "about"
-layout: "simple"
+lead: "美国司法可及基金会的法律身份、公共慈善机构认定、治理独立性、与相关实体的分离、地域范围及正当程序保障。"
+toc:
+  - label: "法律身份"
+    id: "identity"
+  - label: "公共慈善机构分类"
+    id: "classification"
+  - label: "治理独立性"
+    id: "independence"
+  - label: "实体区分"
+    id: "separation"
+  - label: "地域范围"
+    id: "geography"
+  - label: "正当程序与不歧视"
+    id: "dueprocess"
 ---
 
 ## 法律身份

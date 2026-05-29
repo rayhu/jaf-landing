@@ -2,7 +2,24 @@
 title: "董事会招募"
 description: "任职资格、治理职责、声誉标准及如何表达加入基金会志愿董事会兴趣的指引。"
 slug: "board"
-layout: "simple"
+lead: "任职资格、治理职责和声誉标准——JAF志愿董事会的服务机会，此为治理职务而非倡导职务。"
+toc:
+  - label: "诚邀服务"
+    id: "invitation"
+  - label: "理想候选人画像"
+    id: "profile"
+  - label: "任职资格"
+    id: "qualifications"
+  - label: "治理职责"
+    id: "expectations"
+  - label: "声誉标准"
+    id: "reputation"
+  - label: "时间承诺"
+    id: "time"
+  - label: "独立性要求"
+    id: "independence"
+  - label: "如何表达兴趣"
+    id: "interest"
 ---
 
 ## 诚邀服务

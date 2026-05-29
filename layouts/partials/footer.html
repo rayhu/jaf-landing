@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark"><img src="/assets/lighthouse.png" alt="JAF" /></span>
+          {{ .Site.Title }}
+        </div>
+        <p>{{ i18n "footer_tagline" | default "A California nonprofit public benefit corporation and prospective 501(c)(3) public charity, expanding access to civil justice statewide." }}</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>{{ i18n "footer_org" | default "Organization" }}</h4>
+          <a href="{{ "about" | relLangURL }}">{{ i18n "about" | default "About" }}</a>
+          <a href="{{ "programs" | relLangURL }}">{{ i18n "programs" | default "Programs" }}</a>
+          <a href="{{ "governance" | relLangURL }}">{{ i18n "governance" | default "Governance" }}</a>
+          <a href="{{ "board" | relLangURL }}">{{ i18n "board" | default "Board Recruitment" }}</a>
+        </div>
+        <div class="footer-col">
+          <h4>{{ i18n "footer_transparency" | default "Transparency" }}</h4>
+          <a href="{{ "funding" | relLangURL }}">{{ i18n "funding" | default "Funding" }}</a>
+          <a href="{{ "compliance" | relLangURL }}">{{ i18n "compliance" | default "Compliance" }}</a>
+          <a href="{{ "privacy" | relLangURL }}">{{ i18n "privacy" | default "Privacy" }}</a>
+          <a href="{{ "terms" | relLangURL }}">{{ i18n "terms" | default "Terms" }}</a>
+        </div>
+        <div class="footer-col">
+          <h4>{{ i18n "footer_contact" | default "Get in touch" }}</h4>
+          <a href="{{ "contact" | relLangURL }}">{{ i18n "contact" | default "Contact" }}</a>
+          <a href="{{ "donate" | relLangURL }}">{{ i18n "donate" | default "Donate" }}</a>
+          <a href="{{ "campus-study" | relLangURL }}">{{ i18n "campus_study" | default "Campus Study" }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; {{ now.Format "2006" }} {{ .Site.Title }} · California nonprofit public benefit corporation</div>
+      <div class="lang-switch">
+        {{ $currentLang := .Page.Language.Lang }}
+        {{ range .Site.Home.AllTranslations }}
+        <a href="{{ .Permalink }}"{{ if eq .Language.Lang $currentLang }} class="active"{{ end }}>{{ .Language.Lang | upper }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>

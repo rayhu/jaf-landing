@@ -10,10 +10,6 @@ summaryLength   = 0
 defaultContentLanguage        = "en"
 defaultContentLanguageInSubdir = false
 
-[module]
-  [[module.imports]]
-    path = "github.com/jpanther/congo/v2"
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -25,18 +21,18 @@ defaultContentLanguageInSubdir = false
 
   [languages.en]
     title        = "Justice Access Foundation"
-    languageName = "English"
+    label = "English"
     weight       = 1
     contentDir   = "content/en"
 
   [languages.es]
     title        = "Justice Access Foundation"
-    languageName = "Español"
+    label = "Español"
     weight       = 2
     contentDir   = "content/es"
 
   [languages.zh]
     title        = "美国司法可及基金会"
-    languageName = "中文"
+    label = "中文"
     weight       = 3
     contentDir   = "content/zh"

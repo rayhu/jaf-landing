@@ -1,0 +1,99 @@
+/* ============================================================
+   JAF inner content pages
+   (Inter + warm palette + fixed nav)
+   ============================================================ */
+
+/* ---------- Page hero (clears the fixed nav) ---------- */
+.page-hero {
+  position:relative; overflow:hidden;
+  background:
+    radial-gradient(48% 70% at 88% 8%, rgba(200,132,42,0.20), transparent 62%),
+    linear-gradient(180deg, var(--bg-warm), var(--bg));
+  padding:128px clamp(24px,5vw,64px) 60px; border-bottom:1px solid var(--line);
+}
+.page-hero .ph-inner { max-width:1200px; margin:0 auto; position:relative; z-index:2; }
+.page-hero .crumb { font-family:var(--mono); font-size:11px; letter-spacing:0.1em; color:var(--hint); text-transform:uppercase; margin-bottom:20px; }
+.page-hero .crumb a { color:var(--hint); }
+.page-hero .crumb a:hover { color:var(--warm-deep); }
+.page-hero h1 { font-size:clamp(34px,5vw,60px); line-height:1.0; letter-spacing:-0.035em; max-width:18ch; }
+.page-hero .lead { font-size:clamp(16px,1.5vw,20px); color:var(--muted); margin-top:20px; max-width:62ch; line-height:1.5; font-weight:400; }
+.page-hero .ph-light { position:absolute; right:3%; bottom:-44px; width:210px; opacity:0.85; z-index:1; pointer-events:none; }
+
+/* ---------- Content layout (sticky TOC + prose) ---------- */
+.page-body { max-width:1200px; margin:0 auto; padding:64px clamp(24px,5vw,64px) 96px; display:grid; grid-template-columns:236px 1fr; gap:56px; align-items:start; }
+.page-body.no-toc { grid-template-columns:1fr; max-width:840px; }
+
+.toc { position:sticky; top:90px; }
+.toc .lbl { font-family:var(--mono); font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:var(--hint); margin-bottom:16px; }
+.toc a { display:block; font-size:13px; color:var(--muted); padding:7px 0 7px 14px; border-left:1.5px solid var(--line); line-height:1.4; transition:color .15s,border-color .15s; }
+.toc a:hover { color:var(--fg); border-left-color:var(--hint); }
+.toc a.active { color:var(--fg); border-left-color:var(--warm); font-weight:600; }
+
+/* ---------- Prose ---------- */
+.prose { max-width:760px; }
+.prose > .intro { font-size:clamp(17px,1.6vw,21px); line-height:1.55; color:var(--fg); font-weight:500; letter-spacing:-0.01em; margin-bottom:8px; }
+.prose section { padding:40px 0; border-top:1px solid var(--line); scroll-margin-top:100px; }
+.prose section:first-of-type { border-top:none; padding-top:10px; }
+.prose h2 { font-size:clamp(24px,2.4vw,32px); letter-spacing:-0.025em; margin-bottom:18px; line-height:1.1; }
+.prose h2 .sn { font-family:var(--mono); font-size:13px; color:var(--warm); font-weight:500; margin-right:12px; vertical-align:4px; }
+.prose h3 { font-size:17px; font-weight:700; margin:26px 0 10px; }
+.prose p { font-size:16px; line-height:1.7; color:var(--muted); margin:0 0 1em; }
+.prose p strong, .prose li strong { color:var(--fg); font-weight:600; }
+.prose ul { margin:0 0 1.1em; padding:0; list-style:none; }
+.prose li { font-size:16px; line-height:1.6; color:var(--muted); padding:7px 0 7px 26px; position:relative; }
+.prose li::before { content:""; position:absolute; left:4px; top:15px; width:6px; height:6px; border-radius:50%; background:var(--warm); }
+.prose a.inline { color:var(--warm-deep); border-bottom:1px solid rgba(165,106,28,0.4); }
+.prose a.inline:hover { border-bottom-color:var(--warm-deep); }
+
+/* Callout */
+.callout { background:var(--bg-warm); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:18px 0; }
+.callout .ct { font-family:var(--mono); font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--warm-deep); font-weight:500; margin-bottom:8px; }
+.callout p { margin:0; font-size:15px; }
+
+/* Sub-card grid */
+.subgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+.subcard { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; }
+.subcard h4 { font-size:16px; font-weight:700; margin-bottom:7px; }
+.subcard p { font-size:14px; margin:0; color:var(--muted); }
+
+/* Table */
+.prose table { width:100%; border-collapse:collapse; margin:16px 0 8px; }
+.prose th, .prose td { text-align:left; padding:13px 16px; font-size:14px; border-bottom:1px solid var(--line); vertical-align:top; }
+.prose thead th { font-family:var(--mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--hint); background:var(--bg-warm); }
+.prose tbody td { color:var(--muted); }
+.prose tbody td:first-child { font-weight:600; color:var(--fg); }
+.prose tbody tr:nth-child(even) td { background:rgba(26,24,20,0.02); }
+
+/* Fact rows */
+.facts { display:grid; gap:0; margin:12px 0; border-top:1px solid var(--line); }
+.facts .row { display:grid; grid-template-columns:200px 1fr; gap:20px; padding:14px 0; border-bottom:1px solid var(--line); }
+.facts .k { font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:0.04em; color:var(--hint); padding-top:2px; }
+.facts .v { font-size:16px; color:var(--fg); }
+.facts .v .ein, .ein { font-family:var(--mono); color:var(--warm-deep); }
+
+/* Form wrapper */
+.formwrap { margin:8px 0 4px; }
+
+/* In-page CTA band */
+.page-cta { background:var(--bg-dark); color:var(--fg-on-dark); border-radius:18px; padding:36px 40px; margin:34px 0 0; display:flex; align-items:center; justify-content:space-between; gap:30px; }
+.page-cta h3 { color:var(--fg-on-dark); font-size:22px; }
+.page-cta p { color:var(--muted-on-dark); margin:8px 0 0; font-size:15px; max-width:46ch; }
+
+/* Simple centered (thank-you) */
+.simple-center { max-width:640px; margin:0 auto; padding:180px 30px 140px; text-align:center; }
+.simple-center .mark { width:78px; margin:0 auto 26px; display:block; }
+.simple-center .eyebrow { justify-content:center; }
+.simple-center h1 { font-size:clamp(32px,4vw,48px); letter-spacing:-0.03em; }
+.simple-center p { font-size:17px; color:var(--muted); margin:18px 0 0; line-height:1.6; }
+.simple-center .btn { margin-top:32px; }
+
+@media (max-width:980px) {
+  .page-body { grid-template-columns:1fr; gap:30px; }
+  .toc { display:none; }
+  .subgrid { grid-template-columns:1fr; }
+}
+@media (max-width:760px) {
+  .page-hero { padding-top:104px; }
+  .page-cta { flex-direction:column; align-items:flex-start; }
+  .facts .row { grid-template-columns:1fr; gap:4px; }
+}

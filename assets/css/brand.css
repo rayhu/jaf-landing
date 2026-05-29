@@ -1,0 +1,207 @@
+/* ============================================================
+   Justice Access Foundation — SHARED base (all pages)
+   Aligned to jaf-landing.html · Inter + JetBrains Mono · warm palette
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg:#E8E4D9;
+  --bg-alt:#EFECE2;
+  --bg-warm:#EDE3CE;
+  --bg-dark:#1E1A13;
+  --card:#F5F2E9;
+  --fg:#1A1814;
+  --fg-on-dark:#F2EEE3;
+  --muted:rgba(26,24,20,0.66);
+  --muted-on-dark:rgba(242,238,227,0.62);
+  --hint:rgba(26,24,20,0.42);
+  --line:rgba(26,24,20,0.14);
+  --line-on-dark:rgba(242,238,227,0.16);
+  --warm:#C8842A;
+  --warm-deep:#A56A1C;
+  --gold-soft:#E0A856;
+
+  --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+
+html { scroll-behavior:smooth; }
+body {
+  background:var(--bg); color:var(--fg);
+  font-family:var(--font);
+  -webkit-font-smoothing:antialiased; line-height:1.6;
+  overflow-x:hidden;
+}
+a { color:inherit; text-decoration:none; }
+img,video,svg { display:block; max-width:100%; }
+
+h1,h2,h3 { font-weight:800; letter-spacing:-0.03em; line-height:1.05; }
+h2 { font-size:clamp(30px,3.6vw,46px); }
+h3 { font-size:clamp(18px,1.5vw,21px); font-weight:700; letter-spacing:-0.02em; }
+
+.container { max-width:1200px; margin:0 auto; padding:0 clamp(24px,5vw,64px); }
+
+.eyebrow {
+  display:inline-flex; align-items:center; gap:9px;
+  font-family:var(--mono); font-size:11px; letter-spacing:0.22em;
+  text-transform:uppercase; color:var(--warm-deep); font-weight:500; margin-bottom:18px;
+}
+.eyebrow::before { content:""; width:22px; height:1px; background:var(--warm-deep); }
+
+/* ===================== NAV (shared, fixed) ===================== */
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:50;
+  transition:background .25s ease,border-color .25s ease,box-shadow .25s ease;
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled {
+  background:rgba(232,228,217,0.92);
+  backdrop-filter:saturate(160%) blur(12px);
+  -webkit-backdrop-filter:saturate(160%) blur(12px);
+  border-bottom-color:var(--line);
+}
+.nav-inner {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px clamp(24px,5vw,64px); gap:24px; max-width:1320px; margin:0 auto;
+}
+.brand { font-weight:800; font-size:15px; letter-spacing:-0.02em; display:flex; align-items:center; gap:10px; white-space:nowrap; color:var(--fg); }
+.brand-mark { width:30px; height:30px; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+.brand-mark img { width:100%; height:100%; object-fit:contain; }
+.nav-links { display:flex; gap:26px; }
+.nav-links a { font-size:13px; font-weight:500; color:var(--muted); transition:color .15s; padding-bottom:2px; border-bottom:1.5px solid transparent; }
+.nav-links a:hover { color:var(--fg); }
+.nav-links a.is-active { color:var(--fg); border-bottom-color:var(--warm); }
+.nav-cta { background:var(--fg); color:var(--bg); padding:9px 18px; border-radius:999px; font-size:12px; font-weight:600; white-space:nowrap; transition:background .15s,transform .15s; }
+.nav-cta:hover { background:var(--warm-deep); transform:translateY(-1px); }
+.nav-lang { display:flex; gap:4px; align-items:center; }
+.nav-lang a { font-size:11px; font-weight:600; color:var(--hint); padding:4px 7px; border-radius:5px; transition:background .15s,color .15s; }
+.nav-lang a:hover { color:var(--fg); background:rgba(26,24,20,0.06); }
+.nav-lang a.active { color:var(--warm-deep); background:rgba(200,132,42,0.12); }
+.nav-toggle { display:none; background:none; border:none; cursor:pointer; padding:6px; color:var(--fg); }
+
+/* ===================== BUTTONS (shared) ===================== */
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:14px 26px; border-radius:999px; font-size:14px; font-weight:600;
+  cursor:pointer; border:1.5px solid transparent; white-space:nowrap;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.btn-primary { background:var(--fg); color:var(--bg); box-shadow:0 8px 22px -10px rgba(26,24,20,0.5); }
+.btn-primary:hover { background:var(--warm-deep); transform:translateY(-1px); }
+.btn-ghost { background:rgba(245,242,233,0.55); color:var(--fg); border-color:var(--line); backdrop-filter:blur(6px); }
+.btn-ghost:hover { border-color:var(--fg); background:rgba(245,242,233,0.85); }
+.btn-warm { background:var(--warm); color:#fff; box-shadow:0 8px 22px -10px rgba(200,132,42,0.65); }
+.btn-warm:hover { background:var(--warm-deep); transform:translateY(-1px); }
+.btn-gold { background:var(--warm); color:#fff; }
+
+/* ===================== SECTION SHARED ===================== */
+section { padding:clamp(72px,10vw,132px) 0; }
+.section-head { max-width:680px; margin-bottom:clamp(40px,5vw,64px); }
+.section-head h2 { margin-bottom:16px; }
+.section-head p { font-size:clamp(15px,1.3vw,17px); color:var(--muted); }
+
+/* ===================== FOOTER (shared) ===================== */
+.site-footer { background:var(--bg-dark); color:var(--fg-on-dark); padding:64px 0 36px; }
+.site-footer .brand { color:var(--fg-on-dark); }
+.footer-top { display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; padding-bottom:40px; border-bottom:1px solid var(--line-on-dark); }
+.footer-brand { max-width:340px; }
+.footer-brand .brand { margin-bottom:14px; }
+.footer-brand .brand-mark { background:rgba(242,238,227,0.10); border-radius:50%; }
+.footer-brand p { font-size:13px; color:var(--muted-on-dark); line-height:1.65; }
+.footer-cols { display:flex; gap:clamp(32px,5vw,72px); flex-wrap:wrap; }
+.footer-col h4 { font-family:var(--mono); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:14px; font-weight:500; }
+.footer-col a { display:block; font-size:13px; color:var(--muted-on-dark); margin-bottom:9px; transition:color .15s; }
+.footer-col a:hover { color:var(--fg-on-dark); }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; padding-top:28px; font-size:12px; color:var(--muted-on-dark); }
+.lang-switch { display:flex; gap:6px; align-items:center; }
+.lang-switch a { font-size:12px; color:var(--muted-on-dark); padding:4px 9px; border-radius:6px; transition:background .15s,color .15s; }
+.lang-switch a:hover { color:var(--fg-on-dark); }
+.lang-switch a.active { background:rgba(224,168,86,0.16); color:var(--gold-soft); }
+
+/* ===================== FORM CARD (shared) ===================== */
+.jaf-card {
+  width:100%; max-width:600px;
+  background:var(--card);
+  border:1px solid var(--line);
+  margin:2rem 0;
+}
+.jaf-card-header { padding:1.75rem 2rem 1.5rem; border-bottom:1px solid var(--line); }
+.jaf-card-org {
+  font-family:var(--mono); font-size:10px; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--hint); margin-bottom:0.5rem;
+}
+.jaf-card-title { font-size:1.375rem; font-weight:800; color:var(--fg); line-height:1.2; letter-spacing:-0.02em; }
+.jaf-card-sub { font-size:0.8125rem; color:var(--muted); margin-top:0.5rem; line-height:1.55; }
+.jaf-card-body { padding:1.75rem 2rem 2rem; }
+.jaf-section-label {
+  font-family:var(--mono); font-size:10px; letter-spacing:0.16em;
+  text-transform:uppercase; color:var(--hint); margin-bottom:0.875rem;
+  padding-bottom:0.5rem; border-bottom:1px solid var(--line);
+}
+
+.jaf-fields { margin-bottom:1.75rem; }
+.jaf-field-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem; }
+.jaf-field { display:flex; flex-direction:column; margin-bottom:1rem; }
+.jaf-field:last-child { margin-bottom:0; }
+.jaf-field label { font-size:0.8125rem; font-weight:600; color:var(--fg); margin-bottom:0.375rem; letter-spacing:0.01em; }
+.jaf-field .opt { font-weight:400; color:var(--hint); font-size:0.75rem; }
+.req { color:#b91c1c; margin-left:0.125rem; }
+.jaf-field input,
+.jaf-field textarea,
+.jaf-field select {
+  font-family:var(--font); font-size:0.9375rem; color:var(--fg);
+  background:var(--bg); border:1px solid var(--line);
+  padding:0.625rem 0.875rem; outline:none;
+  transition:border-color .12s,box-shadow .12s;
+  -webkit-appearance:none; appearance:none; width:100%;
+}
+.jaf-field input:focus,
+.jaf-field textarea:focus,
+.jaf-field select:focus { border-color:var(--warm); box-shadow:inset 3px 0 0 var(--warm); }
+.jaf-field input::placeholder,
+.jaf-field textarea::placeholder { color:var(--hint); }
+.jaf-field select {
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231A1814' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 0.875rem center; padding-right:2.5rem;
+}
+.jaf-field textarea { resize:vertical; min-height:6rem; line-height:1.55; }
+.jaf-honeypot { position:absolute; left:-9999px; height:1px; overflow:hidden; }
+
+.jaf-submit-section { border-top:1px solid var(--line); padding-top:1.625rem; }
+.jaf-submit-btn {
+  display:block; width:100%;
+  font-family:var(--font); font-size:0.8125rem; letter-spacing:0.12em;
+  text-transform:uppercase; font-weight:700; color:#fff;
+  background:var(--fg); border:none;
+  padding:1rem 2rem; cursor:pointer; transition:background .12s;
+}
+.jaf-submit-btn:hover { background:var(--warm-deep); }
+.jaf-submit-btn:active { background:#0f172a; }
+.jaf-submit-btn:focus-visible { outline:2px solid var(--warm); outline-offset:2px; }
+.jaf-fine-print {
+  margin-top:1.25rem; padding-top:1.125rem; border-top:1px solid var(--line);
+  font-size:0.75rem; color:var(--muted); line-height:1.65;
+}
+
+/* Typeform embed */
+.jaf-typeform-outer { margin-top:1rem; margin-bottom:0.5rem; }
+.jaf-typeform { width:100%; min-height:var(--jaf-tf-h,500px); }
+.jaf-typeform iframe {
+  width:100% !important; min-height:var(--jaf-tf-h,500px) !important;
+  height:var(--jaf-tf-h,500px) !important; max-width:100% !important; border:0;
+}
+.prose .jaf-typeform-outer { max-width:none; }
+
+@media (max-width:520px) {
+  .jaf-card-header { padding:1.5rem 1.25rem 1.25rem; }
+  .jaf-card-body { padding:1.5rem 1.25rem 1.5rem; }
+  .jaf-field-row { grid-template-columns:1fr; }
+}
+
+@media (max-width:760px) {
+  .nav-links { display:none; }
+  .nav-toggle { display:block; }
+  .footer-top { flex-direction:column; gap:32px; }
+}

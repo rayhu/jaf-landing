@@ -2,7 +2,20 @@
 title: "Programs"
 description: "JAF's charitable programs span legal education, court navigation, direct litigation cost assistance, and post-judgment economic stabilization for qualifying Californians."
 slug: "programs"
-layout: "simple"
+lead: "From legal education and procedural guidance to direct litigation cost assistance and emergency economic stabilization — for qualifying Californians who face barriers to the civil legal system."
+toc:
+  - label: "Preventing Housing Instability"
+    id: "housing"
+  - label: "Wage Protection & Economic Justice"
+    id: "wages"
+  - label: "Procedural Fairness & Court Navigation"
+    id: "court"
+  - label: "Public Legal Education & Literacy"
+    id: "education"
+  - label: "Direct Litigation Cost Assistance"
+    id: "litigation"
+  - label: "Post-Judgment Economic Stabilization"
+    id: "stabilization"
 ---
 
 Justice Access Foundation operates charitable programs across a spectrum of direct services — from legal education and procedural guidance to direct litigation cost assistance and emergency economic stabilization — for qualifying individuals and families in California who face barriers to the civil legal system. All programs are charitable in nature and serve an indefinite class of beneficiaries. No program is conditioned on or connected to the purchase of any commercial service.

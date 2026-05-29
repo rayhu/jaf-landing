@@ -1,0 +1,27 @@
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="{{ "" | relLangURL }}" class="brand">
+      <span class="brand-mark"><img src="/assets/lighthouse.png" alt="JAF" /></span>
+      {{ .Site.Title }}
+    </a>
+    <nav class="nav-links">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ $active := or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }}
+        <a href="{{ .URL }}"{{ if $active }} class="is-active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <a href="{{ "donate" | relLangURL }}" class="nav-cta">{{ i18n "donate" | default "Donate" }}</a>
+    <div class="nav-lang">
+      {{ $currentLang := .Language.Lang }}
+      {{ range site.Home.AllTranslations }}
+        <a href="{{ .RelPermalink }}" class="{{ if eq $currentLang .Language.Lang }}active{{ end }}">{{ .Language.Lang | upper }}</a>
+      {{ end }}
+    </div>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>

@@ -2,7 +2,20 @@
 title: "Programas"
 description: "Los programas caritativos de JAF abarcan educación legal, orientación en tribunales, asistencia directa para costos de litigación y estabilización económica post-fallo para californianos elegibles."
 slug: "programs"
-layout: "simple"
+lead: "Desde educación legal y orientación procesal hasta asistencia directa para costos de litigio y estabilización económica de emergencia — para californianos elegibles que enfrentan barreras al sistema legal civil."
+toc:
+  - label: "Prevención de Inestabilidad Habitacional"
+    id: "housing"
+  - label: "Protección Salarial y Justicia Económica"
+    id: "wages"
+  - label: "Equidad Procesal y Orientación en Tribunales"
+    id: "court"
+  - label: "Educación Legal Pública y Alfabetización"
+    id: "education"
+  - label: "Asistencia Directa para Costos de Litigio"
+    id: "litigation"
+  - label: "Estabilización Económica Post-Fallo"
+    id: "stabilization"
 ---
 
 Justice Access Foundation opera programas caritativos que abarcan un espectro completo de servicios directos — desde educación legal y orientación procesal hasta asistencia directa para costos de litigación y estabilización económica de emergencia — para individuos y familias elegibles en California que enfrentan barreras para acceder al sistema legal civil. Todos los programas son de naturaleza caritativa y sirven a una clase indefinida de beneficiarios. Ningún programa está condicionado a la adquisición de ningún servicio comercial, ni vinculado a este.

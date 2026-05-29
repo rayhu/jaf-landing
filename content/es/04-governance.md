@@ -2,7 +2,20 @@
 title: "Gobernanza"
 description: "Estructura de la junta, principio voluntario, política de conflicto de intereses, supervisión financiera y cláusula de disolución."
 slug: "governance"
-layout: "simple"
+lead: "Estructura de la junta, el principio voluntario, política de conflicto de intereses, supervisión financiera y la cláusula de disolución que mantienen nuestra misión caritativa responsable."
+toc:
+  - label: "Estructura de la Junta"
+    id: "structure"
+  - label: "Principio de Junta Voluntaria"
+    id: "volunteer"
+  - label: "Marco de Reuniones Trimestrales"
+    id: "meetings"
+  - label: "Política de Conflicto de Intereses"
+    id: "coi"
+  - label: "Supervisión Financiera"
+    id: "oversight"
+  - label: "Cláusula de Disolución"
+    id: "dissolution"
 ---
 
 ## Estructura de la Junta

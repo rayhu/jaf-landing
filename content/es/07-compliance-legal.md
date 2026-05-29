@@ -2,7 +2,22 @@
 title: "Cumplimiento y Estado Legal"
 description: "Reconocimiento 501(c)(3), distinción entre caridad pública y fundación privada, prueba de apoyo público y prohibición de enriquecimiento privado."
 slug: "compliance"
-layout: "simple"
+lead: "Reconocimiento 501(c)(3), la distinción de caridad pública, la prueba de apoyo público, Formulario 1023, Formulario 990 y la prohibición de enriquecimiento privado."
+toc:
+  - label: "Reconocimiento 501(c)(3)"
+    id: "recognition"
+  - label: "Caridad Pública vs. Privada"
+    id: "distinction"
+  - label: "Prueba de Apoyo Público"
+    id: "support"
+  - label: "Formulario 1023 del IRS"
+    id: "form1023"
+  - label: "Transparencia del Formulario 990"
+    id: "form990"
+  - label: "Cláusula de Disolución de Activos"
+    id: "dissolution"
+  - label: "Sin Enriquecimiento Privado"
+    id: "inurement"
 ---
 
 ## Reconocimiento 501(c)(3)

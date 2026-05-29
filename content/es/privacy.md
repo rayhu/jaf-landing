@@ -2,7 +2,26 @@
 title: "Política de Privacidad"
 description: "Política de privacidad de Justice Access Foundation: cómo recopilamos, usamos y protegemos la información enviada a través de nuestro sitio web."
 slug: "privacy"
-layout: "simple"
+lead: "Cómo Justice Access Foundation recopila, usa, retiene y protege la información enviada a través de este sitio web."
+toc:
+  - label: "Descripción General"
+    id: "overview"
+  - label: "Información que Recopilamos"
+    id: "collect"
+  - label: "Cómo Usamos la Información"
+    id: "use"
+  - label: "Retención"
+    id: "retention"
+  - label: "Derechos de Privacidad de California"
+    id: "ccpa"
+  - label: "Seguridad"
+    id: "security"
+  - label: "Servicios de Terceros"
+    id: "thirdparty"
+  - label: "Privacidad de Menores"
+    id: "children"
+  - label: "Cambios y Contacto"
+    id: "changes"
 ---
 
 _Fecha de vigencia: [Por determinar al momento del lanzamiento]_

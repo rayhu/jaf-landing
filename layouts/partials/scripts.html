@@ -1,0 +1,87 @@
+<script>
+(function () {
+  // Nav background appears once scrolled past the fold
+  var nav = document.getElementById('nav');
+  if (nav) {
+    var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 60); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Mobile menu toggle
+  var toggle = document.querySelector('.nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (toggle && navLinks) {
+    var menuOpen = false;
+    toggle.addEventListener('click', function () {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        navLinks.style.display = 'flex';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.right = '24px';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.background = 'var(--bg)';
+        navLinks.style.padding = '16px 22px';
+        navLinks.style.borderRadius = '12px';
+        navLinks.style.boxShadow = '0 12px 30px rgba(0,0,0,0.12)';
+      } else {
+        navLinks.style.display = '';
+        navLinks.style.position = '';
+        navLinks.style.top = '';
+        navLinks.style.right = '';
+        navLinks.style.flexDirection = '';
+        navLinks.style.background = '';
+        navLinks.style.padding = '';
+        navLinks.style.borderRadius = '';
+        navLinks.style.boxShadow = '';
+      }
+    });
+  }
+
+  // TOC scrollspy + smooth scroll (inner pages)
+  var toc = document.querySelector('.toc');
+  if (toc) {
+    var tocLinks = Array.prototype.slice.call(toc.querySelectorAll('a'));
+    tocLinks.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href');
+        if (id && id.charAt(0) === '#') {
+          var el = document.querySelector(id);
+          if (el) { e.preventDefault(); window.scrollTo({ top: el.offsetTop - 90, behavior: 'smooth' }); }
+        }
+      });
+    });
+    var sections = tocLinks.map(function (a) {
+      var id = a.getAttribute('href'); return id && id.charAt(0) === '#' ? document.querySelector(id) : null;
+    });
+    var spy = function () {
+      var y = window.scrollY + 130, idx = 0;
+      sections.forEach(function (s, i) { if (s && s.offsetTop <= y) idx = i; });
+      tocLinks.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    spy();
+  }
+
+  // Video background probe — only play if video file exists
+  document.querySelectorAll('.hero, .mission').forEach(function (stage) {
+    var v = stage.querySelector('video');
+    if (!v) return;
+    var src = v.getAttribute('data-vsrc');
+    if (!src) return;
+    fetch(src, { method: 'HEAD' }).then(function (r) {
+      if (!r.ok) return;
+      var s = document.createElement('source');
+      s.src = src; s.type = 'video/mp4';
+      v.appendChild(s);
+      v.load();
+      v.addEventListener('loadeddata', function () { if (v.videoWidth > 0) stage.classList.add('has-video'); });
+      v.play().catch(function () {});
+    }).catch(function () {});
+  });
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) document.querySelectorAll('video').forEach(function (v) { v.play().catch(function () {}); });
+  });
+})();
+</script>

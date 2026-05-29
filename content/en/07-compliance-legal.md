@@ -2,7 +2,22 @@
 title: "Compliance and Legal Status"
 description: "501(c)(3) recognition, public charity vs. private foundation distinction, public support test, Form 1023, Form 990, and private inurement prohibition."
 slug: "compliance"
-layout: "simple"
+lead: "501(c)(3) recognition, the public charity distinction, the public support test, Form 1023, Form 990, and the prohibition on private inurement."
+toc:
+  - label: "501(c)(3) Recognition"
+    id: "recognition"
+  - label: "Public Charity vs. Private"
+    id: "distinction"
+  - label: "Public Support Test"
+    id: "support"
+  - label: "IRS Form 1023"
+    id: "form1023"
+  - label: "Form 990 Transparency"
+    id: "form990"
+  - label: "Asset Dissolution Clause"
+    id: "dissolution"
+  - label: "No Private Inurement"
+    id: "inurement"
 ---
 
 ## 501(c)(3) Recognition

@@ -2,7 +2,7 @@
 title: "Contact"
 description: "Contact Justice Access Foundation with general inquiries, board recruitment questions, donation inquiries, or media relations."
 slug: "contact"
-layout: "simple"
+lead: "For general inquiries, board recruitment, donation questions, or media relations. We respond within five business days."
 ---
 
 Use the form below for general inquiries, board recruitment, donation questions, or media relations. We respond within five business days. Submitting this form does not create an attorney-client relationship and does not constitute legal advice.

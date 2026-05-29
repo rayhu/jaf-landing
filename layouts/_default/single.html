@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $toc := .Params.toc }}
+<section class="page-hero">
+  {{ if not .Params.hideLighthouse }}<img class="ph-light" src="/assets/lighthouse.png" alt="" />{{ end }}
+  <div class="ph-inner">
+    <div class="crumb"><a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a> &nbsp;/&nbsp; {{ .Title }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="page-body{{ if not $toc }} no-toc{{ end }}">
+  {{ if $toc }}
+  <aside class="toc">
+    <div class="lbl">{{ i18n "on_this_page" | default "On this page" }}</div>
+    {{ range $toc }}
+    <a href="#{{ .id }}">{{ .label }}</a>
+    {{ end }}
+  </aside>
+  {{ end }}
+
+  <article class="prose">
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

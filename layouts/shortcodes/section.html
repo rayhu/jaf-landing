@@ -1,0 +1,4 @@
+<section id="{{ .Get "id" }}"{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  <h2><span class="sn">{{ .Get "num" }}</span>{{ .Get "title" }}</h2>
+  {{ .Inner | markdownify }}
+</section>
