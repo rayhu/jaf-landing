@@ -4,27 +4,108 @@
     <p class="jaf-card-org">Justice Access Foundation &middot; California 501(c)(3) Public Charity</p>
     {{ if eq $lang "es" }}
       <h2 class="jaf-card-title">Donar Ahora</h2>
-      <p class="jaf-card-sub">Done de forma segura a través de Zeffy. Todas las contribuciones son deducibles de impuestos en la medida permitida por la ley.</p>
+      <p class="jaf-card-sub">
+        Done de forma segura a través de Zeffy. Si el formulario no carga, use el enlace de respaldo abajo.
+      </p>
     {{ else if eq $lang "zh" }}
       <h2 class="jaf-card-title">立即捐款</h2>
-      <p class="jaf-card-sub">通过 Zeffy 安全捐款。在法律允许范围内，所有捐款均可享受税务抵扣。</p>
+      <p class="jaf-card-sub">通过 Zeffy 安全捐款。如表单未加载，请使用下方备用链接。</p>
     {{ else }}
       <h2 class="jaf-card-title">Donate Now</h2>
-      <p class="jaf-card-sub">Give securely through Zeffy. All contributions are tax-deductible to the extent permitted by law.</p>
+      <p class="jaf-card-sub">Give securely through Zeffy. If the embed does not load, use the fallback link below.</p>
     {{ end }}
   </div>
   <div class="jaf-card-body">
-    <div style="position:relative;overflow:hidden;height:450px;width:100%;">
-      <iframe title="Donation form powered by Zeffy" style="position: absolute; border: 0; top:0; left:0; bottom:0; right:0; width:100%; height:100%;" src="https://www.zeffy.com/embed/donation-form/donate-to-justice-access-foundation" allowpaymentrequest allowTransparency="true"></iframe>
+    <div class="jaf-zeffy-embed" data-zeffy-embed>
+      <iframe
+        class="jaf-zeffy-iframe"
+        data-zeffy-iframe
+        title="Donation form powered by Zeffy"
+        src="https://www.zeffy.com/embed/donation-form/donate-to-change-lives-14988"
+        loading="lazy"
+        allowpaymentrequest
+        allowTransparency="true"
+      ></iframe>
+      <div class="jaf-zeffy-fallback" data-zeffy-fallback>
+        {{ if eq $lang "es" }}
+          <p>El formulario incrustado no se pudo cargar en este navegador.</p>
+          <p>
+            Use el enlace directo:
+            <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+              >Abrir formulario de donación en Zeffy</a
+            >.
+          </p>
+        {{ else if eq $lang "zh" }}
+          <p>此浏览器无法加载嵌入式捐款表单。</p>
+          <p>
+            请使用直达链接：
+            <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+              >在 Zeffy 打开捐款表单</a
+            >。
+          </p>
+        {{ else }}
+          <p>The embedded form could not be loaded in this browser.</p>
+          <p>
+            Please use the direct link:
+            <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+              >Open Zeffy donation form</a
+            >.
+          </p>
+        {{ end }}
+      </div>
     </div>
     <p class="jaf-fine-print mt-4">
       {{ if eq $lang "es" }}
-        ¿Preferir abrir el formulario en una nueva pestaña? <a href="https://www.zeffy.com/en-US/donation-form/donate-to-justice-access-foundation" target="_blank" rel="noopener noreferrer">Formulario de donación de Zeffy</a>.
+        ¿Prefiere abrir en una nueva pestaña?
+        <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+          >Formulario de donación de Zeffy</a
+        >.
       {{ else if eq $lang "zh" }}
-        在新标签页中打开？<a href="https://www.zeffy.com/en-US/donation-form/donate-to-justice-access-foundation" target="_blank" rel="noopener noreferrer">Zeffy 捐款表单</a>。
+        想在新标签页打开？
+        <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+          >Zeffy 捐款表单</a
+        >。
       {{ else }}
-        Prefer to open in a new tab? <a href="https://www.zeffy.com/en-US/donation-form/donate-to-justice-access-foundation" target="_blank" rel="noopener noreferrer">Zeffy donation form</a>.
+        Prefer to open in a new tab?
+        <a href="https://www.zeffy.com/donation-form/donate-to-change-lives-14988" target="_blank" rel="noopener noreferrer"
+          >Zeffy donation form</a
+        >.
       {{ end }}
     </p>
   </div>
 </section>
+
+<script>
+  (function () {
+    var embeds = document.querySelectorAll("[data-zeffy-embed]");
+    embeds.forEach(function (embed) {
+      var iframe = embed.querySelector("[data-zeffy-iframe]");
+      var fallback = embed.querySelector("[data-zeffy-fallback]");
+      if (!iframe || !fallback) return;
+
+      function showFallback() {
+        embed.classList.add("is-fallback");
+      }
+
+      function looksBlocked() {
+        try {
+          return (
+            iframe.contentWindow &&
+            iframe.contentWindow.location &&
+            iframe.contentWindow.location.href === "about:blank"
+          );
+        } catch (_err) {
+          return false;
+        }
+      }
+
+      iframe.addEventListener("load", function () {
+        if (looksBlocked()) showFallback();
+      });
+
+      setTimeout(function () {
+        if (looksBlocked()) showFallback();
+      }, 3500);
+    });
+  })();
+</script>
