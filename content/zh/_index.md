@@ -6,10 +6,14 @@ dataPage: "home"
 hero:
   lede: "扩大加利福尼亚州民事司法获取渠道"
   pillars:
-    - "正当程序权利"
-    - "住房稳定"
-    - "防止欠薪盗取"
-    - "反剥削辩护"
+    - text: "正当程序权利"
+      url: "/programs/"
+    - text: "住房稳定"
+      url: "/programs/#housing"
+    - text: "防止欠薪盗取"
+      url: "/programs/#wages"
+    - text: "反剥削辩护"
+      url: "/programs/"
 
 mission:
   eyebrow: "我们是谁"

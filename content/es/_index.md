@@ -6,10 +6,14 @@ dataPage: "home"
 hero:
   lede: "Ampliando el Acceso a la Justicia Civil en California"
   pillars:
-    - "Derechos al debido proceso"
-    - "Estabilidad habitacional"
-    - "Prevención de robo salarial"
-    - "Defensa contra la explotación"
+    - text: "Derechos al debido proceso"
+      url: "/programs/"
+    - text: "Estabilidad habitacional"
+      url: "/programs/#housing"
+    - text: "Prevención de robo salarial"
+      url: "/programs/#wages"
+    - text: "Defensa contra la explotación"
+      url: "/programs/"
 
 mission:
   eyebrow: "Quiénes somos"

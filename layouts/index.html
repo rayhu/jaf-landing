@@ -14,7 +14,7 @@
       </div>
       <div class="pillars">
         {{ range .Params.hero.pillars }}
-        <span class="pill"><span class="pill-dot"></span>{{ . }}</span>
+        <a href="{{ .url | relLangURL }}" class="pill"><span class="pill-dot"></span>{{ .text }}</a>
         {{ end }}
       </div>
     </div>

@@ -6,10 +6,14 @@ dataPage: "home"
 hero:
   lede: "Expanding Access to Civil Justice in California"
   pillars:
-    - "Due process rights"
-    - "Housing stability"
-    - "Wage theft prevention"
-    - "Exploitation defense"
+    - text: "Due process rights"
+      url: "/programs/"
+    - text: "Housing stability"
+      url: "/programs/#housing"
+    - text: "Wage theft prevention"
+      url: "/programs/#wages"
+    - text: "Exploitation defense"
+      url: "/programs/"
 
 mission:
   eyebrow: "Who we are"

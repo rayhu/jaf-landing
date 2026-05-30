@@ -25,14 +25,14 @@ defaultContentLanguageInSubdir = false
     weight       = 1
     contentDir   = "content/en"
 
-  [languages.es]
-    title        = "Justice Access Foundation"
-    label = "Español"
-    weight       = 2
-    contentDir   = "content/es"
-
   [languages.zh]
     title        = "美国司法可及基金会"
     label = "中文"
-    weight       = 3
+    weight       = 2
     contentDir   = "content/zh"
+
+  [languages.es]
+    title        = "Justice Access Foundation"
+    label = "Español"
+    weight       = 3
+    contentDir   = "content/es"

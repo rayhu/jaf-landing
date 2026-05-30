@@ -34,7 +34,8 @@
 .cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
 
 .pillars { display:flex; flex-wrap:wrap; gap:10px; margin-top:36px; padding-top:26px; border-top:1px solid var(--line); max-width:620px; }
-.pill { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:500; padding:6px 13px 6px 11px; border-radius:999px; background:rgba(245,242,233,0.6); border:1px solid var(--line); backdrop-filter:blur(6px); }
+.pill { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:500; padding:6px 13px 6px 11px; border-radius:999px; background:rgba(245,242,233,0.6); border:1px solid var(--line); backdrop-filter:blur(6px); color:var(--fg); text-decoration:none; white-space:nowrap; transition:background .2s ease,border-color .2s ease,transform .2s ease; }
+.pill:hover { background:rgba(245,242,233,0.88); border-color:var(--warm); transform:translateY(-1px); }
 .pill-dot { width:5px; height:5px; border-radius:50%; background:var(--warm); }
 
 .scroll-cue { position:absolute; left:50%; bottom:28px; transform:translateX(-50%); z-index:3; font-family:var(--mono); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--hint); display:flex; flex-direction:column; align-items:center; gap:8px; }

@@ -34,11 +34,6 @@
   weight = 60
 
 [[main]]
-  name   = "捐款"
-  url    = "/zh/donate/"
-  weight = 70
-
-[[main]]
   name   = "联系我们"
   url    = "/zh/contact/"
   weight = 80

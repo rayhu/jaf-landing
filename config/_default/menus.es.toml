@@ -34,11 +34,6 @@
   weight = 60
 
 [[main]]
-  name   = "Donar"
-  url    = "/es/donate/"
-  weight = 70
-
-[[main]]
   name   = "Contacto"
   url    = "/es/contact/"
   weight = 80
