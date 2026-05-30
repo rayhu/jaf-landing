@@ -20,7 +20,6 @@
     </div>
   </div>
 
-  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
 </section>
 
 <!-- ======================= MISSION ======================= -->
@@ -31,7 +30,6 @@
 
   <div class="container">
     <span class="eyebrow mission-eyebrow">{{ .Params.mission.eyebrow | default "Who we are" }}</span>
-    <div class="mission-divider"></div>
     <p class="mission-text">{{ .Params.mission.text | default "Justice Access Foundation is a California nonprofit public benefit corporation and prospective 501(c)(3) public charity. We work to expand access to the civil legal system, protect due process rights, and help prevent housing instability, wage theft, and exploitation affecting individuals and families who lack adequate legal resources." }}</p>
   </div>
 </section>
@@ -41,8 +39,8 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">{{ .Params.programs.eyebrow | default "What we do" }}</span>
-      <h2>{{ .Params.programs.title | default "Program Areas" }}</h2>
-      <p>{{ .Params.programs.description | default "Four focused programs that meet Californians where the civil legal system most often leaves them without support." }}</p>
+      <h2>{{ .Params.programs.title | default "Our Programs & Services" }}</h2>
+      <p>{{ .Params.programs.description | default "" }}</p>
     </div>
 
     <div class="program-grid">
@@ -50,29 +48,63 @@
       <article class="program-card">
         <div class="program-icon">{{ partial (printf "icons/%s.svg" .icon) . }}</div>
         <h3>{{ .title }}</h3>
-        <p>{{ .description }}</p>
+        {{ with .bullets }}
+        <ul class="program-bullets">
+          {{ range . }}
+          <li>{{ . | safeHTML }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
         <a href="{{ .link | relLangURL }}" class="program-tag">{{ .link_text }}</a>
       </article>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================= IMPACT ======================= -->
+<section class="impact" id="impact" data-screen-label="Our Impact">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-metrics">
+        <span class="eyebrow">{{ .Params.impact.eyebrow | default "Our Impact" }}</span>
+        <h2>{{ .Params.impact.title | default "Closing the Justice Gap" }}</h2>
+        {{ range .Params.impact.metrics }}
+        <div class="impact-stat">
+          <span class="impact-num">{{ .number }}</span>
+          <span class="impact-label">{{ .label }}</span>
+        </div>
+        {{ end }}
+      </div>
+      {{ with .Params.impact.testimonial }}
+      <blockquote class="impact-quote">
+        <p>{{ .quote }}</p>
+        <cite>{{ .author }}</cite>
+      </blockquote>
       {{ end }}
     </div>
   </div>
 </section>
 
-<!-- ======================= GOVERNANCE ======================= -->
-<section class="governance" id="governance" data-screen-label="Governance integrity">
+<!-- ======================= NEWS ======================= -->
+<section class="news" id="news" data-screen-label="Latest News">
   <div class="container">
-    <div class="gov-layout">
-      <div class="gov-intro">
-        <span class="eyebrow">{{ .Params.governance.eyebrow | default "Governance integrity" }}</span>
-        <h2>{{ .Params.governance.title | default "Accountable by design." }}</h2>
-        <p>{{ .Params.governance.text | default "Trust is the foundation of our work. Justice Access Foundation operates under governance standards built to keep our charitable mission independent of any outside influence." }}</p>
-        <p style="margin-top:26px"><a href="{{ "governance" | relLangURL }}" class="btn btn-ghost" style="background:rgba(242,238,227,0.08);color:var(--fg-on-dark);border-color:var(--line-on-dark)">{{ i18n "read_governance" | default "Read our governance" }} &rarr;</a></p>
-      </div>
-      <div class="gov-points">
-        {{ range $i, $p := .Params.governance.points }}
-        <div class="gov-point"><span class="gov-num">{{ printf "%02d" (add $i 1) }}</span><div><h3>{{ .title }}</h3><p>{{ .description }}</p></div></div>
+    <div class="section-head" style="text-align:center;max-width:680px;margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="justify-content:center;">{{ .Params.news.eyebrow | default "Latest" }}</span>
+      <h2>{{ .Params.news.title | default "News & Updates" }}</h2>
+    </div>
+    <div class="news-grid">
+      {{ range .Params.news.items }}
+      <article class="news-card">
+        <span class="news-date">{{ .date }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .excerpt }}</p>
+        {{ with .link }}
+        <a href="{{ . | relLangURL }}" class="news-link">Read more &rarr;</a>
         {{ end }}
-      </div>
+      </article>
+      {{ end }}
     </div>
   </div>
 </section>

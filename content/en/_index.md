@@ -21,43 +21,75 @@ mission:
 
 programs:
   eyebrow: "What we do"
-  title: "Program Areas"
-  description: "Four focused programs that meet Californians where the civil legal system most often leaves them without support."
+  title: "Our Programs & Services"
+  description: "In the United States, roughly 80% of people involved in civil cases navigate the courts without a lawyer. For most, the reason is simple: traditional legal representation is simply too expensive, especially for small claims and everyday disputes."
+  intro_text: "The Justice Access Foundation (JAF) is changing this reality. We believe that a lack of funds should never mean a lack of justice. To solve this, we have developed a pioneering hybrid model: lawyer-supervised, AI-enhanced, and user-guided. With JAF, you do not need to hire an expensive, hourly rated lawyer. You simply tell us your needs and show us what you have, and we help you navigate the entire process. By integrating advanced artificial intelligence into the legal workflow, we are making professional legal guidance economically viable for the first time. We are starting with our foundational work in housing disputes, and our programs will soon extend to other high-demand areas of civil law, ensuring you have the tools to stand up and get what you deserve."
   items:
     - icon: housing
-      title: "Preventing Housing Instability"
-      description: "Plain-language legal education, procedural guidance, and trusted referral coordination for low-income Californians facing eviction actions and other housing proceedings."
+      title: "Housing & Tenancy Disputes"
+      description: "Your home is your sanctuary, and a housing dispute can threaten your fundamental stability. We provide step-by-step guidance to help you protect your living situation and your finances."
+      bullets:
+        - "<strong>Security Deposit Disputes:</strong> Drafting demand letters and filing claims to recover wrongfully withheld deposits."
+        - "<strong>Eviction Defense (Unlawful Detainer):</strong> Understanding court notices, summons, and exactly how and when to file your response."
+        - "<strong>Rent and Lease Disputes:</strong> Clarifying your rights regarding illegal rent increases, lease violations, and hidden fees."
+        - "<strong>Habitability Issues:</strong> Forcing landlords to address unsafe living conditions, lack of heat, or severe maintenance failures."
       link: "/programs/#housing"
-      link_text: "Housing →"
+      link_text: "Learn more →"
     - icon: wages
-      title: "Wage Protection & Economic Justice"
-      description: "Information and resources that help workers respond to unpaid wages, unlawful payroll deductions, and other forms of wage theft under California and federal law."
+      title: "Wage Protection & Workplace Rights"
+      description: "When you put in the hours, you deserve your full paycheck. If your employer is taking advantage of you, we provide the legal roadmap to fight back and recover your hard-earned money."
+      bullets:
+        - "<strong>Wage Theft & Unpaid Overtime:</strong> Calculating what you are owed and filing formal claims with the California Labor Commissioner."
+        - "<strong>Unlawful Deductions:</strong> Challenging illegal payroll deductions and withheld tips."
+        - "<strong>Worker Misclassification:</strong> Understanding your rights if you have been wrongly classified as an independent contractor instead of an employee."
       link: "/programs/#wages"
-      link_text: "Wages →"
-    - icon: court
-      title: "Court Navigation Support"
-      description: "Guidance for self-represented individuals on civil court procedure, response deadlines, and filing requirements. JAF provides procedural information, not legal representation."
-      link: "/programs/#court"
-      link_text: "Court access →"
-    - icon: education
-      title: "Public Legal Education & Literacy"
-      description: "Clear legal information published in English, Spanish, and Simplified Chinese, so every Californian can take part in legal proceedings with confidence."
-      link: "/programs/#education"
-      link_text: "Education →"
+      link_text: "Learn more →"
+    - icon: consumer
+      title: "Consumer Protection"
+      description: "When businesses use deceptive practices, everyday consumers pay the price. We level the playing field, giving you the same procedural knowledge that corporations use to defend themselves."
+      bullets:
+        - "<strong>Unfair Business Practices:</strong> Fighting back against scams, hidden subscription fees, and predatory lending."
+        - "<strong>Contractor & Service Disputes:</strong> Seeking refunds or damages from home repair contractors or mechanics who failed to deliver on their promises."
+        - "<strong>Defective Products:</strong> Drafting effective demand letters to manufacturers and retailers to secure replacements or refunds."
+      link: "/programs/#consumer"
+      link_text: "Learn more →"
+    - icon: claims
+      title: "Small Claims & Debt Collection Defense"
+      description: "You do not need to be intimidated by aggressive collectors or the formalities of the courtroom. We provide the orientation and document preparation you need to face these challenges head-on."
+      bullets:
+        - "<strong>Debt Collection Defense:</strong> Forcing creditors to prove you actually owe a debt and protecting yourself from unlawful harassment."
+        - "<strong>Small Claims Court Navigation:</strong> From filling out the right forms to serving the other party, we guide you through the entire lifecycle of a small claims lawsuit."
+        - "<strong>Hearing Preparation:</strong> Helping you organize your evidence (receipts, contracts, photos) and anticipate the questions the judge—and the opposing party—will ask you."
+      link: "/programs/#claims"
+      link_text: "Learn more →"
 
-governance:
-  eyebrow: "Governance integrity"
-  title: "Accountable by design."
-  text: "Trust is the foundation of our work. Justice Access Foundation operates under governance standards built to keep our charitable mission independent of any outside influence."
-  points:
-    - title: "Independent board"
-      description: "An all-volunteer Board of Directors governs the organization and holds full responsibility for its decisions."
-    - title: "No compensation"
-      description: "No director receives payment for board service. Leadership is a voluntary commitment to the mission."
-    - title: "No donor influence"
-      description: "Governance and program decisions rest solely with the Board — free from donors, commercial entities, or affiliated organizations."
-    - title: "Public disclosure"
-      description: "Financial activity is reported each year through public IRS Form 990 filings, open for anyone to review."
+impact:
+  eyebrow: "Our Impact"
+  title: "Closing the Justice Gap"
+  metrics:
+    - number: "80%"
+      label: "of Californians in civil cases navigate the courts without a lawyer"
+    - number: "4.5M+"
+      label: "Californians qualify for legal aid but lack access to affordable representation"
+    - number: "1 in 4"
+      label: "tenants face eviction proceedings without legal counsel"
+  testimonial:
+    quote: "Justice should not depend on the size of your bank account. Our hybrid model — lawyer-supervised, AI-enhanced, and user-guided — makes professional legal guidance accessible to every Californian for the first time."
+    author: "Justice Access Foundation"
+
+news:
+  eyebrow: "Latest"
+  title: "News & Updates"
+  items:
+    - date: "May 2026"
+      title: "JAF Launches AI-Enhanced Legal Guidance Platform"
+      excerpt: "The Justice Access Foundation introduces its pioneering hybrid model combining lawyer supervision with advanced AI technology to make civil justice economically viable."
+    - date: "April 2026"
+      title: "IRS Application Submitted for 501(c)(3) Recognition"
+      excerpt: "JAF has formally submitted its application for public charity status. If recognition is granted, contributions made during the pending period are intended to be tax-deductible."
+    - date: "March 2026"
+      title: "Foundation Established in California"
+      excerpt: "Justice Access Foundation incorporated as a California nonprofit public benefit corporation, beginning its mission to expand access to civil justice."
 
 support:
   eyebrow: "Funding"

@@ -14,29 +14,21 @@
   weight = 20
 
 [[main]]
-  name   = "Governance"
-  url    = "/governance/"
-  weight = 30
-
-[[main]]
-  name   = "Funding"
-  url    = "/funding/"
-  weight = 40
-
-[[main]]
   name   = "Board"
   url    = "/board/"
   weight = 50
 
 [[main]]
-  name   = "Compliance"
-  url    = "/compliance/"
-  weight = 60
+  name       = "Contact"
+  url        = "/contact/"
+  weight     = 80
+  identifier = "contact"
 
 [[main]]
-  name   = "Contact"
-  url    = "/contact/"
-  weight = 80
+  name       = "Campus Study"
+  url        = "/campus-study/"
+  weight     = 81
+  parent     = "contact"
 
 # ─── Footer links ─────────────────────────────────────────────────────────────
 
@@ -44,11 +36,6 @@
   name   = "About"
   url    = "/about/"
   weight = 10
-
-[[footer]]
-  name   = "Compliance"
-  url    = "/compliance/"
-  weight = 20
 
 [[footer]]
   name   = "Privacy"

@@ -1,85 +1,56 @@
 ---
 title: "Sobre Nosotros"
-description: "Identidad legal, clasificación de caridad pública, independencia de gobernanza y enfoque geográfico de Justice Access Foundation."
+description: "Conozca la Justice Access Foundation — nuestra misión, visión y valores fundamentales."
 slug: "about"
-lead: "Identidad legal, clasificación de caridad pública, independencia de gobernanza y el enfoque geográfico de Justice Access Foundation."
+lead: "Somos una corporación de beneficio público sin fines de lucro de California y una organización que solicita reconocimiento 501(c)(3), fundada por abogados y defensores apasionados por hacer la justicia accesible para todos."
 toc:
-  - label: "Identidad Legal"
-    id: "identity"
-  - label: "Clasificación de Caridad Pública"
-    id: "classification"
-  - label: "Independencia de Gobernanza"
-    id: "independence"
-  - label: "Separación de Entidades Comerciales"
-    id: "separation"
-  - label: "Enfoque Geográfico"
-    id: "geography"
-  - label: "Compromiso con el Debido Proceso"
-    id: "dueprocess"
+  - label: "Sobre Nosotros"
+    id: "about"
+  - label: "Nuestra Misión"
+    id: "mission"
+  - label: "Nuestra Visión"
+    id: "vision"
+  - label: "Valores Fundamentales"
+    id: "values"
 ---
 
-## Identidad Legal
+## Sobre Nosotros
 
-Justice Access Foundation (JAF) está organizada y opera bajo tres marcos legales distintos:
+Navegar el sistema legal estadounidense puede sentirse como un laberinto, especialmente si no puede pagar un abogado costoso. Para muchas personas trabajadoras que enfrentan desafíos inesperados, los tribunales civiles pueden parecer completamente fuera de su alcance. La Justice Access Foundation (JAF) es una corporación de beneficio público sin fines de lucro de California y una organización que solicita reconocimiento 501(c)(3). Nuestra organización fue fundada por abogados y defensores apasionados por cambiar esa realidad.
 
-**1. Ley Estatal de California**
-JAF está incorporada como una Corporación Pública Sin Fines de Lucro de California bajo la Ley de Corporaciones Sin Fines de Lucro de California (Cal. Corp. Code §§ 5110 y siguientes). La organización está registrada ante el Secretario de Estado de California y el Registro de Fideicomisos de Caridad del Procurador General de California.
+Sabemos que emprender acciones legales es intimidante, pero la mayor barrera suele ser la brecha de información. Utilizamos herramientas avanzadas de IA para brindarle resultados, eliminar esa brecha y hacer que la justicia sea realmente accesible. Cualquiera que sea su necesidad legal, le ayudamos a evaluar su caso y encontrar la mejor manera posible de luchar por sus derechos. Le acompañamos paso a paso durante todo el proceso. Esto incluye ayudarle a preparar cartas de demanda efectivas, navegar el complejo proceso de notificar a la otra parte y organizar su evidencia. Le capacitamos para defenderse, obtener lo que merece y ponemos resultados medibles y confiables en sus manos.
 
-**2. Ley Fiscal Federal**
-JAF ha presentado una solicitud al Servicio de Impuestos Internos para el reconocimiento como organización exenta de impuestos federales sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas (EIN: 42-2498493). La solicitud (Formulario 1023 del IRS) se encuentra actualmente bajo revisión del IRS. Si se otorga el reconocimiento, el estado de exención bajo la ley federal generalmente se aplica retroactivamente a la fecha de incorporación de JAF.
+## Nuestra Misión
 
-**3. Clasificación de Caridad Pública**
-JAF ha solicitado la clasificación como organización de caridad pública — no como una fundación privada — bajo la Sección 509(a)(1) del Código de Rentas Internas en conjunto con la Sección 170(b)(1)(A)(vi). Esta clasificación, cuando se otorgue, reflejará la amplia base de apoyo público de JAF y el cumplimiento continuo con la prueba de apoyo público del IRS.
+Nuestra misión es expandir incansablemente el acceso al sistema legal civil eliminando las barreras informativas que mantienen a las personas comunes fuera de los tribunales. Mediante el uso estratégico de tecnología de IA y orientación legal, proporcionamos las instrucciones claras que necesita para perseguir sus reclamos civiles, defender sus derechos y presentar con confianza un argumento ganador.
 
----
+## Nuestra Visión
 
-## Clasificación de Caridad Pública
+Visualizamos una California donde las puertas de los tribunales estén completamente abiertas para todos, independientemente de su origen o situación económica. Queremos vivir en una sociedad donde el debido proceso sea un estándar garantizado, no un servicio de lujo reservado para quienes pueden contratar abogados corporativos.
 
-El estatus de JAF como organización de caridad pública, a diferencia de una fundación privada, se establece y mantiene a través de:
+Al combinar la velocidad de la inteligencia artificial con la defensa legal dedicada, vemos un futuro donde las barreras legales sean cosa del pasado. En este futuro, ya sea que esté lidiando con una disputa de propiedad, recuperando salarios impagos o navegando por un tribunal civil, tendrá la confianza y el respaldo para buscar justicia. Trabajamos hacia un sistema legal donde usted esté capacitado con el conocimiento y las habilidades exactas necesarias para presentar su caso de manera efectiva, comprender la dinámica judicial y lograr un resultado exitoso.
 
-- Amplio apoyo público derivado de una base diversa de donantes individuales, financiadores institucionales y subvenciones gubernamentales
-- Cumplimiento con la prueba de apoyo público del IRS, que requiere que al menos un tercio del apoyo total provenga de fuentes públicas calificadas
-- Cumplimiento del límite de concentración, bajo el cual ninguna fuente única contribuye más del 70% del apoyo público total
-- Reporte anual de cumplimiento a través del Formulario 990 del IRS
+## Nuestros Valores Fundamentales
 
-Esta clasificación somete a JAF a un estándar más alto de responsabilidad pública y requisitos de diversificación de donantes, al tiempo que proporciona protecciones legales mejoradas y reconocimiento completo de caridad pública.
-
----
-
-## Independencia de Gobernanza
-
-JAF está gobernada por una Junta Directiva voluntaria e independiente. La independencia de gobernanza se mantiene a través de:
-
-- Requisitos de composición de la junta que impiden que cualquier donante, financiador o entidad afiliada tenga un interés de control
-- Una política formal de conflicto de intereses que requiere divulgación anual y recusación
-- Prohibición de compensación a la junta — ningún director, funcionario o miembro de la junta recibe remuneración
-- Reuniones trimestrales de la junta para revisar el desempeño del programa, la posición financiera y el estado de cumplimiento
-- Autoridad exclusiva de la junta sobre la dirección organizacional, las prioridades del programa y la asignación de recursos
-
-La estructura de gobernanza de JAF está diseñada para garantizar que la misión caritativa — y no las preferencias de ninguna parte externa — dirija la actividad organizacional.
-
----
-
-## Separación de Entidades Comerciales
-
-JAF mantiene una estricta separación institucional, operativa y financiera de cualquier entidad comercial o con fines de lucro. Esta separación se mantiene a través de:
-
-- Incorporación legal separada con su propia junta, funcionarios y documentos de gobernanza
-- Una cuenta bancaria sin fines de lucro dedicada, sin mezcla de fondos con ninguna entidad comercial
-- Un proceso independiente de supervisión financiera realizado por la junta
-- Políticas escritas que prohíben cualquier acuerdo bajo el cual una entidad comercial controle, se beneficie o dirija las operaciones caritativas de JAF
-- Certificación anual por parte de los funcionarios de la junta del cumplimiento de los requisitos de separación
-
-Ninguna entidad comercial tiene autoridad de gobernanza sobre JAF. Ningún programa, subvención o donación dirige los recursos caritativos hacia beneficio comercial.
-
----
-
-## Enfoque Geográfico
-
-Los programas caritativos de JAF están enfocados en servir a individuos y familias en el Estado de California. Como corporación pública sin fines de lucro de California, el marco organizacional de JAF está fundamentado en la ley de California, y sus programas están diseñados para abordar las brechas de acceso a la justicia dentro de los sistemas legales y administrativos de California.
-
----
-
-## Compromiso con el Debido Proceso
-
-El acceso al debido proceso — el derecho procesal de ser escuchado, informado y tratado justamente dentro del sistema legal — es un pilar fundamental de la misión de JAF. JAF no toma posiciones en asuntos políticos o legislativos. El compromiso de JAF con el debido proceso es institucional y procesal: garantizar que los individuos dentro del sistema legal de California tengan acceso a información precisa, procedimientos justos y referencias apropiadas a profesionales legales calificados cuando se requiera representación.
+<div class="values-grid">
+<div class="value-card">
+<h3>Justicia</h3>
+<p class="value-detail">La justicia significa que su caso se decida por sus méritos reales. Le ayudamos a construir un argumento sólido y persuasivo para que pueda entrar en cualquier entorno legal completamente preparado para presentar los hechos y obtener lo que se le debe.</p>
+</div>
+<div class="value-card">
+<h3>Accesibilidad</h3>
+<p class="value-detail">Creemos que la ley debe ser fácil de entender. Utilizamos herramientas de IA para traducir procedimientos judiciales confusos a un lenguaje claro, asegurando que sepa exactamente qué formularios presentar, cómo notificar a la otra parte y cómo funciona todo el proceso.</p>
+</div>
+<div class="value-card">
+<h3>Asequibilidad</h3>
+<p class="value-detail">Buscar justicia no debería costarle toda su recuperación. Nos enfocamos en proporcionar orientación de alta calidad habilitada por tecnología para que pueda luchar eficazmente por su caso sin necesidad de contratar a un abogado tradicional.</p>
+</div>
+<div class="value-card">
+<h3>Debido Proceso</h3>
+<p class="value-detail">El debido proceso es su derecho fundamental a ser escuchado y tratado con justicia. Protegemos este derecho ayudándole a comprender la dinámica de las audiencias, anticipar las preguntas de la parte contraria y cumplir con cada plazo judicial crítico.</p>
+</div>
+<div class="value-card">
+<h3>Igualdad</h3>
+<p class="value-detail">Nos esforzamos por nivelar el campo de juego entre las personas comunes y las grandes instituciones bien financiadas. Al proporcionarle el mismo conocimiento procesal y estrategias de preparación que utilizan las empresas, ayudamos a equilibrar la balanza para que pueda luchar por sus derechos con confianza.</p>
+</div>
+</div>

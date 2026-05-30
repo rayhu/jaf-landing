@@ -7,8 +7,20 @@
     <nav class="nav-links">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <div class="nav-dropdown">
+          {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          <a href="{{ .URL }}" class="nav-parent{{ if $active }} is-active{{ end }}">{{ .Name }} <span class="nav-arrow"></span></a>
+          <div class="nav-dropdown-menu">
+            {{ range .Children }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
         {{ $active := or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }}
         <a href="{{ .URL }}"{{ if $active }} class="is-active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
       {{ end }}
     </nav>
     <a href="{{ "donate" | relLangURL }}" class="nav-cta">{{ i18n "donate" | default "Donate" }}</a>

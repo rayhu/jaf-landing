@@ -1,189 +1,106 @@
 ---
-title: "Programs"
-description: "JAF's charitable programs span legal education, court navigation, direct litigation cost assistance, and post-judgment economic stabilization for qualifying Californians."
+title: "Our Programs & Services"
+description: "JAF's pioneering hybrid model — lawyer-supervised, AI-enhanced, and user-guided — makes professional legal guidance economically viable for every Californian."
 slug: "programs"
-lead: "From legal education and procedural guidance to direct litigation cost assistance and emergency economic stabilization — for qualifying Californians who face barriers to the civil legal system."
+lead: "We believe that a lack of funds should never mean a lack of justice. Our programs span housing, wages, consumer protection, and small claims — delivering measurable, accountable results into your hands."
 toc:
-  - label: "Preventing Housing Instability"
+  - label: "Housing & Tenancy Disputes"
     id: "housing"
-  - label: "Wage Protection & Economic Justice"
+  - label: "Wage Protection & Workplace Rights"
     id: "wages"
-  - label: "Procedural Fairness & Court Navigation"
-    id: "court"
-  - label: "Public Legal Education & Literacy"
-    id: "education"
-  - label: "Direct Litigation Cost Assistance"
-    id: "litigation"
-  - label: "Post-Judgment Economic Stabilization"
-    id: "stabilization"
+  - label: "Consumer Protection"
+    id: "consumer"
+  - label: "Small Claims & Debt Collection Defense"
+    id: "claims"
+  - label: "How Our Hybrid Process Works"
+    id: "process"
 ---
 
-Justice Access Foundation operates charitable programs across a spectrum of direct services — from legal education and procedural guidance to direct litigation cost assistance and emergency economic stabilization — for qualifying individuals and families in California who face barriers to the civil legal system. All programs are charitable in nature and serve an indefinite class of beneficiaries. No program is conditioned on or connected to the purchase of any commercial service.
+In the United States, roughly 80% of people involved in civil cases navigate the courts without a lawyer. For most, the reason is simple: traditional legal representation is simply too expensive, especially for small claims and everyday disputes.
 
----
+The Justice Access Foundation (JAF) is changing this reality. We believe that a lack of funds should never mean a lack of justice. To solve this, we have developed a pioneering hybrid model: **lawyer-supervised, AI-enhanced, and user-guided.**
 
-## Preventing Housing Instability
-
-**Description**
-This program provides low-income individuals and families in California with access to legal education, procedural information, referral coordination, and direct financial assistance for legal and technical services related to residential tenancy, unlawful detainer proceedings, and housing-related administrative processes.
-
-**Target Population**
-Low-income renters and occupants facing housing proceedings, eviction notices, or housing authority actions in California, without adequate access to legal resources.
-
-**Services Provided**
-
-- Plain-language guides to California tenant rights and eviction procedures
-- Assistance in understanding court notices, summons, and response deadlines
-- Referral to qualified legal aid organizations, law school clinics, and licensed attorneys
-- Direct payment of legal representation fees and technical service costs on behalf of qualifying individuals, subject to eligibility review and board-approved grant criteria
-- Information on emergency housing assistance programs and administrative protections
-
-**Safeguards**
-
-- Grant eligibility is determined by written criteria adopted by the Board of Directors
-- All educational materials are reviewed for accuracy and compliance with current California law
-- No financial or referral relationship with any commercial housing, rental, or property management entity
-
-**Compliance Boundaries**
-JAF does not provide legal representation. Direct cost assistance is provided as a charitable grant to fund services delivered by independent, licensed professionals. All referrals are to licensed nonprofit legal organizations or licensed attorneys in good standing with the California State Bar.
+With JAF, you do not need to hire an expensive, hourly rated lawyer. You simply tell us your needs and show us what you have, and we help you navigate the entire process. By integrating advanced artificial intelligence into the legal workflow, we are making professional legal guidance economically viable for the first time. We are starting with our foundational work in housing disputes, and our programs will soon extend to other high-demand areas of civil law, ensuring you have the tools to stand up and get what you deserve.
 
 ---
 
-## Wage Protection and Economic Justice
+## Housing & Tenancy Disputes
 
-**Description**
-This program assists workers in California who have experienced wage theft, unpaid overtime, unlawful payroll deductions, or other violations of state and federal wage and hour laws. Services include legal education, procedural guidance, referral coordination, and direct financial assistance to fund legal representation and technical services for qualifying workers.
+Your home is your sanctuary, and a housing dispute can threaten your fundamental stability. We provide step-by-step guidance to help you protect your living situation and your finances. We help you navigate:
 
-**Target Population**
-Current and former workers in California who have experienced wage theft or labor law violations and who lack adequate access to legal resources.
-
-**Services Provided**
-
-- Plain-language explanations of California wage and hour laws
-- Guidance on filing wage claims with the California Labor Commissioner
-- Information on workers' rights under federal and state law
-- Referral to legal aid organizations, worker centers, and licensed employment attorneys
-- Direct payment of legal representation fees, filing fees, and related technical service costs on behalf of qualifying workers, subject to eligibility review and board-approved grant criteria
-- Educational workshops on wage protection and labor rights
-
-**Safeguards**
-
-- Grant eligibility is determined by written criteria adopted by the Board of Directors
-- Content is regularly reviewed to reflect current law and enforcement guidance
-- No referral or financial arrangement with any commercial staffing, payroll, or employer-side service
-
-**Compliance Boundaries**
-Direct cost assistance is provided as a charitable grant to fund services delivered by independent, licensed professionals. JAF does not represent workers in proceedings and does not guarantee case outcomes.
+- **Security Deposit Disputes:** Drafting demand letters and filing claims to recover wrongfully withheld deposits.
+- **Eviction Defense (Unlawful Detainer):** Understanding court notices, summons, and exactly how and when to file your response.
+- **Rent and Lease Disputes:** Clarifying your rights regarding illegal rent increases, lease violations, and hidden fees.
+- **Habitability Issues:** Forcing landlords to address unsafe living conditions, lack of heat, or severe maintenance failures.
 
 ---
 
-## Procedural Fairness and Court Navigation Support
+## Wage Protection & Workplace Rights
 
-**Description**
-This program assists individuals in California who must navigate civil court proceedings without legal representation. It provides procedural information, form-completion guidance, navigation assistance, and direct financial support for legal and technical services to qualifying self-represented litigants.
+When you put in the hours, you deserve your full paycheck. If your employer is taking advantage of you, we provide the legal roadmap to fight back and recover your hard-earned money. We help you navigate:
 
-**Target Population**
-Self-represented litigants in California civil courts, including individuals involved in small claims, unlawful detainer, limited family law proceedings, and administrative hearings, who lack adequate financial resources to retain counsel.
-
-**Services Provided**
-
-- Plain-language guides to civil procedure and court filing requirements
-- Assistance in locating and understanding official court forms
-- Orientation to courtroom procedures and hearing formats
-- Referral to court self-help centers, law libraries, and legal aid organizations
-- Direct payment of legal representation fees, court filing fees, and technical service costs on behalf of qualifying individuals, subject to eligibility review and board-approved grant criteria
-- Multilingual informational materials
-
-**Safeguards**
-
-- All guidance is limited to publicly available procedural information
-- Grant eligibility is determined by written criteria adopted by the Board of Directors
-- No advice on legal strategy, case outcomes, or litigation tactics is provided
-
-**Compliance Boundaries**
-JAF does not provide legal representation or legal advice. This program does not create an attorney-client relationship. Where JAF funds legal services, the attorney-client relationship is between the funded attorney and the individual participant.
+- **Wage Theft & Unpaid Overtime:** Calculating what you are owed and filing formal claims with the California Labor Commissioner.
+- **Unlawful Deductions:** Challenging illegal payroll deductions and withheld tips.
+- **Worker Misclassification:** Understanding your rights if you have been wrongly classified as an independent contractor instead of an employee.
 
 ---
 
-## Public Legal Education and Literacy
+## Consumer Protection
 
-**Description**
-This program produces and disseminates plain-language legal information in English, Spanish, and Chinese (Simplified) to support the ability of California residents to understand their legal rights and civic obligations within the state and federal legal systems.
+When businesses use deceptive practices, everyday consumers pay the price. We level the playing field, giving you the same procedural knowledge that corporations use to defend themselves. We help you navigate:
 
-**Target Population**
-General public in California, with emphasis on communities with limited English proficiency, recent immigrants, and individuals with limited prior exposure to the U.S. legal system.
-
-**Services Provided**
-
-- Multilingual legal information publications and guides
-- Community information workshops and presentations
-- Online resources accessible to the general public
-- Collaboration with libraries, community centers, and nonprofit organizations for distribution
-
-**Safeguards**
-
-- Content is reviewed by qualified legal professionals prior to publication
-- All materials clearly state that the content is informational only and does not constitute legal advice
-- No commercial advertising or promotion is included in any educational material
-
-**Compliance Boundaries**
-Public education content is informational only. JAF does not endorse, recommend, or direct participants to any specific attorney, law firm, or commercial service provider.
+- **Unfair Business Practices:** Fighting back against scams, hidden subscription fees, and predatory lending.
+- **Contractor & Service Disputes:** Seeking refunds or damages from home repair contractors or mechanics who failed to deliver on their promises.
+- **Defective Products:** Drafting effective demand letters to manufacturers and retailers to secure replacements or refunds.
 
 ---
 
-## Direct Litigation Cost Assistance
+## Small Claims & Debt Collection Defense
 
-**Description**
-This program provides direct financial grants to qualifying individuals and families in California to cover the cost of legal representation and technical services necessary to pursue or defend meritorious civil claims. JAF pays service providers directly on behalf of grant recipients. This program enables individuals who cannot afford professional legal or technical assistance to access the civil justice system on an equal footing.
+You do not need to be intimidated by aggressive collectors or the formalities of the courtroom. We provide the orientation and document preparation you need to face these challenges head-on. We help you navigate:
 
-**Covered Costs**
-
-- Attorney and law firm representation fees for civil proceedings
-- Court filing fees, service of process costs, and related judicial fees
-- Expert witness fees and forensic or technical analysis costs
-- Document translation, interpretation, and multilingual legal support services
-- Other reasonable and necessary costs directly associated with the civil proceeding, as approved by the Board of Directors
-
-**Target Population**
-Low-income individuals and families in California who have meritorious civil claims or defenses and who lack the financial resources to retain qualified legal or technical professionals. Eligibility is determined pursuant to written criteria established by the Board of Directors, including income verification and case assessment by qualified reviewers.
-
-**How Assistance Is Provided**
-JAF issues grant awards directly to service providers (law firms, attorneys, technical service firms) contracted to serve the grant recipient. Grant recipients do not receive cash disbursements. The attorney-client or service relationship is between the provider and the individual; JAF is not a party to the proceeding and does not direct legal strategy.
-
-**Safeguards**
-
-- Eligibility and case merit are assessed prior to any grant commitment
-- Grant amounts are subject to Board-approved limits and available program funding
-- All funded service providers must be appropriately licensed and in good standing
-- JAF maintains no financial interest in the outcome of any funded proceeding
-- No grant is conditioned on a particular legal outcome or settlement amount
-
-**Compliance Boundaries**
-This program provides charitable grant funding only. JAF does not provide legal representation, does not act as a party in interest in any proceeding, and does not retain any portion of any judgment or settlement obtained by a funded individual.
+- **Debt Collection Defense:** Forcing creditors to prove you actually owe a debt and protecting yourself from unlawful harassment.
+- **Small Claims Court Navigation:** From filling out the right forms to serving the other party, we guide you through the entire lifecycle of a small claims lawsuit.
+- **Hearing Preparation:** Helping you organize your evidence (receipts, contracts, photos) and anticipate the questions the judge — and the opposing party — will ask you.
 
 ---
 
-## Post-Judgment Economic Stabilization Assistance
+## How Our Hybrid Process Works
 
-**Description**
-This program provides emergency financial assistance to qualifying individuals in California who have obtained a favorable civil judgment or settlement but face documented economic hardship during the period between judgment entry and actual receipt of payment. Civil proceedings frequently result in extended delays between a favorable outcome and actual recovery of funds; this program addresses the economic instability that arises during that interval.
+We do not just give you a form and wish you luck. Our AI-driven, lawyer-backed workflow is designed to deliver measurable, accountable results:
 
-**Target Population**
-Individuals in California who have obtained a final civil judgment or executed settlement agreement in their favor, who face documented economic hardship — including risk of housing loss, utility disconnection, or wage shortfall — during the post-judgment waiting period, and who meet income and need criteria established by the Board of Directors.
+<div class="process-steps">
 
-**Services Provided**
+<div class="process-step">
+<span class="process-num">01</span>
+<div>
+<h3>Case Evaluation & Evidence Review</h3>
+<p>You tell us your story and provide your evidence or proof via conversation with our AI assistant. Our AI tools help organize your documents, tell you exactly what information is missing, and evaluate your case based on the strength of your evidence. We then identify the specific laws that protect you.</p>
+</div>
+</div>
 
-- Emergency assistance grants for immediate stabilization needs including housing costs, utility payments, and essential living expenses
-- Interest-free bridge assistance, structured as program-related investments where appropriate, pending receipt of judgment proceeds
-- Case management and financial counseling referrals to support recipients during the recovery period
+<div class="process-step">
+<span class="process-num">02</span>
+<div>
+<h3>Document Generation & Filing</h3>
+<p>We do not just create the paperwork. We help you draft perfectly formatted, legally sound demand letters and court forms, and then we help you file them with the court or send them to the opposing party.</p>
+</div>
+</div>
 
-**Safeguards**
+<div class="process-step">
+<span class="process-num">03</span>
+<div>
+<h3>Procedural Coaching</h3>
+<p>We walk you through the complex process of serving the other party legally and meeting strict court deadlines.</p>
+</div>
+</div>
 
-- Eligibility requires documented judgment or settlement and documented financial hardship
-- Assistance amounts are calibrated to documented need and are not based on judgment value
-- Bridge assistance structured as loans is subject to written repayment terms tied to receipt of judgment proceeds, not to a fixed date
-- JAF maintains no lien, assignment, or security interest in any judgment or settlement proceeds
-- Program funding is subject to available charitable resources and Board authorization
+<div class="process-step">
+<span class="process-num">04</span>
+<div>
+<h3>Hearing Readiness</h3>
+<p>We prepare you for your day in court so you walk in knowing exactly what to say, what evidence to present, and how to effectively state your case to the judge.</p>
+</div>
+</div>
 
-**Compliance Boundaries**
-This program provides charitable grants and program-related bridge assistance only. JAF does not purchase, assign, or acquire any interest in any judgment or settlement. This program is not litigation finance and does not function as a commercial funding arrangement. Assistance is conditioned solely on documented financial need, not on the amount of any recovery.
+</div>
