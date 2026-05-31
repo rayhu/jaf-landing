@@ -105,9 +105,14 @@ governance:
     - title: "Divulgación pública"
       description: "La actividad financiera se informa cada año a través de las declaraciones públicas del Formulario 990 del IRS, abiertas para revisión pública."
 
-support:
-  eyebrow: "Financiamiento"
-  title: "Apoye nuestro trabajo"
-  text: "Su contribución financia programas caritativos que ayudan a los californianos a acceder al sistema legal civil — para las familias que no pueden pagar un abogado."
-  fineprint: "Justice Access Foundation ha solicitado el reconocimiento como organización de caridad pública 501(c)(3) (<span class=\"ein\">EIN 42-2498493</span>); la solicitud se encuentra actualmente bajo revisión del IRS. Si se otorga el reconocimiento, las contribuciones realizadas durante el período pendiente están destinadas a ser deducibles de impuestos, generalmente con efecto retroactivo a la fecha de incorporación de JAF. Ninguna contribución otorga derecho alguno a influir en las decisiones de gobernanza o programa de la organización."
+intake:
+  eyebrow: "Obtener Ayuda"
+  title: "¿Necesita Ayuda?"
+  text: "Cuéntenos sobre su situación. Nuestro equipo revisará su caso y le dará seguimiento — sin costo y sin obligación."
+  extra: "Estamos aquí para escuchar, evaluar su problema legal y guiarlo hacia el siguiente paso correcto. Ya sea una disputa de vivienda, salarios impagos o cualquier otro asunto legal civil — comience aquí."
+  name_placeholder: "Su nombre"
+  email_placeholder: "Dirección de correo electrónico"
+  phone_placeholder: "Número de teléfono"
+  message_placeholder: "Cuéntenos sobre su situación. ¿Qué problema legal está enfrentando?"
+  disclaimer: "Gratuito y confidencial. Sin obligación. Al enviar, acepta nuestra Política de Privacidad y Términos de Uso."
 ---

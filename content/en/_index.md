@@ -91,9 +91,14 @@ news:
       title: "Foundation Established in California"
       excerpt: "Justice Access Foundation incorporated as a California nonprofit public benefit corporation, beginning its mission to expand access to civil justice."
 
-support:
-  eyebrow: "Funding"
-  title: "Support our work"
-  text: "Your contribution funds charitable programs that help Californians access the civil legal system — for the families who cannot afford a lawyer."
-  fineprint: "Justice Access Foundation has applied for 501(c)(3) public charity recognition (<span class=\"ein\">EIN 42-2498493</span>); the application is currently under IRS review. If recognition is granted, contributions made during the pending period are intended to be tax-deductible, generally retroactive to JAF's date of incorporation. No contribution confers any right to influence organizational governance or program decisions."
+intake:
+  eyebrow: "Get Help"
+  title: "Need Help?"
+  text: "Tell us about your situation. Our team will review your case and follow up with you — at no cost and with no obligation."
+  extra: "We are here to listen, evaluate your legal issue, and guide you toward the right next step. Whether it's a housing dispute, unpaid wages, or any other civil legal matter — start here."
+  name_placeholder: "Your name"
+  email_placeholder: "Email address"
+  phone_placeholder: "Phone number"
+  message_placeholder: "Tell us about your situation. What legal issue are you facing?"
+  disclaimer: "Free and confidential. No obligation. By submitting, you agree to our Privacy Policy and Terms of Use."
 ---

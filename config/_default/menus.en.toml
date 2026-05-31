@@ -14,9 +14,22 @@
   weight = 20
 
 [[main]]
-  name   = "Board"
-  url    = "/board/"
-  weight = 50
+  name       = "Leadership"
+  url        = "/board/"
+  weight     = 50
+  identifier = "leadership"
+
+[[main]]
+  name       = "Board of Directors"
+  url        = "/board/"
+  weight     = 51
+  parent     = "leadership"
+
+[[main]]
+  name       = "Careers"
+  url        = "/careers/"
+  weight     = 52
+  parent     = "leadership"
 
 [[main]]
   name       = "Contact"
@@ -25,9 +38,15 @@
   identifier = "contact"
 
 [[main]]
+  name       = "Get in Touch"
+  url        = "/contact/"
+  weight     = 81
+  parent     = "contact"
+
+[[main]]
   name       = "Campus Study"
   url        = "/campus-study/"
-  weight     = 81
+  weight     = 82
   parent     = "contact"
 
 # ─── Footer links ─────────────────────────────────────────────────────────────

@@ -14,23 +14,23 @@ toc:
     id: "values"
 ---
 
-## Sobre Nosotros
+## Sobre Nosotros {#about}
 
 Navegar el sistema legal estadounidense puede sentirse como un laberinto, especialmente si no puede pagar un abogado costoso. Para muchas personas trabajadoras que enfrentan desafíos inesperados, los tribunales civiles pueden parecer completamente fuera de su alcance. La Justice Access Foundation (JAF) es una corporación de beneficio público sin fines de lucro de California y una organización que solicita reconocimiento 501(c)(3). Nuestra organización fue fundada por abogados y defensores apasionados por cambiar esa realidad.
 
 Sabemos que emprender acciones legales es intimidante, pero la mayor barrera suele ser la brecha de información. Utilizamos herramientas avanzadas de IA para brindarle resultados, eliminar esa brecha y hacer que la justicia sea realmente accesible. Cualquiera que sea su necesidad legal, le ayudamos a evaluar su caso y encontrar la mejor manera posible de luchar por sus derechos. Le acompañamos paso a paso durante todo el proceso. Esto incluye ayudarle a preparar cartas de demanda efectivas, navegar el complejo proceso de notificar a la otra parte y organizar su evidencia. Le capacitamos para defenderse, obtener lo que merece y ponemos resultados medibles y confiables en sus manos.
 
-## Nuestra Misión
+## Nuestra Misión {#mission}
 
 Nuestra misión es expandir incansablemente el acceso al sistema legal civil eliminando las barreras informativas que mantienen a las personas comunes fuera de los tribunales. Mediante el uso estratégico de tecnología de IA y orientación legal, proporcionamos las instrucciones claras que necesita para perseguir sus reclamos civiles, defender sus derechos y presentar con confianza un argumento ganador.
 
-## Nuestra Visión
+## Nuestra Visión {#vision}
 
 Visualizamos una California donde las puertas de los tribunales estén completamente abiertas para todos, independientemente de su origen o situación económica. Queremos vivir en una sociedad donde el debido proceso sea un estándar garantizado, no un servicio de lujo reservado para quienes pueden contratar abogados corporativos.
 
 Al combinar la velocidad de la inteligencia artificial con la defensa legal dedicada, vemos un futuro donde las barreras legales sean cosa del pasado. En este futuro, ya sea que esté lidiando con una disputa de propiedad, recuperando salarios impagos o navegando por un tribunal civil, tendrá la confianza y el respaldo para buscar justicia. Trabajamos hacia un sistema legal donde usted esté capacitado con el conocimiento y las habilidades exactas necesarias para presentar su caso de manera efectiva, comprender la dinámica judicial y lograr un resultado exitoso.
 
-## Nuestros Valores Fundamentales
+## Nuestros Valores Fundamentales {#values}
 
 <div class="values-grid">
 <div class="value-card">

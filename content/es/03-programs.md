@@ -24,7 +24,7 @@ Con JAF, no necesita contratar un abogado costoso por hora. Simplemente díganos
 
 ---
 
-## Vivienda y Disputas de Arrendamiento
+## Vivienda y Disputas de Arrendamiento {#housing}
 
 Su hogar es su santuario, y una disputa de vivienda puede amenazar su estabilidad fundamental. Brindamos orientación paso a paso para ayudarle a proteger su situación de vivienda y sus finanzas. Le ayudamos a navegar:
 
@@ -35,7 +35,7 @@ Su hogar es su santuario, y una disputa de vivienda puede amenazar su estabilida
 
 ---
 
-## Protección Salarial y Derechos Laborales
+## Protección Salarial y Derechos Laborales {#wages}
 
 Cuando usted trabaja, merece su salario completo. Si su empleador se está aprovechando de usted, le proporcionamos la hoja de ruta legal para defenderse y recuperar su dinero ganado con esfuerzo. Le ayudamos a navegar:
 
@@ -45,7 +45,7 @@ Cuando usted trabaja, merece su salario completo. Si su empleador se está aprov
 
 ---
 
-## Protección al Consumidor
+## Protección al Consumidor {#consumer}
 
 Cuando las empresas utilizan prácticas engañosas, los consumidores pagan el precio. Nivelamos el campo de juego, brindándole el mismo conocimiento procesal que las corporaciones usan para defenderse. Le ayudamos a navegar:
 
@@ -55,7 +55,7 @@ Cuando las empresas utilizan prácticas engañosas, los consumidores pagan el pr
 
 ---
 
-## Reclamos Menores y Defensa Contra Cobro de Deudas
+## Reclamos Menores y Defensa Contra Cobro de Deudas {#claims}
 
 No necesita sentirse intimidado por cobradores agresivos o las formalidades del tribunal. Proporcionamos la orientación y preparación de documentos que necesita para enfrentar estos desafíos. Le ayudamos a navegar:
 
@@ -65,7 +65,7 @@ No necesita sentirse intimidado por cobradores agresivos o las formalidades del 
 
 ---
 
-## Cómo Funciona Nuestro Proceso Híbrido
+## Cómo Funciona Nuestro Proceso Híbrido {#process}
 
 No le damos simplemente un formulario y le deseamos suerte. Nuestro flujo de trabajo impulsado por IA y respaldado por abogados está diseñado para ofrecer resultados medibles y confiables:
 

@@ -73,6 +73,9 @@ h3 { font-size:clamp(18px,1.5vw,21px); font-weight:700; letter-spacing:-0.02em; 
 .nav-links a { font-size:13px; font-weight:500; color:var(--muted); transition:color .15s; padding-bottom:2px; border-bottom:1.5px solid transparent; }
 .nav-links a:hover { color:var(--fg); }
 .nav-links a.is-active { color:var(--fg); border-bottom-color:var(--warm); }
+.nav-parent { font-size:13px; font-weight:500; color:var(--muted); padding-bottom:2px; border-bottom:1.5px solid transparent; transition:color .15s; }
+.nav-parent:hover { color:var(--fg); }
+.nav-parent.is-active { color:var(--fg); border-bottom-color:var(--warm); }
 .nav-cta { background:var(--fg); color:var(--bg); padding:9px 18px; border-radius:999px; font-size:12px; font-weight:600; white-space:nowrap; transition:background .15s,transform .15s; }
 .nav-cta:hover { background:var(--warm-deep); transform:translateY(-1px); }
 .nav-dropdown { position:relative; }

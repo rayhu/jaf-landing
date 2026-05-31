@@ -14,23 +14,23 @@ toc:
     id: "values"
 ---
 
-## About Us
+## About Us {#about}
 
 Navigating the American legal system can feel like a maze, especially if you cannot afford a high-priced attorney. For many hardworking people facing unexpected challenges, the civil courts can easily feel completely out of reach. The Justice Access Foundation (JAF) is a California nonprofit public benefit corporation and a prospective 501(c)(3) public charity. Our organization was built by lawyers and advocates passionate about changing that reality.
 
 We know that taking legal action is intimidating, but the biggest barrier is often the information gap. We utilize advanced AI tools to deliver results to you, eliminate that gap, and make justice truly accessible. Whatever your legal need is, we help you evaluate your case and find the best possible way to fight for your rights. We will walk you through the entire process step by step. This includes helping you prepare effective demand letters, navigating the complex process of serving the other party, and organizing your evidence. We empower you to stand up, get what you deserve, and we deliver measurable, accountable results into your hands.
 
-## Our Mission
+## Our Mission {#mission}
 
 Our mission is to relentlessly expand access to the civil legal system by eliminating the informational barriers that keep everyday people out of the courtroom. Through the strategic use of AI technology and legal guidance, we provide the clear instruction you need to pursue your civil claims, defend your rights, and confidently present a winning argument.
 
-## Our Vision
+## Our Vision {#vision}
 
 We envision a California where the doors to the courthouse are wide open to everyone, regardless of their background or bank account. We want to live in a society where due process is a guaranteed standard, not a luxury service reserved for those who can hire corporate counsel.
 
 By bringing together the speed of artificial intelligence with dedicated legal advocacy, we see a future where legal gatekeeping is a thing of the past. In this future, whether you are dealing with a property dispute, recovering unpaid wages, or navigating civil court, you will have the confidence and the backing to seek justice. We are working toward a legal system where you are empowered with the exact knowledge and skills needed to effectively present your case, understand court dynamics, and walk away with a successful outcome.
 
-## Our Core Values
+## Our Core Values {#values}
 
 <div class="values-grid">
 <div class="value-card">

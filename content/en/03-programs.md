@@ -24,7 +24,7 @@ With JAF, you do not need to hire an expensive, hourly rated lawyer. You simply 
 
 ---
 
-## Housing & Tenancy Disputes
+## Housing & Tenancy Disputes {#housing}
 
 Your home is your sanctuary, and a housing dispute can threaten your fundamental stability. We provide step-by-step guidance to help you protect your living situation and your finances. We help you navigate:
 
@@ -35,7 +35,7 @@ Your home is your sanctuary, and a housing dispute can threaten your fundamental
 
 ---
 
-## Wage Protection & Workplace Rights
+## Wage Protection & Workplace Rights {#wages}
 
 When you put in the hours, you deserve your full paycheck. If your employer is taking advantage of you, we provide the legal roadmap to fight back and recover your hard-earned money. We help you navigate:
 
@@ -45,7 +45,7 @@ When you put in the hours, you deserve your full paycheck. If your employer is t
 
 ---
 
-## Consumer Protection
+## Consumer Protection {#consumer}
 
 When businesses use deceptive practices, everyday consumers pay the price. We level the playing field, giving you the same procedural knowledge that corporations use to defend themselves. We help you navigate:
 
@@ -55,7 +55,7 @@ When businesses use deceptive practices, everyday consumers pay the price. We le
 
 ---
 
-## Small Claims & Debt Collection Defense
+## Small Claims & Debt Collection Defense {#claims}
 
 You do not need to be intimidated by aggressive collectors or the formalities of the courtroom. We provide the orientation and document preparation you need to face these challenges head-on. We help you navigate:
 
@@ -65,7 +65,7 @@ You do not need to be intimidated by aggressive collectors or the formalities of
 
 ---
 
-## How Our Hybrid Process Works
+## How Our Hybrid Process Works {#process}
 
 We do not just give you a form and wish you luck. Our AI-driven, lawyer-backed workflow is designed to deliver measurable, accountable results:
 

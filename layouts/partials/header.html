@@ -10,7 +10,7 @@
         {{ if .HasChildren }}
         <div class="nav-dropdown">
           {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-          <a href="{{ .URL }}" class="nav-parent{{ if $active }} is-active{{ end }}">{{ .Name }} <span class="nav-arrow"></span></a>
+          <span class="nav-parent{{ if $active }} is-active{{ end }}" tabindex="0">{{ .Name }} <span class="nav-arrow"></span></span>
           <div class="nav-dropdown-menu">
             {{ range .Children }}
             <a href="{{ .URL }}">{{ .Name }}</a>
@@ -23,7 +23,7 @@
         {{ end }}
       {{ end }}
     </nav>
-    <a href="{{ "donate" | relLangURL }}" class="nav-cta">{{ i18n "donate" | default "Donate" }}</a>
+    <a href="{{ "" | relLangURL }}#need-help" class="nav-cta">{{ i18n "get_help" | default "Get Help" }}</a>
     <div class="nav-lang">
       {{ $currentLang := .Language.Lang }}
       {{ range site.Home.AllTranslations }}
