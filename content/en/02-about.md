@@ -2,7 +2,7 @@
 title: "About Us"
 description: "Learn about the Justice Access Foundation — our mission, vision, and core values."
 slug: "about"
-lead: "We are a California nonprofit public benefit corporation and prospective 501(c)(3) public charity, built by lawyers and advocates passionate about making justice accessible to everyone."
+lead: "Built by lawyers and advocates passionate about making justice accessible to everyone."
 toc:
   - label: "About Us"
     id: "about"
@@ -16,7 +16,7 @@ toc:
 
 ## About Us {#about}
 
-Navigating the American legal system can feel like a maze, especially if you cannot afford a high-priced attorney. For many hardworking people facing unexpected challenges, the civil courts can easily feel completely out of reach. The Justice Access Foundation (JAF) is a California nonprofit public benefit corporation and a prospective 501(c)(3) public charity. Our organization was built by lawyers and advocates passionate about changing that reality.
+Navigating the American legal system can feel like a maze, especially if you cannot afford a high-priced attorney. For many hardworking people facing unexpected challenges, the civil courts can easily feel completely out of reach. The Justice Access Foundation (JAF) was built by lawyers and advocates passionate about changing that reality.
 
 We know that taking legal action is intimidating, but the biggest barrier is often the information gap. We utilize advanced AI tools to deliver results to you, eliminate that gap, and make justice truly accessible. Whatever your legal need is, we help you evaluate your case and find the best possible way to fight for your rights. We will walk you through the entire process step by step. This includes helping you prepare effective demand letters, navigating the complex process of serving the other party, and organizing your evidence. We empower you to stand up, get what you deserve, and we deliver measurable, accountable results into your hands.
 

@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $toc := .Params.toc }}
 <section class="page-hero">
-  {{ if not .Params.hideLighthouse }}<img class="ph-light" src="/assets/lighthouse.png" alt="" />{{ end }}
+  {{ if not .Params.hideLighthouse }}<img class="ph-light ph-light-{{ .Slug }}" src="/assets/lighthouse.png" alt="" />{{ end }}
   <div class="ph-inner">
     <div class="crumb"><a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a> &nbsp;/&nbsp; {{ .Title }}</div>
     <h1>{{ .Title }}</h1>

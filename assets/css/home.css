@@ -47,7 +47,7 @@
 .mission .container { position:relative; z-index:3; }
 .mission-eyebrow { justify-content:center; }
 .mission-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; background:var(--bg); opacity:0; }
-.mission.has-video .mission-video { opacity:1; }
+.mission.has-video .mission-video { opacity:0.1; }
 .mission.has-video .mission-fallback { display:none; }
 .mission-fallback { position:absolute; inset:0; z-index:1; background:
   radial-gradient(60% 80% at 50% 40%, rgba(200,132,42,0.12), transparent 70%), var(--bg); }

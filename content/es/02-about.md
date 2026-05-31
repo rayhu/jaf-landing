@@ -2,7 +2,7 @@
 title: "Sobre Nosotros"
 description: "Conozca la Justice Access Foundation — nuestra misión, visión y valores fundamentales."
 slug: "about"
-lead: "Somos una corporación de beneficio público sin fines de lucro de California y una organización que solicita reconocimiento 501(c)(3), fundada por abogados y defensores apasionados por hacer la justicia accesible para todos."
+lead: "Fundada por abogados y defensores apasionados por hacer la justicia accesible para todos."
 toc:
   - label: "Sobre Nosotros"
     id: "about"
@@ -16,7 +16,7 @@ toc:
 
 ## Sobre Nosotros {#about}
 
-Navegar el sistema legal estadounidense puede sentirse como un laberinto, especialmente si no puede pagar un abogado costoso. Para muchas personas trabajadoras que enfrentan desafíos inesperados, los tribunales civiles pueden parecer completamente fuera de su alcance. La Justice Access Foundation (JAF) es una corporación de beneficio público sin fines de lucro de California y una organización que solicita reconocimiento 501(c)(3). Nuestra organización fue fundada por abogados y defensores apasionados por cambiar esa realidad.
+Navegar el sistema legal estadounidense puede sentirse como un laberinto, especialmente si no puede pagar un abogado costoso. Para muchas personas trabajadoras que enfrentan desafíos inesperados, los tribunales civiles pueden parecer completamente fuera de su alcance. La Justice Access Foundation (JAF) fue fundada por abogados y defensores apasionados por cambiar esa realidad.
 
 Sabemos que emprender acciones legales es intimidante, pero la mayor barrera suele ser la brecha de información. Utilizamos herramientas avanzadas de IA para brindarle resultados, eliminar esa brecha y hacer que la justicia sea realmente accesible. Cualquiera que sea su necesidad legal, le ayudamos a evaluar su caso y encontrar la mejor manera posible de luchar por sus derechos. Le acompañamos paso a paso durante todo el proceso. Esto incluye ayudarle a preparar cartas de demanda efectivas, navegar el complejo proceso de notificar a la otra parte y organizar su evidencia. Le capacitamos para defenderse, obtener lo que merece y ponemos resultados medibles y confiables en sus manos.
 
