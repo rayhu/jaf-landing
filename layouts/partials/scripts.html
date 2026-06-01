@@ -14,6 +14,7 @@
   var drawer = document.querySelector('.nav-drawer');
   var drawerLinks = document.querySelector('.drawer-links');
   var closeBtn = document.querySelector('.drawer-close');
+  var mobileNavQuery = window.matchMedia('(max-width: 760px)');
   var drawerPopulated = false;
 
   function populateDrawer() {
@@ -36,14 +37,13 @@
   }
 
   function openDrawer() {
+    if (!mobileNavQuery.matches) return;
     populateDrawer();
     document.body.classList.add('nav-open');
-    document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
     document.body.classList.remove('nav-open');
-    document.body.style.overflow = '';
   }
 
   if (toggle) toggle.addEventListener('click', openDrawer);
@@ -61,22 +61,31 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && document.body.classList.contains('nav-open')) closeDrawer();
   });
+  function closeDrawerOnDesktop() {
+    if (!mobileNavQuery.matches) closeDrawer();
+  }
+  if (mobileNavQuery.addEventListener) {
+    mobileNavQuery.addEventListener('change', closeDrawerOnDesktop);
+  } else if (mobileNavQuery.addListener) {
+    mobileNavQuery.addListener(closeDrawerOnDesktop);
+  }
+  closeDrawerOnDesktop();
 
   // TOC scrollspy + smooth scroll (inner pages)
   var toc = document.querySelector('.toc');
   if (toc) {
     var tocLinks = Array.prototype.slice.call(toc.querySelectorAll('a'));
+    function getTocTarget(hash) {
+      return hash && hash.charAt(0) === '#' && hash.length > 1 ? document.getElementById(hash.slice(1)) : null;
+    }
     tocLinks.forEach(function (a) {
       a.addEventListener('click', function (e) {
-        var id = a.getAttribute('href');
-        if (id && id.charAt(0) === '#') {
-          var el = document.querySelector(id);
-          if (el) { e.preventDefault(); window.scrollTo({ top: el.offsetTop - 90, behavior: 'smooth' }); }
-        }
+        var el = getTocTarget(a.getAttribute('href'));
+        if (el) { e.preventDefault(); window.scrollTo({ top: el.offsetTop - 90, behavior: 'smooth' }); }
       });
     });
     var sections = tocLinks.map(function (a) {
-      var id = a.getAttribute('href'); return id && id.charAt(0) === '#' ? document.querySelector(id) : null;
+      return getTocTarget(a.getAttribute('href'));
     });
     var spy = function () {
       var y = window.scrollY + 130, idx = 0;
@@ -120,23 +129,20 @@
     missionObs.observe(document.querySelector('.mission'));
   }
 
-  // Video background probe — only play if video file exists
+  // Video backgrounds load directly; the video element handles missing sources.
   document.querySelectorAll('.hero, .mission').forEach(function (stage) {
     var v = stage.querySelector('video');
     if (!v) return;
     var src = v.getAttribute('data-vsrc');
     if (!src) return;
-    fetch(src, { method: 'HEAD' }).then(function (r) {
-      if (!r.ok) return;
-      var s = document.createElement('source');
-      s.src = src; s.type = 'video/mp4';
-      v.appendChild(s);
-      v.load();
-      v.addEventListener('loadeddata', function () {
-        if (v.videoWidth > 0) stage.classList.add('has-video');
-      });
-      v.play().catch(function () {});
-    }).catch(function () {});
+    var s = document.createElement('source');
+    s.src = src; s.type = 'video/mp4';
+    v.appendChild(s);
+    v.load();
+    v.addEventListener('loadeddata', function () {
+      if (v.videoWidth > 0) stage.classList.add('has-video');
+    });
+    v.play().catch(function () {});
   });
   document.addEventListener('visibilitychange', function () {
     if (!document.hidden) document.querySelectorAll('video').forEach(function (v) { v.play().catch(function () {}); });

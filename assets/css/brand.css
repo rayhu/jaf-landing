@@ -2,7 +2,7 @@
    Justice Access Foundation — SHARED base (all pages)
    Aligned to jaf-landing.html · Inter + JetBrains Mono · warm palette
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts are preconnected and loaded in head.html for better performance. */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -211,6 +211,7 @@ section { padding:clamp(72px,10vw,132px) 0; }
 }
 
 @media (max-width:760px) {
+  body.nav-open { overflow:hidden; }
   .nav-links, .nav-cta, .nav-lang { display:none; }
   .nav-toggle { display:block; }
   .footer-top { flex-direction:column; gap:32px; }
@@ -227,8 +228,10 @@ section { padding:clamp(72px,10vw,132px) 0; }
   background:var(--bg); padding:20px 0 32px;
   box-shadow:4px 0 32px rgba(26,24,20,0.18);
 }
-body.nav-open .nav-overlay,
-body.nav-open .nav-drawer { display:block; }
+@media (max-width:760px) {
+  body.nav-open .nav-overlay,
+  body.nav-open .nav-drawer { display:block; }
+}
 .nav-drawer .drawer-head {
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 24px 14px; border-bottom:1px solid var(--line); margin-bottom:12px;
