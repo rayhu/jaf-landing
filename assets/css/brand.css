@@ -226,6 +226,9 @@ section { padding:clamp(72px,10vw,132px) 0; }
   .nav-links, .nav-cta, .nav-lang { display:none; }
   .nav-toggle { display:block; }
   .footer-top { flex-direction:column; gap:32px; }
+  body.nav-open { overflow:hidden; }
+  body.nav-open .nav-overlay,
+  body.nav-open .nav-drawer { display:block; }
 }
 
 /* ── Mobile nav drawer ── */
@@ -239,8 +242,6 @@ section { padding:clamp(72px,10vw,132px) 0; }
   background:var(--bg); padding:20px 0 32px;
   box-shadow:4px 0 32px rgba(26,24,20,0.18);
 }
-body.nav-open .nav-overlay,
-body.nav-open .nav-drawer { display:block; }
 .nav-drawer .drawer-head {
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 24px 14px; border-bottom:1px solid var(--line); margin-bottom:12px;

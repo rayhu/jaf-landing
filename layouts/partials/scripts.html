@@ -15,6 +15,7 @@
   var drawerLinks = document.querySelector('.drawer-links');
   var closeBtn = document.querySelector('.drawer-close');
   var drawerPopulated = false;
+  var mobileNavQuery = window.matchMedia('(max-width: 760px)');
 
   function populateDrawer() {
     if (drawerPopulated || !drawerLinks) return;
@@ -36,19 +37,27 @@
   }
 
   function openDrawer() {
+    if (!mobileNavQuery.matches) return;
     populateDrawer();
     document.body.classList.add('nav-open');
-    document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
     document.body.classList.remove('nav-open');
-    document.body.style.overflow = '';
+  }
+
+  function closeDrawerOnDesktop(e) {
+    if (!e.matches) closeDrawer();
   }
 
   if (toggle) toggle.addEventListener('click', openDrawer);
   if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
   if (overlay) overlay.addEventListener('click', closeDrawer);
+  if (mobileNavQuery.addEventListener) {
+    mobileNavQuery.addEventListener('change', closeDrawerOnDesktop);
+  } else if (mobileNavQuery.addListener) {
+    mobileNavQuery.addListener(closeDrawerOnDesktop);
+  }
 
   // Close drawer when a link inside it is clicked
   if (drawer) {
