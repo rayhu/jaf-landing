@@ -8,36 +8,59 @@
     onScroll();
   }
 
-  // Mobile menu toggle
+  // Mobile menu — left-side drawer
   var toggle = document.querySelector('.nav-toggle');
-  var navLinks = document.querySelector('.nav-links');
-  if (toggle && navLinks) {
-    var menuOpen = false;
-    toggle.addEventListener('click', function () {
-      menuOpen = !menuOpen;
-      if (menuOpen) {
-        navLinks.style.display = 'flex';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '100%';
-        navLinks.style.right = '24px';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.background = 'var(--bg)';
-        navLinks.style.padding = '16px 22px';
-        navLinks.style.borderRadius = '12px';
-        navLinks.style.boxShadow = '0 12px 30px rgba(0,0,0,0.12)';
-      } else {
-        navLinks.style.display = '';
-        navLinks.style.position = '';
-        navLinks.style.top = '';
-        navLinks.style.right = '';
-        navLinks.style.flexDirection = '';
-        navLinks.style.background = '';
-        navLinks.style.padding = '';
-        navLinks.style.borderRadius = '';
-        navLinks.style.boxShadow = '';
+  var overlay = document.querySelector('.nav-overlay');
+  var drawer = document.querySelector('.nav-drawer');
+  var drawerLinks = document.querySelector('.drawer-links');
+  var closeBtn = document.querySelector('.drawer-close');
+  var drawerPopulated = false;
+
+  function populateDrawer() {
+    if (drawerPopulated || !drawerLinks) return;
+    drawerPopulated = true;
+    var links = document.querySelectorAll('.nav-links > a, .nav-links > .nav-dropdown');
+    links.forEach(function (el) {
+      var clone = el.cloneNode(true);
+      drawerLinks.appendChild(clone);
+    });
+    // Handle dropdown toggles in the drawer — click to expand
+    drawerLinks.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      var parent = dd.querySelector('.nav-parent');
+      if (parent) {
+        parent.addEventListener('click', function () {
+          dd.classList.toggle('open');
+        });
       }
     });
   }
+
+  function openDrawer() {
+    populateDrawer();
+    document.body.classList.add('nav-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    document.body.classList.remove('nav-open');
+    document.body.style.overflow = '';
+  }
+
+  if (toggle) toggle.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (overlay) overlay.addEventListener('click', closeDrawer);
+
+  // Close drawer when a link inside it is clicked
+  if (drawer) {
+    drawer.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') closeDrawer();
+    });
+  }
+
+  // Close drawer on Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && document.body.classList.contains('nav-open')) closeDrawer();
+  });
 
   // TOC scrollspy + smooth scroll (inner pages)
   var toc = document.querySelector('.toc');
@@ -64,6 +87,39 @@
     spy();
   }
 
+  // Typing effect on mission text
+  var missionText = document.querySelector('.mission-text');
+  if (missionText) {
+    var fullText = missionText.textContent.trim();
+    missionText.textContent = '';
+    missionText.insertAdjacentHTML('beforeend', '<span class="type-cursor" aria-hidden="true">|</span>');
+    var cursor = missionText.querySelector('.type-cursor');
+    var typed = false;
+    var i = 0;
+
+    function typeNext() {
+      if (i < fullText.length) {
+        cursor.insertAdjacentText('beforebegin', fullText.charAt(i));
+        i++;
+        var delay = fullText.charAt(i - 1) === '.' || fullText.charAt(i - 1) === ',' ? 160 : (Math.random() * 40 + 36);
+        setTimeout(typeNext, delay);
+      } else {
+        cursor.remove();
+      }
+    }
+
+    var missionObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !typed) {
+          typed = true;
+          setTimeout(typeNext, 300);
+          missionObs.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    missionObs.observe(document.querySelector('.mission'));
+  }
+
   // Video background probe — only play if video file exists
   document.querySelectorAll('.hero, .mission').forEach(function (stage) {
     var v = stage.querySelector('video');
@@ -76,7 +132,9 @@
       s.src = src; s.type = 'video/mp4';
       v.appendChild(s);
       v.load();
-      v.addEventListener('loadeddata', function () { if (v.videoWidth > 0) stage.classList.add('has-video'); });
+      v.addEventListener('loadeddata', function () {
+        if (v.videoWidth > 0) stage.classList.add('has-video');
+      });
       v.play().catch(function () {});
     }).catch(function () {});
   });

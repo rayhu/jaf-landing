@@ -20,7 +20,7 @@
   identifier = "leadership"
 
 [[main]]
-  name       = "Board of Directors"
+  name       = "Board Recruitment"
   url        = "/board/"
   weight     = 51
   parent     = "leadership"

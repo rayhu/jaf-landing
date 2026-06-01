@@ -20,7 +20,7 @@
   identifier = "leadership"
 
 [[main]]
-  name       = "董事会"
+  name       = "董事会招募"
   url        = "/zh/board/"
   weight     = 51
   parent     = "leadership"

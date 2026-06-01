@@ -3,25 +3,14 @@
    ============================================================ */
 
 /* ===================== HERO ===================== */
-.hero { position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; }
-#bgVideo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; background:var(--bg); }
-
-/* Static fallback shown until a real bg video loads */
-.hero-fallback {
-  position:absolute; inset:0; z-index:1; background:
+.hero {
+  position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden;
+  background:
     radial-gradient(62% 70% at 80% 30%, rgba(200,132,42,0.30), transparent 60%),
     radial-gradient(50% 50% at 18% 86%, rgba(200,132,42,0.10), transparent 60%),
     linear-gradient(180deg, var(--bg-warm), var(--bg) 55%);
 }
-.hero-fallback img { position:absolute; right:4%; top:50%; transform:translateY(-50%); width:min(40vw,440px); opacity:0.92; filter:drop-shadow(0 20px 44px rgba(60,42,12,0.18)); }
-.hero-fallback::after {
-  content:""; position:absolute; inset:0; opacity:0.5; mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='900' fill='none' stroke='%238a7d63' stroke-width='1' opacity='0.5'%3E%3Cpath d='M0 560 C300 540 600 580 900 555 1200 535 1440 570 1440 570'/%3E%3Cpath d='M0 610 C320 590 640 632 960 605 1200 588 1440 620 1440 620'/%3E%3Cpath d='M0 668 C300 650 600 688 920 660 1220 640 1440 678 1440 678'/%3E%3C/svg%3E");
-  background-size:cover; background-position:center bottom;
-}
-.hero.has-video .hero-fallback { display:none; }
-.hero.has-video #bgVideo { opacity:1; }
-#bgVideo { opacity:0; }
+#bgVideo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; }
 
 .hero::after {
   content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
@@ -53,8 +42,10 @@
   radial-gradient(60% 80% at 50% 40%, rgba(200,132,42,0.12), transparent 70%), var(--bg); }
 .mission-fallback img { position:absolute; left:6%; bottom:-30px; width:min(26vw,300px); opacity:0.5; }
 .mission-wash { position:absolute; inset:0; z-index:2; pointer-events:none; background:radial-gradient(ellipse 56% 60% at 50% 46%, rgba(232,228,217,0.78), rgba(232,228,217,0.30) 60%, rgba(232,228,217,0.05) 100%); }
-.mission-text { padding-left:315px; font-size:clamp(22px,2.6vw,34px); font-weight:600; letter-spacing:-0.02em; line-height:1.4; color:var(--fg); }
+.mission-text { padding-left:315px; font-size:clamp(22px,2.6vw,34px); font-weight:600; letter-spacing:-0.02em; line-height:1.4; color:var(--fg); text-align:left; }
 .mission-text .hl { color:var(--warm-deep); }
+.type-cursor { display:inline; color:var(--warm); font-weight:400; animation:blink 0.8s steps(1) infinite; }
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
 .mission-divider { width:46px; height:3px; background:var(--warm); border-radius:2px; margin:0 auto 30px; }
 
 /* ===================== PROGRAMS ===================== */
@@ -140,13 +131,14 @@
 /* ===================== RESPONSIVE ===================== */
 @media (max-width:1600px){ .hero-inner{margin-left:-120px;} }
 @media (max-width:1320px){ .hero-inner{margin-left:-40px;} }
-@media (max-width:1024px){ .hero-inner{margin-left:0;} }
-@media (max-width:920px){ .gov-layout{grid-template-columns:1fr;gap:32px;} .impact-grid{grid-template-columns:1fr;gap:32px;} .need-help-grid{grid-template-columns:1fr;gap:32px;} }
+@media (max-width:1024px){ .hero-inner{margin-left:0;} .mission-text{padding-left:200px;} }
+@media (max-width:920px){ .gov-layout{grid-template-columns:1fr;gap:32px;} .impact-grid{grid-template-columns:1fr;gap:32px;} .need-help-grid{grid-template-columns:1fr;gap:32px;} .mission-text{padding-left:120px;} }
 @media (max-width:760px){
   .intake-row{grid-template-columns:1fr;}
   .intake-form .btn{align-self:stretch;justify-content:center;}
-  .hero-fallback img{ opacity:0.4; }
   .hero::after{ background:linear-gradient(to bottom, rgba(232,228,217,0.55) 0%, rgba(232,228,217,0.30) 42%, rgba(232,228,217,0.05) 100%); }
   .hero{ align-items:flex-end; padding-bottom:120px; }
   .scroll-cue{ display:none; }
+  .mission-text{ padding-left:0; }
+  .mission-fallback img{ opacity:0.22; left:50%; transform:translateX(-65%); bottom:-44px; }
 }
