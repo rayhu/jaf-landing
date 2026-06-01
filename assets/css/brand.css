@@ -2,7 +2,7 @@
    Justice Access Foundation — SHARED base (all pages)
    Aligned to jaf-landing.html · Inter + JetBrains Mono · warm palette
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts are preconnected and loaded via <link> in head.html for performance. */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 

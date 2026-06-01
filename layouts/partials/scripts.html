@@ -69,14 +69,14 @@
     tocLinks.forEach(function (a) {
       a.addEventListener('click', function (e) {
         var id = a.getAttribute('href');
-        if (id && id.charAt(0) === '#') {
+        if (id && id.charAt(0) === '#' && id.length > 1) {
           var el = document.querySelector(id);
           if (el) { e.preventDefault(); window.scrollTo({ top: el.offsetTop - 90, behavior: 'smooth' }); }
         }
       });
     });
     var sections = tocLinks.map(function (a) {
-      var id = a.getAttribute('href'); return id && id.charAt(0) === '#' ? document.querySelector(id) : null;
+      var id = a.getAttribute('href'); return id && id.charAt(0) === '#' && id.length > 1 ? document.querySelector(id) : null;
     });
     var spy = function () {
       var y = window.scrollY + 130, idx = 0;
