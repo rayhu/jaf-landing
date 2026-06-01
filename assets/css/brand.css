@@ -2,7 +2,19 @@
    Justice Access Foundation — SHARED base (all pages)
    Aligned to jaf-landing.html · Inter + JetBrains Mono · warm palette
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Self-hosted fonts (latin subset, variable). Served from 'self' so they
+   pass the strict CSP in netlify.toml. CJK text falls back to system fonts. */
+@font-face {
+  font-family:'Inter'; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url('/fonts/inter-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family:'JetBrains Mono'; font-style:normal; font-weight:100 800; font-display:swap;
+  src:url('/fonts/jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -214,6 +226,9 @@ section { padding:clamp(72px,10vw,132px) 0; }
   .nav-links, .nav-cta, .nav-lang { display:none; }
   .nav-toggle { display:block; }
   .footer-top { flex-direction:column; gap:32px; }
+  body.nav-open { overflow:hidden; }
+  body.nav-open .nav-overlay,
+  body.nav-open .nav-drawer { display:block; }
 }
 
 /* ── Mobile nav drawer ── */
@@ -227,8 +242,6 @@ section { padding:clamp(72px,10vw,132px) 0; }
   background:var(--bg); padding:20px 0 32px;
   box-shadow:4px 0 32px rgba(26,24,20,0.18);
 }
-body.nav-open .nav-overlay,
-body.nav-open .nav-drawer { display:block; }
 .nav-drawer .drawer-head {
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 24px 14px; border-bottom:1px solid var(--line); margin-bottom:12px;
