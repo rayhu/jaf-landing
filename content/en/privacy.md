@@ -2,7 +2,26 @@
 title: "Privacy Policy"
 description: "Privacy policy for Justice Access Foundation — how we collect, use, and protect information submitted through our website."
 slug: "privacy"
-layout: "simple"
+lead: "How Justice Access Foundation collects, uses, retains, and protects information submitted through this website."
+toc:
+  - label: "Overview"
+    id: "overview"
+  - label: "Information We Collect"
+    id: "collect"
+  - label: "How We Use Information"
+    id: "use"
+  - label: "Retention"
+    id: "retention"
+  - label: "California Privacy Rights"
+    id: "ccpa"
+  - label: "Security"
+    id: "security"
+  - label: "Third-Party Services"
+    id: "thirdparty"
+  - label: "Children's Privacy"
+    id: "children"
+  - label: "Changes & Contact"
+    id: "changes"
 ---
 
 _Effective Date: [May4， 2026]_

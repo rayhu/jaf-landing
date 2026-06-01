@@ -1,4 +1,9 @@
 [[main]]
+  name   = "Inicio"
+  url    = "/es/"
+  weight = 1
+
+[[main]]
   name   = "Nosotros"
   url    = "/es/about/"
   weight = 10
@@ -9,34 +14,40 @@
   weight = 20
 
 [[main]]
-  name   = "Gobernanza"
-  url    = "/es/governance/"
-  weight = 30
+  name       = "Liderazgo"
+  url        = "/es/board/"
+  weight     = 50
+  identifier = "leadership"
 
 [[main]]
-  name   = "Financiamiento"
-  url    = "/es/funding/"
-  weight = 40
+  name       = "Reclutamiento de la Junta"
+  url        = "/es/board/"
+  weight     = 51
+  parent     = "leadership"
 
 [[main]]
-  name   = "Junta"
-  url    = "/es/board/"
-  weight = 50
+  name       = "Carreras"
+  url        = "/es/careers/"
+  weight     = 52
+  parent     = "leadership"
 
 [[main]]
-  name   = "Cumplimiento"
-  url    = "/es/compliance/"
-  weight = 60
+  name       = "Contacto"
+  url        = "/es/contact/"
+  weight     = 80
+  identifier = "contact"
 
 [[main]]
-  name   = "Donar"
-  url    = "/es/donate/"
-  weight = 70
+  name       = "Contactar"
+  url        = "/es/contact/"
+  weight     = 81
+  parent     = "contact"
 
 [[main]]
-  name   = "Contacto"
-  url    = "/es/contact/"
-  weight = 80
+  name       = "Estudio del Campus"
+  url        = "/es/campus-study/"
+  weight     = 82
+  parent     = "contact"
 
 # ─── Footer links ─────────────────────────────────────────────────────────────
 
@@ -44,11 +55,6 @@
   name   = "Nosotros"
   url    = "/es/about/"
   weight = 10
-
-[[footer]]
-  name   = "Cumplimiento"
-  url    = "/es/compliance/"
-  weight = 20
 
 [[footer]]
   name   = "Privacidad"

@@ -2,7 +2,7 @@
 title: "感谢您"
 description: "您的提交已收到。美国司法可及基金会将在五个工作日内与您联系。"
 slug: "xiesie"
-layout: "simple"
+hideLighthouse: true
 ---
 
 您的提交已成功收到。我们的工作人员将在五个工作日内与您联系。

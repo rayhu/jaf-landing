@@ -1,4 +1,9 @@
 [[main]]
+  name   = "首页"
+  url    = "/zh/"
+  weight = 1
+
+[[main]]
   name   = "关于我们"
   url    = "/zh/about/"
   weight = 10
@@ -9,34 +14,40 @@
   weight = 20
 
 [[main]]
-  name   = "治理"
-  url    = "/zh/governance/"
-  weight = 30
+  name       = "领导层"
+  url        = "/zh/board/"
+  weight     = 50
+  identifier = "leadership"
 
 [[main]]
-  name   = "资金"
-  url    = "/zh/funding/"
-  weight = 40
+  name       = "董事会招募"
+  url        = "/zh/board/"
+  weight     = 51
+  parent     = "leadership"
 
 [[main]]
-  name   = "董事会"
-  url    = "/zh/board/"
-  weight = 50
+  name       = "加入我们"
+  url        = "/zh/careers/"
+  weight     = 52
+  parent     = "leadership"
 
 [[main]]
-  name   = "合规"
-  url    = "/zh/compliance/"
-  weight = 60
+  name       = "联系我们"
+  url        = "/zh/contact/"
+  weight     = 80
+  identifier = "contact"
 
 [[main]]
-  name   = "捐款"
-  url    = "/zh/donate/"
-  weight = 70
+  name       = "联系信息"
+  url        = "/zh/contact/"
+  weight     = 81
+  parent     = "contact"
 
 [[main]]
-  name   = "联系我们"
-  url    = "/zh/contact/"
-  weight = 80
+  name       = "校园研究"
+  url        = "/zh/campus-study/"
+  weight     = 82
+  parent     = "contact"
 
 # ─── Footer links ─────────────────────────────────────────────────────────────
 
@@ -44,11 +55,6 @@
   name   = "关于我们"
   url    = "/zh/about/"
   weight = 10
-
-[[footer]]
-  name   = "合规"
-  url    = "/zh/compliance/"
-  weight = 20
 
 [[footer]]
   name   = "隐私政策"

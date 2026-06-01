@@ -2,7 +2,22 @@
 title: "合规与法律状态"
 description: "501(c)(3)认定、公共慈善机构与私人基金会的区别、公众支持测试及禁止私人利益转移。"
 slug: "compliance"
-layout: "simple"
+lead: "501(c)(3)认定、公共慈善机构与私人基金会的区别、公众支持测试、1023表格、990表格及禁止私人利益转移。"
+toc:
+  - label: "501(c)(3) 认定"
+    id: "recognition"
+  - label: "公共慈善机构 vs. 私人基金会"
+    id: "distinction"
+  - label: "公众支持测试"
+    id: "support"
+  - label: "IRS 1023 表格"
+    id: "form1023"
+  - label: "990 表格透明度"
+    id: "form990"
+  - label: "资产解散条款"
+    id: "dissolution"
+  - label: "禁止私人利益转移"
+    id: "inurement"
 ---
 
 ## 501(c)(3)认定

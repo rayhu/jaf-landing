@@ -1,0 +1,27 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ if .IsHome }}{{ .Site.Title }} — Expanding Access to Civil Justice in California{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+{{ with .Params.robots }}<meta name="robots" content="{{ . }}">{{ end }}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ "/img/og.svg" | absURL }}" />
+
+{{ $brand := resources.Get "css/brand.css" | minify | fingerprint }}
+{{ $home := resources.Get "css/home.css" | minify | fingerprint }}
+{{ $page := resources.Get "css/page.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $brand.Permalink }}" integrity="{{ $brand.Data.Integrity }}" />
+<link rel="stylesheet" href="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}" />
+{{ if not .IsHome }}<link rel="stylesheet" href="{{ $page.Permalink }}" integrity="{{ $page.Data.Integrity }}" />{{ end }}
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+{{ if .Site.Params.enableRobotsTXT }}<meta name="robots" content="index, follow" />{{ end }}

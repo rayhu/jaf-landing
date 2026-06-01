@@ -1,39 +1,54 @@
 ---
-title: "Reclutamiento para la Junta"
-description: "Calificaciones, expectativas de gobernanza, estándares de reputación y cómo expresar interés en la Junta Directiva voluntaria de JAF."
+title: "Reclutamiento de la Junta"
+description: "Cualificaciones, expectativas de gobernanza y estándares para servir en la Junta Directiva voluntaria de JAF."
 slug: "board"
-layout: "simple"
+lead: "Justice Access Foundation invita a personas cualificadas a considerar servir en su Junta Directiva voluntaria — un rol de gobernanza, no un rol de defensa."
+toc:
+  - label: "Invitación a Servir"
+    id: "invitation"
+  - label: "Perfil del Candidato Ideal"
+    id: "profile"
+  - label: "Cualificaciones"
+    id: "qualifications"
+  - label: "Expectativas de Gobernanza"
+    id: "expectations"
+  - label: "Estándares de Reputación"
+    id: "reputation"
+  - label: "Compromiso de Tiempo"
+    id: "time"
+  - label: "Requisito de Independencia"
+    id: "independence"
+  - label: "Cómo Expresar Interés"
+    id: "interest"
 ---
 
-## Invitación a Servir
+## Invitación a Servir {#invitation}
 
-Justice Access Foundation invita a personas calificadas a considerar el servicio en su Junta Directiva voluntaria. La Fundación busca líderes experimentados que estén comprometidos con el acceso a la justicia, la credibilidad institucional y una sólida gobernanza sin fines de lucro.
+Justice Access Foundation invita a personas cualificadas a considerar servir en su Junta Directiva voluntaria. La Fundación busca líderes con experiencia comprometidos con el acceso a la justicia, la credibilidad institucional y la buena gobernanza sin fines de lucro.
 
-Este es un rol de gobernanza, no de defensa. Se espera que los miembros de la junta apliquen juicio profesional a la administración organizacional, la supervisión financiera y el cumplimiento de la misión.
-
----
-
-## Perfil del Candidato Ideal
-
-JAF busca candidatos para la junta cuyos antecedentes demuestren:
-
-- Experiencia de liderazgo senior en organizaciones de ayuda legal, clínicas de escuelas de derecho, asociaciones de abogados o el poder judicial
-- Ejecutivos jubilados o en transición con experiencia en derecho de interés público, gestión sin fines de lucro o gobernanza de fundaciones
-- Experiencia sirviendo en las juntas de organizaciones sin fines de lucro, particularmente aquellas con misiones de caridad pública o interés público
-- Demostrado compromiso con la integridad institucional y la conducta profesional
+Este es un rol de gobernanza, no un rol de defensa. Se espera que los miembros de la Junta apliquen su juicio profesional a la administración organizacional, la supervisión financiera y el cumplimiento de la misión.
 
 ---
 
-## Calificaciones
+## Perfil del Candidato Ideal {#profile}
 
-**Requeridas**
+- Experiencia en liderazgo senior en organizaciones de asistencia legal, clínicas jurídicas universitarias, colegios de abogados o el poder judicial
+- Ejecutivos jubilados o en transición con experiencia en derecho de interés público, gestión de organizaciones sin fines de lucro o gobernanza de fundaciones
+- Experiencia sirviendo en juntas directivas de organizaciones sin fines de lucro, particularmente aquellas con misiones de beneficencia pública o interés público
+- Compromiso demostrado con la integridad institucional y la conducta profesional
 
-- Experiencia profesional demostrada relevante para las áreas de misión de JAF (legal, servicios sociales, gestión sin fines de lucro, administración pública o campo relacionado)
-- Capacidad para leer y comprender estados financieros sin fines de lucro (balance general, estado de ingresos, Formulario 990 del IRS)
+---
+
+## Cualificaciones {#qualifications}
+
+### Requisitos
+
+- Experiencia profesional demostrada en áreas relevantes para la misión de JAF (derecho, servicios sociales, gestión de organizaciones sin fines de lucro, administración pública o campos afines)
+- Capacidad para leer y comprender estados financieros de organizaciones sin fines de lucro (balance general, estado de resultados, Formulario 990 del IRS)
 - Sin historial previo de mala conducta fiduciaria, acción regulatoria o disciplina profesional
-- Capacidad para comprometerse con la asistencia y preparación para las reuniones trimestrales de la junta
+- Capacidad para comprometerse a asistir a las reuniones trimestrales de la Junta y prepararse con anticipación
 
-**Preferidas**
+### Preferencias
 
 - Servicio previo en la junta de una organización sin fines de lucro de California
 - Experiencia con los requisitos de cumplimiento del IRS 501(c)(3)
@@ -42,66 +57,56 @@ JAF busca candidatos para la junta cuyos antecedentes demuestren:
 
 ---
 
-## Expectativas de Gobernanza
+## Expectativas de Gobernanza {#expectations}
 
-Se espera que los miembros de la junta:
-
-- Asistan a todas las reuniones trimestrales de la junta y reuniones especiales según se convoquen
-- Revisen todos los materiales de la junta con anticipación a cada reunión
-- Completen los formularios anuales de divulgación de conflicto de intereses
-- Ejerzan juicio independiente en todas las decisiones de la junta
-- Mantengan la confidencialidad de las deliberaciones de la junta según lo requieran los Estatutos
-- Se abstengan de hacer compromisos unilaterales en nombre de la organización
-- Apoyen los objetivos de apoyo público y recaudación de fondos de JAF a través de redes profesionales, de conformidad con la política de la junta
+- Asistir a todas las reuniones trimestrales de la Junta y a las reuniones extraordinarias que se convoquen
+- Revisar todos los materiales de la Junta con anticipación a cada reunión
+- Completar los formularios anuales de divulgación de conflictos de intereses
+- Ejercer un juicio independiente en todas las decisiones de la Junta
+- Mantener la confidencialidad de las deliberaciones de la Junta según lo requieren los Estatutos
+- Abstenerse de asumir compromisos unilaterales en nombre de la organización
+- Apoyar los objetivos de apoyo público y recaudación de fondos de JAF a través de redes profesionales, de acuerdo con la política de la Junta
 
 ---
 
-## Estándares de Reputación
+## Estándares de Reputación {#reputation}
 
-La credibilidad de JAF depende de la posición profesional de sus miembros de junta. Se espera que los candidatos para la junta mantengan:
+La credibilidad de JAF depende de la reputación profesional de los miembros de su Junta. Se espera que los candidatos a la Junta mantengan:
 
 - Un historial profesional y legal intachable
 - Sin historial de participación en acciones regulatorias, procedimientos disciplinarios o mala conducta financiera
-- Buena reputación dentro de su comunidad profesional
-- Sin conflicto de intereses material con la misión o los socios operativos de JAF
+- Buena reputación en su comunidad profesional
+- Sin conflicto de intereses material con la misión de JAF o sus socios operativos
 
 ---
 
-## Expectativa de Alfabetización Financiera
+## Compromiso de Tiempo {#time}
 
-No se requiere que los miembros de la junta tengan credenciales de Contador Público Certificado (CPA) ni calificaciones legales en derecho tributario. Sin embargo, se espera que todos los miembros de la junta:
-
-- Lean e interpreten estados financieros sin fines de lucro con razonable competencia
-- Comprendan la estructura y la importancia del Formulario 990 del IRS
-- Reconozcan y planteen preocupaciones sobre anomalías financieras o riesgos de gobernanza
-- Apliquen juicio financiero prudente en decisiones de la junta que involucren gastos, contratos y controles financieros
-
----
-
-## Compromiso de Tiempo
-
-El servicio en la junta de JAF requiere:
-
-- Asistencia a cuatro (4) reuniones trimestrales de la junta por año (en persona o de forma remota)
-- Aproximadamente 4 a 6 horas por reunión, incluyendo tiempo de preparación
-- Revisión periódica de informes y materiales escritos entre reuniones
-- Disponibilidad para reuniones especiales o asuntos urgentes de gobernanza según sea necesario
-- Finalización anual de la documentación de conflicto de intereses y gobernanza
+- Asistencia a cuatro (4) reuniones trimestrales de la Junta por año (presenciales o remotas)
+- Aproximadamente de 4 a 6 horas por reunión, incluyendo el tiempo de preparación
+- Revisión periódica de informes escritos y materiales entre reuniones
+- Disponibilidad para reuniones extraordinarias o asuntos de gobernanza urgentes según sea necesario
+- Cumplimentación anual de la documentación de conflictos de intereses y gobernanza
 
 ---
 
-## Requisito de Independencia
+## Requisito de Independencia {#independence}
 
-Los miembros de la junta deben ser independientes de cualquier entidad comercial que tenga o busque una relación financiera con JAF. Específicamente:
+Los miembros de la Junta deben ser independientes de cualquier entidad comercial que tenga o busque una relación financiera con JAF. Específicamente:
 
-- Ningún miembro de la junta puede tener un interés financiero material en ninguna entidad que realice transacciones con JAF
-- Ningún miembro de la junta puede servir simultáneamente en el organismo rector de ninguna entidad en una relación comercial con JAF sin divulgación completa y aprobación de la junta
-- Los miembros de la junta que desarrollen un conflicto de intereses durante su servicio están obligados a revelarlo de inmediato y, cuando sea apropiado, a renunciar
+- Ningún miembro de la Junta puede tener un interés financiero material en ninguna entidad que realice transacciones con JAF
+- Ningún miembro de la Junta puede servir simultáneamente en el órgano de gobierno de ninguna entidad que tenga una relación comercial con JAF sin la plena divulgación y aprobación de la Junta
+- Los miembros de la Junta que desarrollen un conflicto de intereses durante su servicio deben divulgarlo de inmediato y, cuando corresponda, renunciar
 
 ---
 
-## Cómo Expresar Interés
+## Cómo Expresar Interés {#interest}
 
-Los candidatos calificados pueden comunicarse con el Comité de Desarrollo de la Junta designado por JAF. Todas las consultas se mantienen en estricta confidencialidad. Los antecedentes de los candidatos son revisados por la junta en pleno de conformidad con los procedimientos de gobernanza de JAF.
+Los candidatos cualificados pueden comunicarse con el Comité de Desarrollo de la Junta de JAF. Todas las consultas se mantienen confidenciales. Los antecedentes de los candidatos son revisados por la Junta en pleno de acuerdo con los procedimientos de gobernanza de JAF.
 
-[Contactar al Comité de Desarrollo de la Junta]
+{{< page-cta
+  title="Exprese su interés"
+  text="Comuníquese con el Comité de Desarrollo de la Junta a través de nuestro formulario de contacto. Todas las consultas son confidenciales."
+  link_text="Contactar al comité"
+  link="/es/contact/"
+>}}

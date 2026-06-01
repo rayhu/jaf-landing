@@ -2,7 +2,22 @@
 title: "使用条款"
 description: "适用于美国司法可及基金会网站及通过 Typeform 提交信息的使用条款。"
 slug: "terms"
-layout: "simple"
+lead: "适用于美国司法可及基金会网站及通过表单提交信息的使用条款。"
+toc:
+  - label: "条款接受"
+    id: "acceptance"
+  - label: "不构成法律建议"
+    id: "noadvice"
+  - label: "知识产权"
+    id: "ip"
+  - label: "第三方服务"
+    id: "thirdparty"
+  - label: "责任限制"
+    id: "liability"
+  - label: "适用法律"
+    id: "law"
+  - label: "条款变更"
+    id: "changes"
 ---
 
 _生效日期：[待网站正式上线后确定]_

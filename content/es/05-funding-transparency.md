@@ -2,7 +2,20 @@
 title: "Financiamiento y Transparencia"
 description: "Estructura de financiamiento, límites de concentración de donantes, segregación financiera, cumplimiento del Formulario 990 e independencia de gobernanza."
 slug: "funding"
-layout: "simple"
+lead: "Un enfoque estructurado de múltiples etapas para el financiamiento, diseñado para garantizar estabilidad financiera, amplio apoyo público y cumplimiento con los requisitos de caridad pública del IRS."
+toc:
+  - label: "Etapa 1 · Establecimiento"
+    id: "stage1"
+  - label: "Etapa 2 · Apoyo Público"
+    id: "stage2"
+  - label: "Límites de Concentración de Donantes"
+    id: "concentration"
+  - label: "Segregación Financiera"
+    id: "segregation"
+  - label: "Cumplimiento del Formulario 990"
+    id: "form990"
+  - label: "Independencia del Financiamiento"
+    id: "independence"
 ---
 
 ## Descripción General de la Estructura de Financiamiento

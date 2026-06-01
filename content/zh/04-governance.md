@@ -2,7 +2,20 @@
 title: "治理"
 description: "董事会结构、志愿原则、利益冲突政策、财务监督机制及解散条款。"
 slug: "governance"
-layout: "simple"
+lead: "董事会结构、志愿原则、利益冲突政策、财务监督机制及维护我们慈善使命问责制的解散条款。"
+toc:
+  - label: "董事会结构"
+    id: "structure"
+  - label: "志愿董事会原则"
+    id: "volunteer"
+  - label: "季度会议框架"
+    id: "meetings"
+  - label: "利益冲突政策"
+    id: "coi"
+  - label: "财务监督"
+    id: "oversight"
+  - label: "解散条款"
+    id: "dissolution"
 ---
 
 ## 董事会结构

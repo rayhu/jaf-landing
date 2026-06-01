@@ -1,0 +1,63 @@
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="{{ "" | relLangURL }}" class="brand">
+      <span class="brand-mark"><img src="/assets/logo.png" alt="JAF" /></span>
+      {{ .Site.Title }}
+    </a>
+    <nav class="nav-links">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <div class="nav-dropdown">
+          {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          <span class="nav-parent{{ if $active }} is-active{{ end }}" tabindex="0">{{ .Name }} <span class="nav-arrow"></span></span>
+          <div class="nav-dropdown-menu">
+            {{ range .Children }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
+        {{ $active := or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }}
+        <a href="{{ .URL }}"{{ if $active }} class="is-active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+    <a href="{{ "" | relLangURL }}#need-help" class="nav-cta">{{ i18n "get_help" | default "Get Help" }}</a>
+    <div class="nav-lang">
+      {{ $currentLang := .Language.Lang }}
+      {{ range site.Home.AllTranslations }}
+        <a href="{{ .RelPermalink }}" class="{{ if eq $currentLang .Language.Lang }}active{{ end }}">{{ .Language.Lang | upper }}</a>
+      {{ end }}
+    </div>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+</header>
+
+<div class="nav-overlay"></div>
+<div class="nav-drawer">
+  <div class="drawer-head">
+    <a href="{{ "" | relLangURL }}" class="brand">
+      <span class="brand-mark"><img src="/assets/logo.png" alt="JAF" /></span>
+      {{ .Site.Title }}
+    </a>
+    <button class="drawer-close" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="drawer-links"></div>
+  <a href="{{ "" | relLangURL }}#need-help" class="drawer-cta">{{ i18n "get_help" | default "Get Help" }}</a>
+  <div class="drawer-langs">
+    {{ $currentLang := .Language.Lang }}
+    {{ range site.Home.AllTranslations }}
+      <a href="{{ .RelPermalink }}" class="{{ if eq $currentLang .Language.Lang }}active{{ end }}">{{ .Language.Lang | upper }}</a>
+    {{ end }}
+  </div>
+</div>

@@ -2,7 +2,22 @@
 title: "Terms of Use"
 description: "Terms governing use of Justice Access Foundation's website and Typeform-based submissions."
 slug: "terms"
-layout: "simple"
+lead: "Terms governing use of Justice Access Foundation's website and form-based submissions."
+toc:
+  - label: "Acceptance of Terms"
+    id: "acceptance"
+  - label: "No Legal Advice"
+    id: "noadvice"
+  - label: "Intellectual Property"
+    id: "ip"
+  - label: "Third-Party Services"
+    id: "thirdparty"
+  - label: "Limitation of Liability"
+    id: "liability"
+  - label: "Governing Law"
+    id: "law"
+  - label: "Changes to Terms"
+    id: "changes"
 ---
 
 _Effective Date: [May 4, 2026]_

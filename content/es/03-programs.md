@@ -1,176 +1,106 @@
 ---
-title: "Programas"
-description: "Los programas caritativos de JAF abarcan educación legal, orientación en tribunales, asistencia directa para costos de litigación y estabilización económica post-fallo para californianos elegibles."
+title: "Nuestros Programas y Servicios"
+description: "El modelo híbrido pionero de JAF — supervisado por abogados, mejorado con IA y guiado por el usuario — hace que la orientación legal profesional sea económicamente viable."
 slug: "programs"
-layout: "simple"
+lead: "Creemos que la falta de fondos nunca debe significar falta de justicia. Nuestros programas abarcan vivienda, salarios, protección al consumidor y reclamos menores."
+toc:
+  - label: "Vivienda y Disputas de Arrendamiento"
+    id: "housing"
+  - label: "Protección Salarial y Derechos Laborales"
+    id: "wages"
+  - label: "Protección al Consumidor"
+    id: "consumer"
+  - label: "Reclamos Menores y Defensa Contra Cobro de Deudas"
+    id: "claims"
+  - label: "Cómo Funciona Nuestro Proceso Híbrido"
+    id: "process"
 ---
 
-Justice Access Foundation opera programas caritativos que abarcan un espectro completo de servicios directos — desde educación legal y orientación procesal hasta asistencia directa para costos de litigación y estabilización económica de emergencia — para individuos y familias elegibles en California que enfrentan barreras para acceder al sistema legal civil. Todos los programas son de naturaleza caritativa y sirven a una clase indefinida de beneficiarios. Ningún programa está condicionado a la adquisición de ningún servicio comercial, ni vinculado a este.
+En los Estados Unidos, aproximadamente el 80% de las personas involucradas en casos civiles navegan por los tribunales sin un abogado. Para la mayoría, la razón es simple: la representación legal tradicional es simplemente demasiado costosa, especialmente para reclamos menores y disputas cotidianas.
 
----
+La Justice Access Foundation (JAF) está cambiando esta realidad. Creemos que la falta de fondos nunca debe significar falta de justicia. Para resolver esto, hemos desarrollado un modelo híbrido pionero: **supervisado por abogados, mejorado con IA y guiado por el usuario.**
 
-## Prevención de la Inestabilidad Habitacional
-
-**Descripción**
-Este programa proporciona a personas y familias de bajos ingresos en California acceso a educación legal, información procesal, coordinación de derivaciones y asistencia financiera directa para servicios legales y técnicos relacionados con el arrendamiento residencial, los procedimientos de desahucio y los procesos administrativos relacionados con la vivienda.
-
-**Población Objetivo**
-Arrendatarios y ocupantes de bajos ingresos que enfrentan procedimientos de vivienda, avisos de desahucio o acciones de autoridades de vivienda en California, sin acceso adecuado a recursos legales.
-
-**Servicios Proporcionados**
-
-- Guías en lenguaje claro sobre los derechos de los inquilinos en California y los procedimientos de desahucio
-- Asistencia para comprender avisos judiciales, citaciones y plazos de respuesta
-- Derivación a organizaciones calificadas de ayuda legal, clínicas de escuelas de derecho y abogados con licencia vigente
-- Pago directo de honorarios de representación legal y costos de servicios técnicos en nombre de personas elegibles, sujeto a revisión de elegibilidad y criterios de subvención aprobados por la Junta Directiva
-- Información sobre programas de asistencia de vivienda de emergencia y protecciones administrativas
-
-**Salvaguardas**
-
-- La elegibilidad para subvenciones está determinada por criterios escritos adoptados por la Junta Directiva
-- Todos los materiales educativos son revisados para verificar su exactitud y cumplimiento con la ley vigente de California
-- No existe relación financiera ni de derivación con ninguna entidad comercial de vivienda, arrendamiento o administración de propiedades
-
-**Límites de Cumplimiento**
-JAF no proporciona representación legal. La asistencia directa para costos se otorga como subvención caritativa para financiar servicios prestados por profesionales independientes con licencia. Todas las derivaciones son a organizaciones legales sin fines de lucro con licencia o a abogados con licencia vigente ante el Colegio de Abogados del Estado de California.
+Con JAF, no necesita contratar un abogado costoso por hora. Simplemente díganos sus necesidades y muéstrenos lo que tiene, y le ayudamos a navegar todo el proceso. Al integrar inteligencia artificial avanzada en el flujo de trabajo legal, estamos haciendo que la orientación legal profesional sea económicamente viable por primera vez. Comenzamos con nuestro trabajo fundamental en disputas de vivienda y pronto nuestros programas se extenderán a otras áreas de alta demanda del derecho civil.
 
 ---
 
-## Protección Salarial y Justicia Económica
+## Vivienda y Disputas de Arrendamiento {#housing}
 
-**Descripción**
-Este programa asiste a trabajadores en California que han experimentado robo salarial, horas extra no pagadas, deducciones ilegales de nómina u otras violaciones de las leyes de salarios y horas del estado y federales. Los servicios incluyen educación legal, orientación procesal, coordinación de derivaciones y asistencia financiera directa para financiar representación legal y servicios técnicos para trabajadores elegibles.
+Su hogar es su santuario, y una disputa de vivienda puede amenazar su estabilidad fundamental. Brindamos orientación paso a paso para ayudarle a proteger su situación de vivienda y sus finanzas. Le ayudamos a navegar:
 
-**Población Objetivo**
-Trabajadores actuales y anteriores en California que han experimentado robo salarial o violaciones de la ley laboral y que carecen de acceso adecuado a recursos legales.
-
-**Servicios Proporcionados**
-
-- Explicaciones en lenguaje claro de las leyes de salarios y horas de California
-- Orientación para presentar reclamaciones salariales ante el Comisionado Laboral de California
-- Información sobre los derechos de los trabajadores bajo la ley federal y estatal
-- Derivación a organizaciones de ayuda legal, centros de trabajadores y abogados laborales con licencia
-- Pago directo de honorarios de representación legal, honorarios de presentación y costos de servicios técnicos relacionados en nombre de trabajadores elegibles, sujeto a revisión de elegibilidad y criterios de subvención aprobados por la Junta Directiva
-- Talleres educativos sobre protección salarial y derechos laborales
-
-**Salvaguardas**
-
-- La elegibilidad para subvenciones está determinada por criterios escritos adoptados por la Junta Directiva
-- El contenido se revisa regularmente para reflejar la ley vigente y la orientación de aplicación
-- No existe relación de derivación o financiera con ningún servicio comercial de personal, nómina o del lado del empleador
-
-**Límites de Cumplimiento**
-La asistencia directa para costos se otorga como subvención caritativa para financiar servicios prestados por profesionales independientes con licencia. JAF no representa a los trabajadores en procedimientos y no garantiza resultados de casos.
+- **Disputas de Depósito de Garantía:** Redacción de cartas de demanda y presentación de reclamos para recuperar depósitos retenidos indebidamente.
+- **Defensa contra Desalojo:** Comprensión de notificaciones judiciales, citaciones y exactamente cómo y cuándo presentar su respuesta.
+- **Disputas de Alquiler y Contrato:** Aclaración de sus derechos sobre aumentos ilegales de alquiler, violaciones de contrato y tarifas ocultas.
+- **Problemas de Habitabilidad:** Exigir a los propietarios que aborden condiciones de vida inseguras, falta de calefacción o fallas graves de mantenimiento.
 
 ---
 
-## Equidad Procesal y Apoyo para la Orientación en Tribunales
+## Protección Salarial y Derechos Laborales {#wages}
 
-**Descripción**
-Este programa asiste a personas en California que deben navegar procedimientos del tribunal civil sin representación legal. Proporciona información procesal, orientación para completar formularios, asistencia para navegar en procedimientos administrativos y judiciales, y apoyo financiero directo para servicios legales y técnicos a litigantes elegibles que se representan a sí mismos.
+Cuando usted trabaja, merece su salario completo. Si su empleador se está aprovechando de usted, le proporcionamos la hoja de ruta legal para defenderse y recuperar su dinero ganado con esfuerzo. Le ayudamos a navegar:
 
-**Población Objetivo**
-Litigantes que se representan a sí mismos en los tribunales civiles de California, incluyendo personas involucradas en casos de reclamaciones menores, desahucio, procedimientos limitados de derecho de familia y audiencias administrativas, que carecen de recursos financieros adecuados para contratar asesoría legal.
-
-**Servicios Proporcionados**
-
-- Guías en lenguaje claro sobre el procedimiento civil y los requisitos de presentación ante el tribunal
-- Asistencia para localizar y comprender los formularios judiciales oficiales
-- Orientación sobre los procedimientos de la sala y los formatos de audiencia
-- Derivación a centros de autoayuda del tribunal, bibliotecas jurídicas y organizaciones de ayuda legal
-- Pago directo de honorarios de representación legal, honorarios de presentación ante el tribunal y costos de servicios técnicos en nombre de personas elegibles, sujeto a revisión de elegibilidad y criterios de subvención aprobados por la Junta Directiva
-- Materiales informativos multilingües
-
-**Salvaguardas**
-
-- Toda orientación se limita a información procesal disponible al público
-- La elegibilidad para subvenciones está determinada por criterios escritos adoptados por la Junta Directiva
-- No se proporciona ningún consejo sobre estrategia legal, resultados de casos o tácticas de litigación
-
-**Límites de Cumplimiento**
-JAF no proporciona representación legal ni asesoramiento legal. Este programa no crea una relación abogado-cliente. Cuando JAF financia servicios legales, la relación abogado-cliente existe entre el abogado financiado y el participante individual.
+- **Robo Salarial y Horas Extra Impagas:** Cálculo de lo que se le debe y presentación de reclamos ante el Comisionado Laboral de California.
+- **Deducciones Ilegales:** Impugnación de descuentos salariales ilegales y propinas retenidas.
+- **Clasificación Incorrecta de Trabajadores:** Comprensión de sus derechos si ha sido clasificado incorrectamente como contratista independiente en lugar de empleado.
 
 ---
 
-## Educación Legal Pública y Alfabetización
+## Protección al Consumidor {#consumer}
 
-**Descripción**
-Este programa produce y difunde información legal en lenguaje claro en inglés, español y chino simplificado para apoyar la capacidad de los residentes de California de comprender sus derechos legales y obligaciones cívicas dentro de los sistemas legales estatales y federales.
+Cuando las empresas utilizan prácticas engañosas, los consumidores pagan el precio. Nivelamos el campo de juego, brindándole el mismo conocimiento procesal que las corporaciones usan para defenderse. Le ayudamos a navegar:
 
-**Población Objetivo**
-Público en general en California, con énfasis en comunidades con dominio limitado del inglés, inmigrantes recientes e individuos con exposición previa limitada al sistema legal de los Estados Unidos.
-
-**Servicios Proporcionados**
-
-- Publicaciones y guías de información legal multilingüe
-- Talleres y presentaciones de información comunitaria
-- Recursos en línea accesibles al público en general
-- Colaboración con bibliotecas, centros comunitarios y organizaciones sin fines de lucro para la distribución
-
-**Salvaguardas**
-
-- El contenido es revisado por profesionales legales calificados antes de su publicación
-- Todos los materiales indican claramente que el contenido es únicamente informativo y no constituye asesoramiento legal
-- Ningún material educativo incluye publicidad comercial ni promoción
-
-**Límites de Cumplimiento**
-El contenido de educación pública es únicamente informativo. JAF no respalda, recomienda ni dirige a los participantes hacia ningún abogado, firma legal o proveedor de servicios comerciales específico.
+- **Prácticas Comerciales Desleales:** Lucha contra estafas, tarifas de suscripción ocultas y préstamos abusivos.
+- **Disputas con Contratistas y Servicios:** Búsqueda de reembolsos o daños de contratistas o mecánicos que no cumplieron sus promesas.
+- **Productos Defectuosos:** Redacción de cartas de demanda efectivas para obtener reemplazos o reembolsos.
 
 ---
 
-## Asistencia Directa para Costos de Litigación
+## Reclamos Menores y Defensa Contra Cobro de Deudas {#claims}
 
-**Descripción**
-Este programa proporciona subvenciones financieras directas a personas y familias elegibles en California para cubrir los costos de representación legal y servicios técnicos necesarios para interponer o defender reclamaciones civiles con fundamento. JAF paga directamente a los proveedores de servicios en nombre de los beneficiarios de la subvención. Este programa permite que personas que no pueden costear asistencia legal o técnica profesional accedan al sistema de justicia civil en igualdad de condiciones.
+No necesita sentirse intimidado por cobradores agresivos o las formalidades del tribunal. Proporcionamos la orientación y preparación de documentos que necesita para enfrentar estos desafíos. Le ayudamos a navegar:
 
-**Costos Cubiertos**
-
-- Honorarios de representación de abogados y firmas legales en procedimientos civiles
-- Honorarios de presentación ante el tribunal, costos de notificación del proceso y honorarios judiciales relacionados
-- Honorarios de testigos expertos y costos de análisis forense o técnico
-- Servicios de traducción de documentos, interpretación y apoyo legal multilingüe
-- Otros costos razonables y necesarios directamente asociados con el procedimiento civil, según aprobación de la Junta Directiva
-
-**Población Objetivo**
-Personas y familias de bajos ingresos en California que tienen reclamaciones o defensas civiles con fundamento y que carecen de los recursos financieros para contratar profesionales legales o técnicos calificados. La elegibilidad se determina conforme a criterios escritos establecidos por la Junta Directiva, incluyendo verificación de ingresos y evaluación del caso por revisores calificados.
-
-**Cómo Se Proporciona la Asistencia**
-JAF emite subvenciones directamente a los proveedores de servicios (firmas legales, abogados, firmas de servicios técnicos) contratados para servir al beneficiario de la subvención. Los beneficiarios no reciben desembolsos en efectivo. La relación abogado-cliente o de servicio existe entre el proveedor y el individuo; JAF no es parte en el procedimiento y no dirige la estrategia legal.
-
-**Salvaguardas**
-
-- La elegibilidad y el fundamento del caso se evalúan antes de cualquier compromiso de subvención
-- Los montos de las subvenciones están sujetos a límites aprobados por la Junta y a los fondos disponibles del programa
-- Todos los proveedores de servicios financiados deben contar con la licencia apropiada y estar en buen estado
-- JAF no mantiene ningún interés financiero en el resultado de ningún procedimiento financiado
-- Ninguna subvención está condicionada a un resultado legal particular o monto de acuerdo
-
-**Límites de Cumplimiento**
-Este programa proporciona únicamente financiamiento de subvenciones caritativas. JAF no proporciona representación legal, no actúa como parte interesada en ningún procedimiento y no retiene ninguna parte de ningún fallo o acuerdo obtenido por un individuo financiado.
+- **Defensa Contra Cobro de Deudas:** Exigir a los acreedores que demuestren que realmente debe una deuda y protegerse del acoso ilegal.
+- **Orientación en Reclamos Menores:** Desde completar los formularios correctos hasta notificar a la otra parte, le guiamos durante todo el proceso de una demanda de reclamos menores.
+- **Preparación para Audiencias:** Le ayudamos a organizar su evidencia (recibos, contratos, fotos) y anticipar las preguntas que le harán el juez y la parte contraria.
 
 ---
 
-## Asistencia de Estabilización Económica Post-Fallo
+## Cómo Funciona Nuestro Proceso Híbrido {#process}
 
-**Descripción**
-Este programa proporciona asistencia financiera de emergencia a personas elegibles en California que han obtenido un fallo civil favorable o acuerdo pero enfrentan dificultades económicas documentadas durante el período entre la emisión del fallo y el cobro efectivo del pago. Los procedimientos civiles frecuentemente resultan en demoras prolongadas entre un resultado favorable y la recuperación efectiva de fondos; este programa aborda la inestabilidad económica que surge durante ese intervalo.
+No le damos simplemente un formulario y le deseamos suerte. Nuestro flujo de trabajo impulsado por IA y respaldado por abogados está diseñado para ofrecer resultados medibles y confiables:
 
-**Población Objetivo**
-Personas en California que han obtenido un fallo civil definitivo o acuerdo de liquidación ejecutado a su favor, que enfrentan dificultades económicas documentadas — incluyendo riesgo de pérdida de vivienda, desconexión de servicios públicos o déficit salarial — durante el período de espera post-fallo, y que cumplen con los criterios de ingresos y necesidad establecidos por la Junta Directiva.
+<div class="process-steps">
 
-**Servicios Proporcionados**
+<div class="process-step">
+<span class="process-num">01</span>
+<div>
+<h3>Evaluación del Caso y Revisión de Evidencia</h3>
+<p>Usted nos cuenta su historia y proporciona su evidencia o prueba mediante una conversación con nuestro asistente de IA. Nuestras herramientas de IA ayudan a organizar sus documentos, le indican exactamente qué información falta y evalúan su caso según la solidez de su evidencia. Luego identificamos las leyes específicas que lo protegen.</p>
+</div>
+</div>
 
-- Subvenciones de asistencia de emergencia para necesidades inmediatas de estabilización, incluyendo costos de vivienda, pagos de servicios públicos y gastos esenciales de subsistencia
-- Asistencia puente sin intereses, estructurada como inversiones relacionadas con el programa cuando corresponda, pendiente del cobro de los fondos del fallo
-- Derivaciones a gestión de casos y asesoramiento financiero para apoyar a los beneficiarios durante el período de recuperación
+<div class="process-step">
+<span class="process-num">02</span>
+<div>
+<h3>Generación de Documentos y Presentación</h3>
+<p>No solo creamos el papeleo. Le ayudamos a redactar cartas de demanda y formularios judiciales perfectamente formateados y legalmente sólidos, y luego le ayudamos a presentarlos ante el tribunal o enviarlos a la parte contraria.</p>
+</div>
+</div>
 
-**Salvaguardas**
+<div class="process-step">
+<span class="process-num">03</span>
+<div>
+<h3>Orientación Procesal</h3>
+<p>Le guiamos a través del complejo proceso de notificar legalmente a la otra parte y cumplir con los estrictos plazos judiciales.</p>
+</div>
+</div>
 
-- La elegibilidad requiere fallo o acuerdo documentado y dificultad financiera documentada
-- Los montos de asistencia se calibran según la necesidad documentada y no se basan en el valor del fallo
-- La asistencia puente estructurada como préstamos está sujeta a términos de reembolso escritos vinculados al cobro de los fondos del fallo, no a una fecha fija
-- JAF no mantiene ningún gravamen, cesión o interés de garantía en ningún fallo o fondo de acuerdo
-- El financiamiento del programa está sujeto a los recursos caritativos disponibles y a la autorización de la Junta
+<div class="process-step">
+<span class="process-num">04</span>
+<div>
+<h3>Preparación para la Audiencia</h3>
+<p>Lo preparamos para su día en el tribunal para que entre sabiendo exactamente qué decir, qué evidencia presentar y cómo exponer su caso de manera efectiva ante el juez.</p>
+</div>
+</div>
 
-**Límites de Cumplimiento**
-Este programa proporciona únicamente subvenciones caritativas y asistencia puente relacionada con el programa. JAF no compra, cede ni adquiere ningún interés en ningún fallo o acuerdo. Este programa no es financiamiento de litigios y no funciona como un acuerdo de financiamiento comercial. La asistencia está condicionada únicamente a la necesidad financiera documentada, no al monto de ninguna recuperación.
+</div>

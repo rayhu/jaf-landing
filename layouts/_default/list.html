@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="ph-inner">
+    <div class="crumb"><a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a></div>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+<div class="page-body no-toc">
+  <article class="prose">
+    {{ .Content }}
+    <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .Permalink }}" class="inline">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+  </article>
+</div>
+{{ end }}

@@ -1,11 +1,28 @@
 ---
 title: "Board Recruitment"
-description: "Qualifications, governance expectations, reputation standards, and how to express interest in serving on JAF's volunteer Board of Directors."
+description: "Qualifications, governance expectations, and standards for service on JAF's volunteer Board of Directors."
 slug: "board"
-layout: "simple"
+lead: "Justice Access Foundation invites qualified individuals to consider service on its volunteer Board of Directors — a governance role, not an advocacy role."
+toc:
+  - label: "Invitation to Serve"
+    id: "invitation"
+  - label: "Ideal Candidate Profile"
+    id: "profile"
+  - label: "Qualifications"
+    id: "qualifications"
+  - label: "Governance Expectations"
+    id: "expectations"
+  - label: "Reputation Standards"
+    id: "reputation"
+  - label: "Time Commitment"
+    id: "time"
+  - label: "Independence Requirement"
+    id: "independence"
+  - label: "How to Express Interest"
+    id: "interest"
 ---
 
-## Invitation to Serve
+## Invitation to Serve {#invitation}
 
 Justice Access Foundation invites qualified individuals to consider service on its volunteer Board of Directors. The Foundation seeks experienced leaders who are committed to access to justice, institutional credibility, and sound nonprofit governance.
 
@@ -13,9 +30,7 @@ This is a governance role, not an advocacy role. Board members are expected to a
 
 ---
 
-## Ideal Candidate Profile
-
-JAF seeks board candidates whose backgrounds demonstrate:
+## Ideal Candidate Profile {#profile}
 
 - Senior leadership experience in legal aid organizations, law school clinics, bar associations, or the judiciary
 - Retired or transitioning executives with backgrounds in public interest law, nonprofit management, or foundation governance
@@ -24,16 +39,16 @@ JAF seeks board candidates whose backgrounds demonstrate:
 
 ---
 
-## Qualifications
+## Qualifications {#qualifications}
 
-**Required**
+### Required
 
 - Demonstrated professional experience relevant to JAF's mission areas (legal, social services, nonprofit management, public administration, or related field)
 - Ability to read and understand nonprofit financial statements (balance sheet, income statement, IRS Form 990)
 - No prior history of fiduciary misconduct, regulatory action, or professional discipline
 - Ability to commit to quarterly board meeting attendance and advance preparation
 
-**Preferred**
+### Preferred
 
 - Prior board service with a California nonprofit organization
 - Experience with IRS 501(c)(3) compliance requirements
@@ -42,9 +57,7 @@ JAF seeks board candidates whose backgrounds demonstrate:
 
 ---
 
-## Governance Expectations
-
-Board members are expected to:
+## Governance Expectations {#expectations}
 
 - Attend all quarterly board meetings and special meetings as called
 - Review all board materials in advance of each meeting
@@ -56,7 +69,7 @@ Board members are expected to:
 
 ---
 
-## Reputation Standards
+## Reputation Standards {#reputation}
 
 JAF's credibility depends on the professional standing of its board members. Board candidates are expected to maintain:
 
@@ -67,20 +80,7 @@ JAF's credibility depends on the professional standing of its board members. Boa
 
 ---
 
-## Financial Literacy Expectation
-
-Board members are not required to hold CPA credentials or legal qualifications in tax law. However, all board members are expected to:
-
-- Read and interpret nonprofit financial statements with reasonable proficiency
-- Understand the structure and significance of IRS Form 990
-- Recognize and raise concerns about financial anomalies or governance risks
-- Apply prudent financial judgment in board decisions involving expenditures, contracts, and financial controls
-
----
-
-## Time Commitment
-
-Board service at JAF requires:
+## Time Commitment {#time}
 
 - Attendance at four (4) quarterly board meetings per year (in person or remote)
 - Approximately 4 to 6 hours per meeting, including preparation time
@@ -90,7 +90,7 @@ Board service at JAF requires:
 
 ---
 
-## Independence Requirement
+## Independence Requirement {#independence}
 
 Board members must be independent of any commercial entity that has or seeks a financial relationship with JAF. Specifically:
 
@@ -100,8 +100,13 @@ Board members must be independent of any commercial entity that has or seeks a f
 
 ---
 
-## How to Express Interest
+## How to Express Interest {#interest}
 
 Qualified candidates may contact JAF's Board Development Committee. All inquiries are held in confidence. Candidate backgrounds are reviewed by the full Board in accordance with JAF's governance procedures.
 
-[Contact the Board Development Committee]
+{{< page-cta
+  title="Express your interest"
+  text="Reach the Board Development Committee through our contact form. All inquiries are confidential."
+  link_text="Contact the committee"
+  link="/contact/"
+>}}

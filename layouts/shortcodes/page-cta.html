@@ -1,0 +1,7 @@
+<div class="page-cta">
+  <div>
+    <h3>{{ .Get "title" }}</h3>
+    <p>{{ .Get "text" }}</p>
+  </div>
+  <a class="btn btn-gold" href="{{ .Get "link" | relLangURL }}">{{ .Get "link_text" }} &rarr;</a>
+</div>
