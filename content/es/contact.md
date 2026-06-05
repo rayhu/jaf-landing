@@ -8,6 +8,6 @@ Use el formulario a continuacion para consultas generales, preguntas sobre reclu
 
 También puede escribirnos directamente a [hello@justiceaccessfoundation.org](mailto:hello@justiceaccessfoundation.org).
 
-Si desea completar nuestro formulario anterior sobre vivienda estudiantil, visite la [pagina de Estudio del Campus](/es/campus-study/).
+¿Tiene una disputa de alquiler? Visite la [página de Admisión de Disputas de Alquiler](/es/rental-dispute-intake/).
 
 {{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}

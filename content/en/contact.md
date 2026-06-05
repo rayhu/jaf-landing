@@ -9,6 +9,6 @@ Use the form below for general inquiries, board recruitment, donation questions,
 
 You may also email us directly at [hello@justiceaccessfoundation.org](mailto:hello@justiceaccessfoundation.org).
 
-Looking for our student housing dispute survey form? Visit the [Campus Study page](/campus-study/).
+Have a rental dispute? Visit the [Rental Dispute Intake page](/rental-dispute-intake/).
 
 {{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}

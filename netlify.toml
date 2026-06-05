@@ -74,6 +74,22 @@
   status = 301
   force  = true
 
+# campus-study → rental-dispute-intake (page renamed 2026; keep old links alive)
+[[redirects]]
+  from   = "/campus-study/*"
+  to     = "/rental-dispute-intake/:splat"
+  status = 301
+
+[[redirects]]
+  from   = "/es/campus-study/*"
+  to     = "/es/rental-dispute-intake/:splat"
+  status = 301
+
+[[redirects]]
+  from   = "/zh/campus-study/*"
+  to     = "/zh/rental-dispute-intake/:splat"
+  status = 301
+
 # ─── Form notifications (configure recipients in Netlify dashboard) ───────────
 # Forms registered here are discovered by Netlify at build time.
 # Actual notification routing is configured in the Netlify UI under Forms → Settings.

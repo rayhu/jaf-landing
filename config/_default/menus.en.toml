@@ -44,8 +44,8 @@
   parent     = "contact"
 
 [[main]]
-  name       = "Campus Study"
-  url        = "/campus-study/"
+  name       = "Rental Dispute Intake"
+  url        = "/rental-dispute-intake/"
   weight     = 82
   parent     = "contact"
 
