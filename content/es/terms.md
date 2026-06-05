@@ -41,7 +41,7 @@ Todo el contenido de este sitio web se proporciona solo con fines informativos y
 Nuestros formularios de contacto y encuesta se ofrecen a traves de Typeform. Cuando envia informacion mediante estos formularios, usted acepta que JAF pueda usar su envio para:
 
 - Responder a su solicitud
-- Comprender las necesidades legales de los estudiantes y las barreras para acceder a ayuda legal
+- Comprender las necesidades legales y las barreras para acceder a ayuda legal
 - Coordinar seguimiento cuando usted lo solicite
 
 Si solicita seguimiento, su informacion puede compartirse con Accessible Justice Inc. o con organizaciones asociadas aprobadas con su consentimiento.

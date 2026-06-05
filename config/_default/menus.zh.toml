@@ -44,8 +44,8 @@
   parent     = "contact"
 
 [[main]]
-  name       = "校园研究"
-  url        = "/zh/campus-study/"
+  name       = "租房纠纷登记"
+  url        = "/zh/rental-dispute-intake/"
   weight     = 82
   parent     = "contact"
 

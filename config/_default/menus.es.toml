@@ -44,8 +44,8 @@
   parent     = "contact"
 
 [[main]]
-  name       = "Estudio del Campus"
-  url        = "/es/campus-study/"
+  name       = "Admisión de Disputas de Alquiler"
+  url        = "/es/rental-dispute-intake/"
   weight     = 82
   parent     = "contact"
 

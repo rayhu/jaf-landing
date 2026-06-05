@@ -55,12 +55,12 @@ Each language has `contentDir` (`content/en/`, `content/es/`, `content/zh/`) and
 - `subgrid.html`/`subcard.html` — card grids within prose
 - `facts.html`/`fact-row.html` — key-value fact lists
 - `page-cta.html` — CTA banner (title, text, button link)
-- `typeform-embed.html` — Typeform Live embed (contact, campus-study)
+- `typeform-embed.html` — Typeform Live embed (contact, rental-dispute-intake). The `rental-dispute-intake` page (formerly `campus-study`; old URL 301-redirected in `netlify.toml`) embeds Typeform **"JAF Leasing 2026-04-01 v1"** (id `01KN5BAR1DGSR69TEAKK1JMEKK`); the `contact` page embeds a separate form (id `01KQTPVGPNE1S3XAGQZGEMSE8E`)
 - `contact-form.html` — trilingual Netlify Forms contact form with honeypot
 - `donate-form.html` — trilingual Zeffy donation iframe
 
 **Homepage front matter**: The homepage (`_index.md`) uses structured front matter to drive all 5 sections (hero, mission, programs, governance, support). Each section has its own set of parameters (lede, pillars, items, points, etc.). The Markdown body is unused for the homepage.
 
-**Inner page front matter**: Pages use `lead` (hero intro text) and `toc` (array of `label`/`id` pairs for sidebar navigation). Pages without TOC (contact, campus-study, thank-you) omit the `toc` field. The `thank-you`/`gracias`/`xiesie` pages use `hideLighthouse: true` to suppress the hero image.
+**Inner page front matter**: Pages use `lead` (hero intro text) and `toc` (array of `label`/`id` pairs for sidebar navigation). Pages without TOC (contact, rental-dispute-intake, thank-you) omit the `toc` field. The `thank-you`/`gracias`/`xiesie` pages use `hideLighthouse: true` to suppress the hero image.
 
 **Deployment**: Netlify Git integration — Deploy Previews on PRs, production on merge to `main`. `netlify.toml` pins Hugo/Go versions, sets security headers (CSP with Typeform exceptions, HSTS), caching for fingerprinted assets, and www→apex redirect. Deploy previews use `--baseURL $DEPLOY_PRIME_URL/`.

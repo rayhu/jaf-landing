@@ -9,6 +9,6 @@ lead: "如需咨询一般事宜、董事会招聘、捐赠相关问题或媒体�
 
 您也可以直接发送邮件至 [hello@justiceaccessfoundation.org](mailto:hello@justiceaccessfoundation.org)。
 
-如需填写学生住房纠纷相关问卷，请访问[校园研究页面](/zh/campus-study/)。
+如有租房纠纷，请访问[租房纠纷登记页面](/zh/rental-dispute-intake/)。
 
 {{< typeform-embed id="01KQTPVGPNE1S3XAGQZGEMSE8E" >}}
