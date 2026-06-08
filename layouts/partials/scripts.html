@@ -152,3 +152,12 @@
   });
 })();
 </script>
+
+{{- /* Self-hosted deadline calculator: loaded only on tool pages. Fingerprinted; served from
+       'self' so it satisfies the strict CSP without any third-party origin. */ -}}
+{{ if eq .Params.pageType "tool" }}
+  {{ with resources.Get "js/deadline-calc.js" }}
+    {{ $js := . | js.Build (dict "minify" true "target" "es2017") | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{ end }}
+{{ end }}

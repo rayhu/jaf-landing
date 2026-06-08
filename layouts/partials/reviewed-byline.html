@@ -1,0 +1,7 @@
+{{- /* "Last reviewed {date} by {name}" — the visible E-E-A-T trust signal. */ -}}
+{{ with .Params.reviewedDate }}
+<p class="page-reviewed">
+  <span class="pr-label">{{ i18n "last_reviewed" | default "Last reviewed" }}</span>
+  <time datetime="{{ . }}">{{ . }}</time>{{ with $.Params.reviewedBy }} · {{ . }}{{ end }}
+</p>
+{{ end }}

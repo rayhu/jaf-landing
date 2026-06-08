@@ -1,0 +1,8 @@
+{{- /* Conversion path → existing intake form. Reuses the .page-cta band markup/classes. */ -}}
+<div class="page-cta">
+  <div>
+    <h3>{{ i18n "cta_title" | default "Facing a rental problem?" }}</h3>
+    <p>{{ i18n "cta_text" | default "Tell us what's happening and we'll help you understand your options. Free and confidential." }}</p>
+  </div>
+  <a class="btn btn-gold" href="{{ "rental-dispute-intake" | relLangURL }}">{{ i18n "cta_button" | default "Get help" }} &rarr;</a>
+</div>

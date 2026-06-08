@@ -1,0 +1,21 @@
+{{- /* Cross-links pages that share this page's `issue` taxonomy term (guide ↔ checklist ↔
+       letter ↔ tool for the same problem). Driven by the taxonomy, never the adapter. */ -}}
+{{ $self := .RelPermalink }}
+{{ $items := slice }}
+{{ with .Params.issue }}
+  {{ with index $.Site.Taxonomies.issues . }}
+    {{ range .Pages }}
+      {{ if ne .RelPermalink $self }}{{ $items = $items | append . }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ with $items }}
+<div class="related-links">
+  <h2>{{ i18n "related" | default "Related resources" }}</h2>
+  <ul>
+    {{ range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

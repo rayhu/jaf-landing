@@ -15,6 +15,13 @@ defaultContentLanguageInSubdir = false
     [markup.goldmark.renderer]
       unsafe = true
 
+# ─── Taxonomies (hub pages for programmatic SEO: /issues/<x>/, /jurisdictions/<y>/) ──
+# Defining these replaces Hugo's default tags/categories (unused on this site).
+
+[taxonomies]
+  issue        = "issues"
+  jurisdiction = "jurisdictions"
+
 # ─── Languages ────────────────────────────────────────────────────────────────
 
 [languages]

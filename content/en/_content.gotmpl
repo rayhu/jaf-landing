@@ -1,0 +1,104 @@
+{{/* ───────────────────────────────────────────────────────────────────────────
+     Programmatic-SEO content adapter — generates guides / checklists / letters
+     from data/pages/<type>/<slug>.yaml. ONE adapter, EnableAllLanguages → emits
+     all three language trees (en, /es/, /zh/) with shared slugs (auto-translated).
+
+     Review gate:
+       • Production build (HUGO_PUBLISH=live): only PUBLISHED pages are added, so
+         drafts never enter the build or sitemap.xml.
+       • Preview/branch/dev: ALL pages render so reviewers can see them; non-published
+         pages get robots "noindex, nofollow".
+     City guard: city pages are skipped unless the jurisdiction hasOrdinance.
+     Letters: dual gate — must be reviewed AND legalReview == "signed" (counsel).
+   ─────────────────────────────────────────────────────────────────────────── */}}
+{{ .EnableAllLanguages }}
+
+{{ $live := eq (os.Getenv "HUGO_PUBLISH") "live" }}
+{{ $lang := site.Language.Lang }}
+{{ $jurs := hugo.Data.jurisdictions }}
+
+{{ range $type := slice "guides" "checklists" "letters" "tools" }}
+  {{ $coll := index hugo.Data.pages $type }}
+  {{ range $slug, $rec := $coll }}
+
+    {{/* Per-language content block; skip languages not yet authored. */}}
+    {{ $c := index $rec.i18n $lang }}
+    {{ if not $c }}{{ continue }}{{ end }}
+
+    {{/* Publish state (per-language status, plus counsel gate for letters). */}}
+    {{ $reviewed := eq $c.status "reviewed" }}
+    {{ $published := $reviewed }}
+    {{ if eq $rec.type "letter" }}
+      {{ $published = and $reviewed (eq $rec.legalReview "signed") }}
+    {{ end }}
+
+    {{/* City guard: skip city pages without a distinct local ordinance. */}}
+    {{ $jur := index $jurs $rec.jurisdiction }}
+    {{ $jurName := $rec.jurisdiction }}
+    {{ with $jur }}
+      {{ $jurName = .name }}
+      {{ if and (eq .level "city") (not .hasOrdinance) }}{{ continue }}{{ end }}
+    {{ end }}
+
+    {{/* Production gate: never emit unpublished pages in a live build. */}}
+    {{ if and $live (not $published) }}{{ continue }}{{ end }}
+
+    {{/* ── Assemble the markdown body from the structured arrays ── */}}
+    {{ $body := $c.intro_md | default "" }}
+    {{ with $c.steps }}
+      {{ range $i, $s := . }}
+        {{ $body = printf "%s\n\n### %d. %s\n\n%s" $body (add $i 1) $s.name $s.text_md }}
+      {{ end }}
+    {{ end }}
+    {{ with $c.items }}
+      {{ range . }}
+        {{ $body = printf "%s\n\n- %s" $body .text_md }}
+      {{ end }}
+    {{ end }}
+    {{/* Letter templates are rendered by the template from the param below (preserves the
+         fill-in line breaks in a <pre>), not folded into the markdown body. */}}
+    {{ with $c.faq }}
+      {{ $body = printf "%s\n\n## %s" $body (i18n "faq" | default "Frequently asked questions") }}
+      {{ range . }}
+        {{ $body = printf "%s\n\n**%s**\n\n%s" $body .q .a_md }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Dates: only set when reviewed (drives dateModified / "last reviewed"). */}}
+    {{ $dates := dict }}
+    {{ with $c.reviewedDate }}
+      {{ $t := time.AsTime . }}
+      {{ $dates = dict "date" $t "lastmod" $t }}
+    {{ end }}
+
+    {{ $.AddPage (dict
+      "kind" "page"
+      "path" (printf "%s/%s" $type $rec.slug)
+      "title" $c.title
+      "content" (dict "mediaType" "text/markdown" "value" $body)
+      "dates" $dates
+      "params" (dict
+        "description"      $c.description
+        "lead"             $c.lead
+        "pageType"         $rec.type
+        "issue"            $rec.issue
+        "jurisdiction"     $rec.jurisdiction
+        "jurisdictionName" $jurName
+        "statutes"         (default slice $rec.statutes)
+        "fields"           (default slice $c.fields)
+        "checklistItems"   (default slice $c.items)
+        "faqItems"         (default slice $c.faq)
+        "letterTemplate"   (default "" $c.template_md)
+        "uplSensitive"     (default false $rec.upl_sensitive)
+        "calculator"       (default "" $rec.calculator)
+        "reviewedBy"       (default "" $c.reviewedBy)
+        "reviewedDate"     (default "" $c.reviewedDate)
+        "reviewed"         $published
+        "robots"           (cond $published "index, follow" "noindex, nofollow")
+        "issues"           (slice $rec.issue)
+        "jurisdictions"    (slice $rec.jurisdiction)
+      )
+    ) }}
+
+  {{ end }}
+{{ end }}

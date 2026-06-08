@@ -1,0 +1,95 @@
+# SAMPLE / DRAFT — AI-drafted, awaiting human (attorney) review. Do NOT set status: reviewed
+# until a qualified CA reviewer has confirmed accuracy. status: draft => hidden in production,
+# rendered with noindex on previews for review.
+type: guide
+slug: 3-day-notice-pay-or-quit
+jurisdiction: california
+issue: eviction
+calculator: notice-deadline-calculator   # this guide links to the deadline calculator
+statutes:
+  - cite: "Cal. Code Civ. Proc. § 1161(2)"
+    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161"
+  - cite: "Cal. Code Civ. Proc. § 1167"
+    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1167"
+
+i18n:
+  en:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "What to Do After Receiving a 3-Day Notice to Pay or Quit in California"
+    description: "Got a 3-day notice to pay rent or quit in California? Learn what it means, how the 3 days are counted, your options to respond, and the deadlines that protect you."
+    lead: "A 3-day notice to pay or quit is the first step a landlord takes toward eviction — but it is not an eviction, and you still have rights and time to act."
+    intro_md: |
+      In California, a landlord who wants to evict you for unpaid rent usually must first serve a
+      written **3-Day Notice to Pay Rent or Quit**. This notice gives you a short window to either pay
+      the full rent that is owed or move out. It is not a court order, and your landlord cannot lock
+      you out, shut off utilities, or remove your belongings based on this notice alone.
+    steps:
+      - name: "Read the notice carefully and check it for errors"
+        text_md: "Confirm it states the **exact amount of rent** owed (not late fees or other charges) and is properly dated and signed. Mistakes in the amount or in how it was served can make a notice defective."
+      - name: "Count your 3 days correctly"
+        text_md: "The 3 days are **court days** — you do **not** count the day you received the notice, weekends, or court holidays. Use the [deadline calculator](/tools/notice-deadline-calculator/) to find your exact last day."
+      - name: "Decide: pay in full, or prepare to respond"
+        text_md: "If you pay the **full amount** demanded within the 3 days, the notice is void and the eviction cannot move forward on that basis. Keep proof of payment."
+      - name: "If you can't pay, get help right away"
+        text_md: "Contact your local legal aid office or [reach out to us](/rental-dispute-intake/). You may have defenses, and acting early gives you the most options."
+    faq:
+      - q: "Does the 3-day period include weekends?"
+        a_md: "No. Under California law the 3 days are counted as court days, so Saturdays, Sundays, and judicial holidays are excluded."
+      - q: "Can my landlord evict me immediately after 3 days?"
+        a_md: "No. If you don't pay or move, the landlord must file an unlawful detainer lawsuit and win a court judgment before the sheriff can carry out an eviction. You will have a chance to respond in court."
+
+  es:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Qué hacer después de recibir un aviso de 3 días para pagar o desalojar en California"
+    description: "¿Recibió un aviso de 3 días para pagar el alquiler o desalojar en California? Conozca qué significa, cómo se cuentan los 3 días, sus opciones para responder y los plazos que lo protegen."
+    lead: "Un aviso de 3 días para pagar o desalojar es el primer paso que da el propietario hacia un desalojo, pero no es un desalojo: usted todavía tiene derechos y tiempo para actuar."
+    intro_md: |
+      En California, un propietario que quiere desalojarlo por alquiler no pagado generalmente debe
+      primero entregar un **aviso de 3 días para pagar el alquiler o desalojar** por escrito. Este
+      aviso le da un plazo corto para pagar todo el alquiler que debe o mudarse. No es una orden
+      judicial, y su propietario no puede cambiar las cerraduras, cortar los servicios ni sacar sus
+      pertenencias basándose únicamente en este aviso.
+    steps:
+      - name: "Lea el aviso con cuidado y revise si tiene errores"
+        text_md: "Confirme que indique la **cantidad exacta** de alquiler que debe (no cargos por mora u otros) y que tenga fecha y firma. Los errores en la cantidad o en la forma de entrega pueden invalidar el aviso."
+      - name: "Cuente bien sus 3 días"
+        text_md: "Los 3 días son **días hábiles del tribunal**: no cuenta el día en que recibió el aviso, ni fines de semana, ni días feriados judiciales. Use la [calculadora de plazos](/es/tools/notice-deadline-calculator/) para encontrar su último día exacto."
+      - name: "Decida: pagar todo o prepararse para responder"
+        text_md: "Si paga la **cantidad total** exigida dentro de los 3 días, el aviso queda anulado y el desalojo no puede avanzar por ese motivo. Guarde el comprobante de pago."
+      - name: "Si no puede pagar, busque ayuda de inmediato"
+        text_md: "Comuníquese con su oficina local de ayuda legal o [contáctenos](/es/rental-dispute-intake/). Puede tener defensas, y actuar pronto le da más opciones."
+    faq:
+      - q: "¿El plazo de 3 días incluye los fines de semana?"
+        a_md: "No. Según la ley de California, los 3 días se cuentan como días hábiles del tribunal, así que se excluyen sábados, domingos y feriados judiciales."
+      - q: "¿Mi propietario puede desalojarme de inmediato después de 3 días?"
+        a_md: "No. Si no paga ni se muda, el propietario debe presentar una demanda de desalojo y ganar una sentencia antes de que el alguacil pueda ejecutar el desalojo. Usted tendrá la oportunidad de responder en el tribunal."
+
+  zh:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "在加州收到 3 天付款或搬离通知后该怎么办"
+    description: "在加州收到 3 天付款或搬离通知？了解它的含义、如何计算这 3 天、您的回应选项，以及保护您的截止期限。"
+    lead: "3 天付款或搬离通知是房东走向驱逐的第一步，但它本身并不是驱逐——您仍然有权利，也有时间采取行动。"
+    intro_md: |
+      在加州，房东若想因欠租驱逐您，通常必须先送达书面的**3 天付款或搬离通知**。该通知给您一个
+      短暂的期限，让您付清所欠的全部租金或搬离。它不是法院命令，房东不能仅凭此通知就更换门锁、
+      停掉水电或搬走您的物品。
+    steps:
+      - name: "仔细阅读通知并检查是否有错误"
+        text_md: "确认通知写明了所欠租金的**确切金额**（不含滞纳金或其他费用），并有正确的日期和签名。金额或送达方式上的错误可能使通知无效。"
+      - name: "正确计算您的 3 天"
+        text_md: "这 3 天是**法院工作日**——不计入您收到通知的当天、周末和法院假日。请使用[期限计算器](/zh/tools/notice-deadline-calculator/)找出您确切的最后一天。"
+      - name: "决定：付清全款，还是准备回应"
+        text_md: "如果您在 3 天内付清所要求的**全部金额**，通知即告失效，驱逐不能以此为由继续。请保留付款凭证。"
+      - name: "如果无法付款，请立即寻求帮助"
+        text_md: "联系当地法律援助机构或[与我们联系](/zh/rental-dispute-intake/)。您可能拥有抗辩理由，尽早行动能让您有最多的选择。"
+    faq:
+      - q: "这 3 天包括周末吗？"
+        a_md: "不包括。根据加州法律，这 3 天按法院工作日计算，因此排除周六、周日和法院假日。"
+      - q: "房东能在 3 天后立即驱逐我吗？"
+        a_md: "不能。如果您不付款也不搬离，房东必须提起非法滞留诉讼并赢得法院判决，之后治安官才能执行驱逐。您将有机会在法庭上回应。"

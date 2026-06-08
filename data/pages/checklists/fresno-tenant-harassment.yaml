@@ -1,0 +1,24 @@
+# FIXTURE — demonstrates the CITY GUARD. jurisdiction "fresno" has hasOrdinance: false, so the
+# content adapter SKIPS this page in every language and every build mode (Fresno renters are served
+# by the statewide California pages instead). Kept as status: draft as well, so it is never
+# publish-eligible even if the guard is ever changed — belt and suspenders. The build should
+# produce NO /checklists/fresno-tenant-harassment/ page.
+type: checklist
+slug: fresno-tenant-harassment
+jurisdiction: fresno
+issue: harassment
+statutes: []
+
+i18n:
+  en:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Fresno Tenant Harassment Checklist"
+    description: "Placeholder — skipped by the city guard (Fresno has no distinct local ordinance)."
+    lead: "Fresno follows California state law; use the statewide checklist."
+    intro_md: |
+      Placeholder fixture. Fresno has no distinct local ordinance, so renters there use the
+      statewide California resources. The content adapter skips this entry via the city guard.
+    items:
+      - text_md: "Placeholder — the adapter skips this entry."

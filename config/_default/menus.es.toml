@@ -14,6 +14,36 @@
   weight = 20
 
 [[main]]
+  name       = "Recursos"
+  url        = "/es/guides/"
+  weight     = 30
+  identifier = "resources"
+
+[[main]]
+  name   = "Guías"
+  url    = "/es/guides/"
+  weight = 31
+  parent = "resources"
+
+[[main]]
+  name   = "Listas de verificación"
+  url    = "/es/checklists/"
+  weight = 32
+  parent = "resources"
+
+[[main]]
+  name   = "Plantillas de cartas"
+  url    = "/es/letters/"
+  weight = 33
+  parent = "resources"
+
+[[main]]
+  name   = "Herramientas"
+  url    = "/es/tools/"
+  weight = 34
+  parent = "resources"
+
+[[main]]
   name       = "Liderazgo"
   url        = "/es/board/"
   weight     = 50

@@ -134,3 +134,53 @@
   .page-cta { flex-direction:column; align-items:flex-start; }
   .facts .row { grid-template-columns:1fr; gap:4px; }
 }
+
+/* ============================================================
+   Programmatic SEO pages (guides / checklists / letters / tools)
+   ============================================================ */
+
+/* Draft banner — shown on previews only (never in production) */
+.draft-banner { background:#fbeecb; border:1px solid var(--warm); color:var(--warm-deep); border-radius:12px; padding:12px 16px; margin:0 0 24px; font-size:14px; font-weight:600; }
+
+/* "Last reviewed by" byline */
+.page-reviewed { font-family:var(--mono); font-size:12px; color:var(--hint); margin:0 0 20px; letter-spacing:0.02em; }
+.page-reviewed .pr-label { text-transform:uppercase; color:var(--warm-deep); margin-right:6px; }
+
+/* E-E-A-T meta block: sources + disclaimer */
+.page-meta { margin-top:44px; }
+.page-sources { margin:24px 0; }
+.page-sources h2 { font-size:13px; font-family:var(--mono); text-transform:uppercase; letter-spacing:0.08em; color:var(--hint); margin-bottom:10px; }
+.page-sources ul { list-style:none; padding:0; margin:0; }
+.page-sources li { padding:4px 0; }
+.page-sources li::before { display:none; }
+.page-sources a, .statute-ref { color:var(--warm-deep); border-bottom:1px solid rgba(165,106,28,0.4); font-size:14px; }
+
+.legal-disclaimer { background:var(--bg-warm); border:1px solid var(--line); border-left:3px solid var(--warm); border-radius:12px; padding:16px 20px; margin:24px 0; }
+.legal-disclaimer .ld-label { font-family:var(--mono); font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--warm-deep); margin-bottom:6px; font-weight:600; }
+.legal-disclaimer p { margin:0; font-size:14px; color:var(--muted); line-height:1.6; }
+
+/* Related resources + hub badges */
+.related-links { margin:32px 0; }
+.related-links h2 { font-size:16px; margin-bottom:10px; }
+.hub-jur { font-family:var(--mono); font-size:11px; color:var(--warm-deep); background:var(--bg-warm); border:1px solid var(--line); border-radius:20px; padding:2px 10px; margin-left:8px; }
+
+/* Letter templates */
+.letter-fields { margin:24px 0; }
+.letter-template { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:24px; font-family:var(--mono); font-size:13px; line-height:1.7; white-space:pre-wrap; color:var(--fg); overflow-x:auto; margin:12px 0; }
+
+/* ---------- Deadline calculator ---------- */
+.calc { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px; margin:24px 0; }
+.calc-form { display:flex; flex-direction:column; gap:18px; }
+.calc-field { display:flex; flex-direction:column; gap:6px; }
+.calc-field > label { font-size:14px; font-weight:600; color:var(--fg); }
+.calc-field select, .calc-field input[type="date"] { font-family:var(--sans); font-size:15px; padding:11px 14px; border:1px solid var(--line); border-radius:10px; background:var(--bg); color:var(--fg); }
+.calc-method { border:none; padding:0; margin:0; }
+.calc-method legend { font-size:14px; font-weight:600; margin-bottom:8px; padding:0; }
+.calc-method label { display:inline-flex; align-items:center; gap:6px; font-weight:400; margin-right:18px; font-size:15px; }
+.calc .btn { align-self:flex-start; cursor:pointer; border:none; }
+.calc-result { margin-top:20px; padding:18px 20px; background:var(--bg-warm); border:1px solid var(--warm); border-radius:12px; }
+.calc-result.calc-error { background:#fbece9; border-color:#e0a99b; }
+.calc-answer { font-size:18px; font-weight:600; color:var(--fg); margin:0; }
+.calc-statute { font-family:var(--mono); font-size:12px; color:var(--hint); margin:8px 0 0; }
+.calc-disclaimer { font-size:13px; color:var(--muted); margin:16px 0 0; line-height:1.55; }
+.calc-noscript { font-size:14px; color:var(--muted); }

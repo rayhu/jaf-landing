@@ -9,14 +9,23 @@
   HUGO_ENV     = "production"
   GO_VERSION   = "1.22"
 
+# Programmatic-SEO review gate: HUGO_PUBLISH="live" is set ONLY for production builds, so the
+# content adapter publishes only reviewed pages in prod while rendering drafts (noindex) on
+# previews for review. It must NOT live in [build.environment] (that applies to every context,
+# incl. previews) and must be HUGO_-prefixed (Hugo's default getenv allowlist is ^HUGO_/^CI$).
+[context.production.environment]
+  HUGO_PUBLISH = "live"
+
 # Deploy previews / branch deploys must use this deploy's URL as baseURL. Otherwise
 # Hugo keeps hugo.toml's production baseURL, styles load from the apex domain, and
 # CSP (style-src 'self' on the *.netlify.app document) blocks them → broken layout.
+# The appended _headers write tags every preview/branch response noindex (defense-in-depth
+# against indexed *.netlify.app URLs; complements the per-draft <meta robots> from the gate).
 [context.deploy-preview]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/"
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/ && printf '/*\n  X-Robots-Tag: noindex\n' > public/_headers"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/"
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL/ && printf '/*\n  X-Robots-Tag: noindex\n' > public/_headers"
 
 # ─── Dev server (netlify dev) ─────────────────────────────────────────────────
 

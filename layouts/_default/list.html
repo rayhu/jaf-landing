@@ -1,18 +1,52 @@
 {{ define "main" }}
 <section class="page-hero">
   <div class="ph-inner">
-    <div class="crumb"><a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a></div>
+    <div class="crumb">
+      <a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a>
+      {{ if not .IsSection }}&nbsp;/&nbsp;{{ .Title }}{{ end }}
+    </div>
     <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
   </div>
 </section>
+
 <div class="page-body no-toc">
   <article class="prose">
     {{ .Content }}
-    <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .Permalink }}" class="inline">{{ .Title }}</a></li>
+
+    {{- /* Group child pages by type so a jurisdiction/issue hub shows guides, checklists,
+           letters and tools under clear headings. */ -}}
+    {{ $order := slice "guide" "checklist" "letter" "tool" }}
+    {{ $labels := dict
+        "guide"     (i18n "guides"     | default "Guides")
+        "checklist" (i18n "checklists" | default "Checklists")
+        "letter"    (i18n "letters"    | default "Letter templates")
+        "tool"      (i18n "tools"      | default "Tools") }}
+    {{ $shown := 0 }}
+    {{ range $t := $order }}
+      {{ $group := where $.Pages "Params.pageType" $t }}
+      {{ with $group }}
+        {{ $shown = add $shown (len .) }}
+        <h2>{{ index $labels $t }}</h2>
+        <ul>
+          {{ range . }}
+          <li>
+            <a href="{{ .RelPermalink }}" class="inline">{{ .Title }}</a>
+            {{ with .Params.jurisdictionName }}<span class="hub-jur">{{ . }}</span>{{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
     {{ end }}
-    </ul>
+
+    {{- /* Fallback: any pages without a pageType (e.g. ordinary list pages). */ -}}
+    {{ if eq $shown 0 }}
+      {{ with .Pages }}
+      <ul>
+        {{ range . }}<li><a href="{{ .RelPermalink }}" class="inline">{{ .Title }}</a></li>{{ end }}
+      </ul>
+      {{ end }}
+    {{ end }}
   </article>
 </div>
 {{ end }}

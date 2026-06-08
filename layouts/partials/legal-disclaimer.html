@@ -1,0 +1,13 @@
+{{- /* Single-sourced "not legal advice" disclaimer (data/legal/disclaimers.yaml).
+       Letters (uplSensitive) get the stronger UPL variant. Never hard-code this text. */ -}}
+{{ $variant := cond .Params.uplSensitive "upl" "general" }}
+{{ $set := index hugo.Data.legal.disclaimers $variant }}
+{{ with $set }}
+{{ $text := index . $.Language.Lang }}
+{{ with $text }}
+<aside class="legal-disclaimer">
+  <div class="ld-label">{{ i18n "not_legal_advice" | default "Not legal advice" }}</div>
+  <p>{{ . }}</p>
+</aside>
+{{ end }}
+{{ end }}

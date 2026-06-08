@@ -1,0 +1,50 @@
+# Jurisdictions referenced by programmatic pages.
+#   level:        state | city
+#   hasOrdinance: does this jurisdiction have its own tenant law distinct from CA state law?
+#                 The content adapter SKIPS city pages where hasOrdinance is false (thin-content
+#                 defense — a Fresno page that just restates state law shouldn't exist).
+#   name:         display name (used in headings, breadcrumbs, JSON-LD areaServed/spatialCoverage)
+#   parent:       containing jurisdiction code (for breadcrumbs / "California → Los Angeles")
+
+california:
+  name: California
+  level: state
+  hasOrdinance: true   # state law is the baseline; state pages always render
+
+los-angeles:
+  name: Los Angeles
+  level: city
+  hasOrdinance: true   # LA Tenant Anti-Harassment Ordinance, RSO/just-cause, etc.
+  parent: california
+
+san-francisco:
+  name: San Francisco
+  level: city
+  hasOrdinance: true   # SF Rent Ordinance, just-cause, harassment protections
+  parent: california
+
+oakland:
+  name: Oakland
+  level: city
+  hasOrdinance: true   # Oakland Just Cause / Tenant Protection Ordinance
+  parent: california
+
+san-jose:
+  name: San Jose
+  level: city
+  hasOrdinance: true   # San Jose Apartment Rent Ordinance / Tenant Protection Ordinance
+  parent: california
+
+san-diego:
+  name: San Diego
+  level: city
+  hasOrdinance: true   # San Diego Tenant Protection Ordinance
+  parent: california
+
+# Example of a city WITHOUT a distinct local ordinance — the adapter skips city pages for it,
+# so renters there are served by the statewide California pages instead.
+fresno:
+  name: Fresno
+  level: city
+  hasOrdinance: false
+  parent: california

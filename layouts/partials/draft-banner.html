@@ -1,0 +1,7 @@
+{{- /* Shown only on non-published pages (drafts / unsigned letters), which appear on
+       previews but never in production. Makes it obvious a page is not live. */ -}}
+{{ if not .Params.reviewed }}
+<div class="draft-banner" role="status">
+  ⚠ {{ i18n "draft_banner" | default "DRAFT — pending review. This page is not published and is hidden from search engines." }}
+</div>
+{{ end }}

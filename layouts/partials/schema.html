@@ -1,0 +1,58 @@
+{{- /* Per-page JSON-LD for programmatic pages, gated to reviewed pages only.
+       Article is the realistic SEO win; ItemList/FAQPage/WebApplication are emitted for
+       correctness/future-proofing (Google retired HowTo rich results and limits FAQ snippets
+       to gov/health domains, so don't expect SERP features from those). */ -}}
+{{ if .Params.reviewed }}
+{{ $org := dict "@type" "NGO" "name" "Justice Access Foundation" "url" "https://justiceaccessfoundation.org/" }}
+
+{{/* ── Article (all reviewed programmatic pages) ── */}}
+{{ $article := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "description" .Params.description
+  "inLanguage" .Language.Lang
+  "isAccessibleForFree" true
+  "author" $org
+  "publisher" $org
+  "mainEntityOfPage" .Permalink
+}}
+{{ with .Params.reviewedDate }}{{ $article = merge $article (dict "datePublished" . "dateModified" .) }}{{ end }}
+{{ with .Params.jurisdictionName }}{{ $article = merge $article (dict "spatialCoverage" (dict "@type" "AdministrativeArea" "name" .)) }}{{ end }}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+
+{{/* ── ItemList (checklists) ── */}}
+{{ if eq .Params.pageType "checklist" }}
+{{ with .Params.checklistItems }}
+{{ $els := slice }}
+{{ range $i, $it := . }}
+{{ $els = $els | append (dict "@type" "ListItem" "position" (add $i 1) "name" ($it.text_md | markdownify | plainify | htmlUnescape)) }}
+{{ end }}
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@type" "ItemList" "itemListElement" $els) | jsonify | safeJS }}</script>
+{{ end }}
+{{ end }}
+
+{{/* ── FAQPage (any page with FAQ items) ── */}}
+{{ with .Params.faqItems }}
+{{ $qs := slice }}
+{{ range . }}
+{{ $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" (.a_md | markdownify | plainify | htmlUnescape))) }}
+{{ end }}
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $qs) | jsonify | safeJS }}</script>
+{{ end }}
+
+{{/* ── WebApplication (the calculator tool) ── */}}
+{{ if eq .Params.pageType "tool" }}
+<script type="application/ld+json">{{ (dict
+  "@context" "https://schema.org"
+  "@type" "WebApplication"
+  "name" .Title
+  "url" .Permalink
+  "applicationCategory" "UtilitiesApplication"
+  "operatingSystem" "Any"
+  "inLanguage" .Language.Lang
+  "isAccessibleForFree" true
+  "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "USD")) | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ end }}

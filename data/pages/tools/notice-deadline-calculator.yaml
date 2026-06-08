@@ -1,0 +1,46 @@
+# SAMPLE / DRAFT — the calculator's legal rules (notice-periods + court holidays) must be
+# confirmed by a qualified CA reviewer before this is set status: reviewed. status: draft =>
+# hidden in production, shown with noindex on previews.
+type: tool
+slug: notice-deadline-calculator
+jurisdiction: california
+issue: eviction
+statutes:
+  - cite: "Cal. Code Civ. Proc. §§ 12, 12a, 1161"
+    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=12"
+  - cite: "Cal. Code Civ. Proc. § 1013 (service by mail)"
+    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1013"
+
+i18n:
+  en:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "California Eviction Notice Deadline Calculator"
+    description: "Free calculator: enter the date you were served a California eviction or termination notice and see your response deadline, excluding weekends and court holidays."
+    lead: "Served a notice? Enter the date below to estimate your deadline to respond — counting weekends and California court holidays the way the law does."
+    intro_md: |
+      The number of days on your notice is not always the same as the number of days on the calendar.
+      Some notices are counted in **court days** (skipping weekends and court holidays); some add extra
+      days when you're served by mail. Enter your details below to estimate your deadline.
+  es:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Calculadora de plazos de avisos de desalojo en California"
+    description: "Calculadora gratuita: ingrese la fecha en que recibió un aviso de desalojo o terminación en California y vea su plazo para responder, excluyendo fines de semana y feriados judiciales."
+    lead: "¿Recibió un aviso? Ingrese la fecha para estimar su plazo para responder, contando fines de semana y feriados judiciales de California como lo hace la ley."
+    intro_md: |
+      La cantidad de días en su aviso no siempre es igual a la cantidad de días del calendario. Algunos
+      avisos se cuentan en **días hábiles del tribunal** (sin fines de semana ni feriados judiciales);
+      otros suman días adicionales cuando le notifican por correo. Ingrese sus datos para estimar su plazo.
+  zh:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "加州驱逐通知期限计算器"
+    description: "免费计算器：输入您收到加州驱逐或终止租约通知的日期，查看您的回应期限，排除周末和法院假日。"
+    lead: "收到通知了？在下方输入日期，按照法律的计算方式（计入周末和加州法院假日）估算您的回应期限。"
+    intro_md: |
+      通知上的天数不总是等于日历上的天数。有些通知按**法院工作日**计算（跳过周末和法院假日）；有些在
+      通过邮寄送达时会增加额外天数。请在下方输入您的信息以估算期限。

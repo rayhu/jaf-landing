@@ -1,0 +1,39 @@
+{{- /* Shared renderer for all programmatic page types (guide/checklist/letter/tool).
+       The thin layouts/{guides,checklists,letters,tools}/single.html templates each just call
+       this, so the page chrome lives in one place. Type-specific bits switch on pageType. */ -}}
+<section class="page-hero">
+  <div class="ph-inner">
+    {{ partial "breadcrumb.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="page-body no-toc">
+  <article class="prose">
+    {{ partial "draft-banner.html" . }}
+
+    {{ .Content }}
+
+    {{ if eq .Params.pageType "tool" }}
+      {{ partial "calculator-widget.html" . }}
+    {{ end }}
+
+    {{ if eq .Params.pageType "letter" }}
+      {{ with .Params.fields }}
+      <div class="letter-fields">
+        <h2>{{ i18n "fill_in" | default "Fill in these fields" }}</h2>
+        <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+      {{ with .Params.letterTemplate }}
+      <h2>{{ i18n "template_heading" | default "Template" }}</h2>
+      <pre class="letter-template">{{ . }}</pre>
+      {{ end }}
+    {{ end }}
+
+    {{ partial "page-meta.html" . }}
+    {{ partial "related-links.html" . }}
+    {{ partial "intake-cta.html" . }}
+  </article>
+</div>

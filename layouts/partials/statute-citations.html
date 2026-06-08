@@ -1,0 +1,11 @@
+{{- /* "Sources" — the statute citations that demonstrate authoritativeness (E-E-A-T). */ -}}
+{{ with .Params.statutes }}
+<div class="page-sources">
+  <h2>{{ i18n "sources" | default "Sources" }}</h2>
+  <ul>
+    {{ range . }}
+    <li><a href="{{ .url }}" rel="nofollow noopener" target="_blank">{{ .cite }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
