@@ -19,7 +19,7 @@
 
   var form = root.querySelector('.calc-form');
   var result = root.querySelector('.calc-result');
-  if (!form || !result) return;
+  if (!form || !result || !form.noticeType || !form.serviceDate) return;
 
   // Local YYYY-MM-DD (avoids UTC shift from toISOString).
   function iso(d) {
@@ -97,12 +97,12 @@
     }
     var parts = raw.split('-');
     if (parts.length !== 3) {
-      render(t.invalid, null, true);
+      render(t.invalid || 'Please enter the date you were served.', null, true);
       return;
     }
     var start = new Date(+parts[0], +parts[1] - 1, +parts[2]);
     if (isNaN(start.getTime())) {
-      render(t.invalid, null, true);
+      render(t.invalid || 'Please enter the date you were served.', null, true);
       return;
     }
 
