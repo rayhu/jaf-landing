@@ -1,0 +1,143 @@
+# SAMPLE / DRAFT — letter template. Two gates apply: status must be "reviewed" AND legalReview
+# must be "signed" (counsel sign-off) before it can publish. upl_sensitive: true => the stronger
+# UPL disclaimer is shown. Keep legalReview: pending until JAF's counsel approves shipping letters.
+type: letter
+slug: security-deposit-demand
+jurisdiction: california
+issue: security-deposit
+upl_sensitive: true
+legalReview: pending        # counsel sign-off gate (see adapter dual-gate)
+statutes:
+  - cite: "Cal. Civ. Code § 1950.5"
+    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+
+i18n:
+  en:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Security Deposit Demand Letter (California)"
+    description: "A free template California renters can adapt to demand the return of a security deposit wrongfully withheld after move-out, under Civil Code § 1950.5."
+    lead: "Under California law your landlord must return your deposit, or an itemized statement of deductions, within 21 days of move-out. If they haven't, this template can help you make a written demand."
+    intro_md: |
+      California Civil Code § 1950.5 requires a landlord to return your security deposit — or a written,
+      itemized statement of any deductions plus the remaining balance — within **21 days** after you move
+      out. If that deadline has passed, a clear written demand is a good first step. Fill in the bracketed
+      fields below and keep a copy of everything you send.
+    fields:
+      - "Your name and current mailing address"
+      - "Date"
+      - "Landlord's name and address"
+      - "Address of the unit you rented"
+      - "Move-out date"
+      - "Deposit amount paid"
+      - "Date you gave your forwarding address"
+    template_md: |
+      [Your Name]
+      [Your Current Address]
+
+      [Date]
+
+      [Landlord Name]
+      [Landlord Address]
+
+      Re: Demand for return of security deposit — [Unit Address]
+
+      Dear [Landlord Name],
+
+      I rented the unit at [Unit Address] and moved out on [Move-out Date]. I paid a security deposit
+      of [Deposit Amount]. Under California Civil Code § 1950.5, you were required to return my deposit
+      or provide an itemized statement of deductions within 21 days of my move-out. As of today, I have
+      not received [my deposit / a proper itemized statement].
+
+      I request that you return the full amount of [Deposit Amount], or a lawful itemized statement and
+      any remaining balance, within 14 days of the date of this letter, sent to the address above.
+
+      Sincerely,
+      [Your Name]
+
+  es:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Carta de reclamo del depósito de seguridad (California)"
+    description: "Una plantilla gratuita que los inquilinos de California pueden adaptar para exigir la devolución de un depósito de seguridad retenido indebidamente tras la mudanza, según el Código Civil § 1950.5."
+    lead: "Según la ley de California, su propietario debe devolver su depósito, o una declaración detallada de las deducciones, dentro de los 21 días de la mudanza. Si no lo ha hecho, esta plantilla puede ayudarle a hacer un reclamo por escrito."
+    intro_md: |
+      El Código Civil de California § 1950.5 exige que el propietario devuelva su depósito de seguridad,
+      o una declaración detallada por escrito de las deducciones más el saldo restante, dentro de los
+      **21 días** después de mudarse. Si ese plazo ya pasó, un reclamo claro por escrito es un buen
+      primer paso. Complete los campos entre corchetes y guarde copia de todo lo que envíe.
+    fields:
+      - "Su nombre y dirección postal actual"
+      - "Fecha"
+      - "Nombre y dirección del propietario"
+      - "Dirección de la unidad que alquiló"
+      - "Fecha de mudanza"
+      - "Monto del depósito pagado"
+      - "Fecha en que dio su dirección de reenvío"
+    template_md: |
+      [Su Nombre]
+      [Su Dirección Actual]
+
+      [Fecha]
+
+      [Nombre del Propietario]
+      [Dirección del Propietario]
+
+      Re: Reclamo de devolución del depósito de seguridad — [Dirección de la Unidad]
+
+      Estimado/a [Nombre del Propietario]:
+
+      Alquilé la unidad en [Dirección de la Unidad] y me mudé el [Fecha de Mudanza]. Pagué un depósito
+      de seguridad de [Monto del Depósito]. Según el Código Civil de California § 1950.5, usted debía
+      devolver mi depósito o entregar una declaración detallada de deducciones dentro de los 21 días de
+      mi mudanza. Hasta hoy, no he recibido [mi depósito / una declaración detallada adecuada].
+
+      Solicito que devuelva el monto total de [Monto del Depósito], o una declaración detallada legal y
+      cualquier saldo restante, dentro de los 14 días de la fecha de esta carta, a la dirección indicada.
+
+      Atentamente,
+      [Su Nombre]
+
+  zh:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "押金索还信（加州）"
+    description: "一份免费模板，供加州租客修改使用，依据《民法典》第 1950.5 条，要求退还搬离后被不当扣留的押金。"
+    lead: "根据加州法律，房东必须在您搬离后 21 天内退还押金，或提供逐项扣款说明。如果尚未退还，本模板可帮助您提出书面索还。"
+    intro_md: |
+      加州《民法典》第 1950.5 条要求房东在您搬离后 **21 天**内退还押金，或提供书面的逐项扣款说明及
+      剩余余额。如果该期限已过，一封清晰的书面索还信是很好的第一步。请填写下方方括号中的内容，并保留
+      您寄出的所有文件副本。
+    fields:
+      - "您的姓名和当前邮寄地址"
+      - "日期"
+      - "房东的姓名和地址"
+      - "您租住单元的地址"
+      - "搬离日期"
+      - "已付押金金额"
+      - "您提供转寄地址的日期"
+    template_md: |
+      [您的姓名]
+      [您的当前地址]
+
+      [日期]
+
+      [房东姓名]
+      [房东地址]
+
+      事由：要求退还押金——[单元地址]
+
+      尊敬的 [房东姓名]：
+
+      我租住于 [单元地址]，并于 [搬离日期] 搬离。我支付了 [押金金额] 的押金。根据加州《民法典》第
+      1950.5 条，您应在我搬离后 21 天内退还押金，或提供逐项扣款说明。截至今日，我尚未收到
+      [我的押金／妥当的逐项扣款说明]。
+
+      我要求您在本信日期起 14 天内，将全额 [押金金额]，或合法的逐项扣款说明及任何剩余余额，寄至上述
+      地址。
+
+      此致
+      [您的姓名]

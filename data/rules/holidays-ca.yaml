@@ -1,0 +1,39 @@
+# California judicial holidays (courts closed) — used by the deadline calculator to skip
+# non-court days. Sources: Cal. Gov. Code § 6700, Cal. Code Civ. Proc. § 135.
+#
+# STANDING OBLIGATION: this table MUST be extended each year. The calculator REFUSES to
+# compute a deadline for any year not listed here (it fails safe rather than undercount a
+# renter's deadline). Add next year's dates well before January.
+#
+# REVIEW REQUIRED before the calculator is set status: reviewed — confirm each date against
+# the Judicial Council holiday schedule (some "observed" dates shift when they fall on a weekend).
+
+"2026":
+  - 2026-01-01   # New Year's Day
+  - 2026-01-19   # Martin Luther King Jr. Day
+  - 2026-02-12   # Lincoln's Birthday
+  - 2026-02-16   # Washington's Birthday (observed)
+  - 2026-03-31   # Cesar Chavez Day
+  - 2026-05-25   # Memorial Day
+  - 2026-06-19   # Juneteenth
+  - 2026-07-03   # Independence Day (observed; Jul 4 is a Saturday)
+  - 2026-09-07   # Labor Day
+  - 2026-11-11   # Veterans Day
+  - 2026-11-26   # Thanksgiving Day
+  - 2026-11-27   # Day after Thanksgiving
+  - 2026-12-25   # Christmas Day
+
+"2027":
+  - 2027-01-01   # New Year's Day
+  - 2027-01-18   # Martin Luther King Jr. Day
+  - 2027-02-12   # Lincoln's Birthday
+  - 2027-02-15   # Washington's Birthday (observed)
+  - 2027-03-31   # Cesar Chavez Day
+  - 2027-05-31   # Memorial Day
+  - 2027-06-18   # Juneteenth (observed; Jun 19 is a Saturday)
+  - 2027-07-05   # Independence Day (observed; Jul 4 is a Sunday)
+  - 2027-09-06   # Labor Day
+  - 2027-11-11   # Veterans Day
+  - 2027-11-25   # Thanksgiving Day
+  - 2027-11-26   # Day after Thanksgiving
+  - 2027-12-24   # Christmas Day (observed; Dec 25 is a Saturday)

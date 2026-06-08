@@ -1,0 +1,61 @@
+# California notice/response periods — the legal rules the deadline calculator applies.
+# REVIEW REQUIRED: these drive a tool that tells renters their deadline; a qualified CA
+# reviewer must confirm each rule before the calculator page is set status: reviewed.
+#
+#   days:    integer count
+#   basis:   court    -> count only court days (skip weekends + judicial holidays), CCP §§12, 12a
+#            calendar -> count calendar days; if the last day is a weekend/holiday, roll forward
+#   mailExtension: extra CALENDAR days added when the notice was served by mail (CCP §1013).
+#                  null = mail service does not apply / not adjusted here.
+#   statute: controlling authority, shown with the result.
+#   label:   per-language display name for the calculator's notice-type dropdown.
+
+3-day-pay-or-quit:
+  days: 3
+  basis: court
+  mailExtension: null
+  statute: "Cal. Code Civ. Proc. § 1161(2)"
+  label:
+    en: "3-Day Notice to Pay Rent or Quit"
+    es: "Aviso de 3 días para pagar el alquiler o desalojar"
+    zh: "3 天付款或搬离通知"
+
+3-day-perform-or-quit:
+  days: 3
+  basis: court
+  mailExtension: null
+  statute: "Cal. Code Civ. Proc. § 1161(3)"
+  label:
+    en: "3-Day Notice to Perform Covenants or Quit"
+    es: "Aviso de 3 días para cumplir el contrato o desalojar"
+    zh: "3 天履行约定或搬离通知"
+
+30-day-termination:
+  days: 30
+  basis: calendar
+  mailExtension: 5
+  statute: "Cal. Civ. Code § 1946.1"
+  label:
+    en: "30-Day Notice to Terminate (tenancy under 1 year)"
+    es: "Aviso de 30 días para terminar (inquilinato menor de 1 año)"
+    zh: "30 天终止租约通知（租期不满 1 年）"
+
+60-day-termination:
+  days: 60
+  basis: calendar
+  mailExtension: 5
+  statute: "Cal. Civ. Code § 1946.1"
+  label:
+    en: "60-Day Notice to Terminate (tenancy 1 year or more)"
+    es: "Aviso de 60 días para terminar (inquilinato de 1 año o más)"
+    zh: "60 天终止租约通知（租期满 1 年或以上）"
+
+summons-unlawful-detainer:
+  days: 5
+  basis: court
+  mailExtension: null
+  statute: "Cal. Code Civ. Proc. § 1167"
+  label:
+    en: "Summons & Complaint (unlawful detainer) — time to respond"
+    es: "Citación y demanda (desalojo) — plazo para responder"
+    zh: "传票与起诉书（非法滞留）— 回应期限"

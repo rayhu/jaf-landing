@@ -1,0 +1,8 @@
+{{- /* Inline statute citation: {{< statute cite="Cal. Civ. Code § 1950.5" url="https://..." >}} */ -}}
+{{- $cite := .Get "cite" -}}
+{{- $url := .Get "url" -}}
+{{- if $url -}}
+<a class="statute-ref" href="{{ $url }}" rel="nofollow noopener" target="_blank">{{ $cite }}</a>
+{{- else -}}
+<span class="statute-ref">{{ $cite }}</span>
+{{- end -}}

@@ -14,6 +14,36 @@
   weight = 20
 
 [[main]]
+  name       = "资源"
+  url        = "/zh/guides/"
+  weight     = 30
+  identifier = "resources"
+
+[[main]]
+  name   = "指南"
+  url    = "/zh/guides/"
+  weight = 31
+  parent = "resources"
+
+[[main]]
+  name   = "核查清单"
+  url    = "/zh/checklists/"
+  weight = 32
+  parent = "resources"
+
+[[main]]
+  name   = "信函模板"
+  url    = "/zh/letters/"
+  weight = 33
+  parent = "resources"
+
+[[main]]
+  name   = "工具"
+  url    = "/zh/tools/"
+  weight = 34
+  parent = "resources"
+
+[[main]]
   name       = "领导层"
   url        = "/zh/board/"
   weight     = 50

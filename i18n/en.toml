@@ -1,0 +1,39 @@
+# UI chrome strings for programmatic SEO pages (and existing keys with defaults).
+# Page *content* lives in data/ + content/; only fixed interface labels live here.
+
+home = "Home"
+on_this_page = "On this page"
+faq = "Frequently asked questions"
+last_reviewed = "Last reviewed"
+sources = "Sources"
+not_legal_advice = "Not legal advice"
+related = "Related resources"
+fill_in = "Fill in these fields"
+template_heading = "Template"
+draft_banner = "DRAFT — pending review. This page is not published and is hidden from search engines."
+
+# Section / hub labels
+resources = "Resources"
+guides = "Guides"
+checklists = "Checklists"
+letters = "Letter templates"
+tools = "Tools"
+
+# Intake CTA
+cta_title = "Facing a rental problem?"
+cta_text = "Tell us what's happening and we'll help you understand your options. Free and confidential."
+cta_button = "Get help"
+
+# Deadline calculator
+calc_notice_type = "Notice type"
+calc_service_date = "Date you were served"
+calc_service_method = "How were you served?"
+calc_personal = "In person"
+calc_mail = "By mail"
+calc_button = "Calculate deadline"
+calc_result = "Your response deadline is"
+calc_invalid = "Please enter the date you were served."
+calc_missing_year = "We don't have court-holiday data for that year yet — please check with the court."
+calc_statute_prefix = "Authority:"
+calc_disclaimer = "This is an estimate. Court holidays and how you were served can affect the exact date — confirm with the court or a lawyer."
+calc_noscript = "This calculator needs JavaScript. To count manually: start the day after you were served, then count forward the number of days on your notice, skipping weekends and California court holidays for court-day notices."

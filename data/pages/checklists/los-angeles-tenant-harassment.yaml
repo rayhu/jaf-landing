@@ -1,0 +1,66 @@
+# SAMPLE / DRAFT — AI-drafted, awaiting human (attorney) review. status: draft => hidden in prod.
+# City page: jurisdiction los-angeles has hasOrdinance: true, so the adapter renders it.
+type: checklist
+slug: los-angeles-tenant-harassment
+jurisdiction: los-angeles
+issue: harassment
+statutes:
+  - cite: "L.A. Mun. Code § 45.30 et seq. (Tenant Anti-Harassment Ordinance)"
+    url: "https://library.municode.com/ca/los_angeles/codes/municipal_code"
+
+i18n:
+  en:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Los Angeles Tenant Harassment Checklist"
+    description: "A step-by-step checklist for Los Angeles renters who believe their landlord is harassing them — what to document, your rights under the LA Tenant Anti-Harassment Ordinance, and where to report."
+    lead: "If your landlord is pressuring, threatening, or trying to force you out, the Los Angeles Tenant Anti-Harassment Ordinance (TAHO) may protect you. Use this checklist to document what's happening and take action."
+    intro_md: |
+      Los Angeles prohibits landlords from harassing tenants — including cutting off services,
+      repeated unwanted entries, threats, and bad-faith efforts to make you leave. Strong
+      documentation is the foundation of any harassment complaint. Work through this checklist.
+    items:
+      - text_md: "**Write down every incident** with the date, time, location, who was involved, and exactly what was said or done."
+      - text_md: "**Save all written communication** — texts, emails, letters, and notices from your landlord or their agents."
+      - text_md: "**Photograph or video** conditions or incidents where safe and legal to do so (e.g., utilities shut off, locks changed)."
+      - text_md: "**Keep names and contact info of witnesses** — neighbors, family, anyone who saw or heard what happened."
+      - text_md: "**Identify which prohibited conduct applies** under the LA Tenant Anti-Harassment Ordinance and note it next to each incident."
+      - text_md: "**Report it** to the LA Housing Department, and consider [contacting us](/rental-dispute-intake/) or a local legal aid office for help."
+
+  es:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "Lista de verificación de acoso al inquilino en Los Ángeles"
+    description: "Una lista paso a paso para inquilinos de Los Ángeles que creen que su propietario los está acosando: qué documentar, sus derechos bajo la Ordenanza contra el Acoso al Inquilino de LA y dónde denunciar."
+    lead: "Si su propietario lo presiona, amenaza o intenta obligarlo a irse, la Ordenanza contra el Acoso al Inquilino de Los Ángeles (TAHO) puede protegerlo. Use esta lista para documentar lo que ocurre y actuar."
+    intro_md: |
+      Los Ángeles prohíbe que los propietarios acosen a los inquilinos, incluido cortar servicios,
+      entradas repetidas no deseadas, amenazas y esfuerzos de mala fe para hacerlo salir. Una buena
+      documentación es la base de cualquier queja por acoso. Siga esta lista.
+    items:
+      - text_md: "**Anote cada incidente** con la fecha, hora, lugar, quiénes participaron y exactamente qué se dijo o hizo."
+      - text_md: "**Guarde toda comunicación escrita**: mensajes de texto, correos, cartas y avisos de su propietario o sus agentes."
+      - text_md: "**Tome fotos o video** de las condiciones o incidentes cuando sea seguro y legal (por ejemplo, servicios cortados, cerraduras cambiadas)."
+      - text_md: "**Guarde nombres y contactos de testigos**: vecinos, familiares, cualquiera que haya visto u oído lo ocurrido."
+      - text_md: "**Identifique qué conducta prohibida aplica** según la Ordenanza contra el Acoso al Inquilino de LA y anótela junto a cada incidente."
+      - text_md: "**Denúncielo** al Departamento de Vivienda de LA, y considere [contactarnos](/es/rental-dispute-intake/) o a una oficina local de ayuda legal."
+
+  zh:
+    status: draft
+    reviewedBy: ""
+    reviewedDate: ""
+    title: "洛杉矶租客骚扰核查清单"
+    description: "为认为房东在骚扰自己的洛杉矶租客提供的分步核查清单——应记录什么、您在洛杉矶《反租客骚扰条例》下的权利，以及向何处举报。"
+    lead: "如果房东施压、威胁或试图迫使您搬走，洛杉矶《反租客骚扰条例》（TAHO）可能保护您。请用此清单记录事件并采取行动。"
+    intro_md: |
+      洛杉矶禁止房东骚扰租客——包括切断服务、反复擅自进入、威胁，以及恶意迫使您搬离。充分的记录是
+      任何骚扰投诉的基础。请逐项完成此清单。
+    items:
+      - text_md: "**记录每一次事件**，写明日期、时间、地点、涉及人员，以及具体说了或做了什么。"
+      - text_md: "**保存所有书面沟通**——房东或其代理人发来的短信、电子邮件、信件和通知。"
+      - text_md: "**拍照或录像**记录相关状况或事件（在安全合法的前提下，例如水电被切断、门锁被更换）。"
+      - text_md: "**保留证人的姓名和联系方式**——邻居、家人，以及任何目击或听到事件经过的人。"
+      - text_md: "**确定适用的违禁行为**——对照洛杉矶《反租客骚扰条例》，在每一事件旁注明。"
+      - text_md: "**进行举报**——向洛杉矶住房局举报，并可考虑[与我们联系](/zh/rental-dispute-intake/)或求助当地法律援助机构。"

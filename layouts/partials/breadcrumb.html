@@ -1,0 +1,6 @@
+{{- /* Breadcrumb: Home / Section / Title — reuses the existing .crumb styling. */ -}}
+<nav class="crumb" aria-label="Breadcrumb">
+  <a href="{{ "" | relLangURL }}">{{ i18n "home" | default "Home" }}</a>
+  {{- with .CurrentSection }}{{ if .Title }}&nbsp;/&nbsp;<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end -}}
+  &nbsp;/&nbsp;<span>{{ .Title }}</span>
+</nav>

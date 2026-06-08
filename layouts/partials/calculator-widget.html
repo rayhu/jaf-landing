@@ -1,0 +1,49 @@
+{{- /* CSP-safe, self-hosted deadline calculator. The form + rules render server-side; the JS
+       (loaded from scripts.html for tool pages) reads the JSON data island below and computes.
+       Degrades to a <noscript> manual-counting fallback. */ -}}
+{{ $lang := .Page.Language.Lang }}
+{{ $rules := index hugo.Data.rules "notice-periods" }}
+{{ $holidays := index hugo.Data.rules "holidays-ca" }}
+{{ $locale := index (dict "en" "en-US" "es" "es-ES" "zh" "zh-CN") $lang }}
+
+<div class="calc" id="deadline-calc">
+  <form class="calc-form">
+    <div class="calc-field">
+      <label for="calc-notice">{{ i18n "calc_notice_type" | default "Notice type" }}</label>
+      <select id="calc-notice" name="noticeType">
+        {{ range $key, $r := $rules }}
+        <option value="{{ $key }}">{{ index $r.label $lang | default (index $r.label "en") }}</option>
+        {{ end }}
+      </select>
+    </div>
+    <div class="calc-field">
+      <label for="calc-date">{{ i18n "calc_service_date" | default "Date you were served" }}</label>
+      <input type="date" id="calc-date" name="serviceDate">
+    </div>
+    <fieldset class="calc-field calc-method">
+      <legend>{{ i18n "calc_service_method" | default "How were you served?" }}</legend>
+      <label><input type="radio" name="serviceMethod" value="personal" checked> {{ i18n "calc_personal" | default "In person" }}</label>
+      <label><input type="radio" name="serviceMethod" value="mail"> {{ i18n "calc_mail" | default "By mail" }}</label>
+    </fieldset>
+    <button type="submit" class="btn btn-gold">{{ i18n "calc_button" | default "Calculate deadline" }}</button>
+  </form>
+  <div class="calc-result" role="status" aria-live="polite" hidden></div>
+  <p class="calc-disclaimer">{{ i18n "calc_disclaimer" | default "This is an estimate. Court holidays and how you were served can affect the exact date — confirm with the court or a lawyer." }}</p>
+  <noscript>
+    <p class="calc-noscript">{{ i18n "calc_noscript" | default "This calculator needs JavaScript. To count manually: start the day after you were served, then count forward the number of days on your notice, skipping weekends and California court holidays for court-day notices." }}</p>
+  </noscript>
+</div>
+
+{{ $payload := dict
+  "locale" $locale
+  "rules" $rules
+  "holidays" $holidays
+  "i18n" (dict
+    "result"       (i18n "calc_result"        | default "Your response deadline is")
+    "invalid"      (i18n "calc_invalid"       | default "Please enter the date you were served.")
+    "missingYear"  (i18n "calc_missing_year"  | default "We don't have court-holiday data for that year yet — please check with the court.")
+    "statutePrefix" (i18n "calc_statute_prefix" | default "Authority:")
+  )
+}}
+{{- /* safeJS: prevent html/template's <script> JS-escaper from re-quoting the JSON (double-encoding). */ -}}
+<script type="application/json" id="calc-data">{{ $payload | jsonify | safeJS }}</script>

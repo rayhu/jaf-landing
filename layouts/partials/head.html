@@ -2,7 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ if .IsHome }}{{ .Site.Title }} — Expanding Access to Civil Justice in California{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-{{ with .Params.robots }}<meta name="robots" content="{{ . }}">{{ end }}
+{{- /* Robots: per-page `robots` param wins (programmatic pages set it via the review gate).
+       As a safety net, an empty hub/taxonomy page (no child pages yet) is noindex'd so thin
+       intro-only pages don't get indexed before content lands; it flips to indexable automatically
+       once it has children. */ -}}
+{{ $robots := .Params.robots }}
+{{ if and (not $robots) (in (slice "section" "taxonomy" "term") .Kind) (eq (len .Pages) 0) }}{{ $robots = "noindex, follow" }}{{ end }}
+{{ with $robots }}<meta name="robots" content="{{ . }}">{{ end }}
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}" />
@@ -29,4 +35,9 @@
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
 {{ end }}
-{{ if .Site.Params.enableRobotsTXT }}<meta name="robots" content="index, follow" />{{ end }}
+{{/* Robots: the per-page `robots` param (set above, line 5) is the single source of truth.
+     Programmatic pages set it via the content adapter's review gate (noindex for drafts);
+     normal pages omit it and are indexable by default. */}}
+
+{{/* Per-page structured data for programmatic SEO pages (rendered only for reviewed pages). */}}
+{{ partial "schema.html" . }}

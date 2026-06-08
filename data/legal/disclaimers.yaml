@@ -1,0 +1,34 @@
+# Single source of legal-safety boilerplate, rendered by partials/legal-disclaimer.html.
+# Never copy-paste disclaimer text into individual pages — edit it here once, in all 3 languages.
+#   general: shown on every programmatic page (guides, checklists, tools).
+#   upl:     stronger variant auto-applied to letter templates (upl_sensitive: true) — emphasizes
+#            JAF is not a law firm and using a template creates no attorney-client relationship.
+
+general:
+  en: >-
+    This page is general legal information, not legal advice. Laws change and every situation is
+    different. Reading it does not create an attorney–client relationship. For advice about your
+    specific situation, talk to a licensed attorney or your local legal aid office.
+  es: >-
+    Esta página ofrece información legal general, no asesoría legal. Las leyes cambian y cada
+    situación es distinta. Leerla no crea una relación abogado–cliente. Para asesoría sobre su caso
+    específico, hable con un abogado con licencia o con su oficina local de ayuda legal.
+  zh: >-
+    本页面提供的是一般法律信息，而非法律建议。法律会变化，每个人的情况也不同。阅读本页不构成
+    律师—当事人关系。如需针对您具体情况的建议，请咨询有执照的律师或当地法律援助机构。
+
+upl:
+  en: >-
+    This is a free template offered as general legal information only. Justice Access Foundation is
+    not a law firm and does not provide legal advice; using this template does not create an
+    attorney–client relationship. Review and adapt it to your own situation, and consult a licensed
+    California attorney or your local legal aid office before relying on it.
+  es: >-
+    Esta es una plantilla gratuita ofrecida solo como información legal general. Justice Access
+    Foundation no es un bufete de abogados y no brinda asesoría legal; usar esta plantilla no crea
+    una relación abogado–cliente. Revísela y adáptela a su situación, y consulte a un abogado con
+    licencia en California o a su oficina local de ayuda legal antes de usarla.
+  zh: >-
+    这是一份免费模板，仅作为一般法律信息提供。Justice Access Foundation 不是律师事务所，也不提供
+    法律建议；使用本模板不构成律师—当事人关系。请根据您的具体情况审阅和修改，并在依据本模板行事前
+    咨询加州持照律师或当地法律援助机构。
