@@ -5,7 +5,7 @@ type: guide
 slug: 3-day-notice-pay-or-quit
 jurisdiction: california
 issue: eviction
-calculator: notice-deadline-calculator   # this guide links to the deadline calculator
+calculator: notice-deadline-calculator # this guide links to the deadline calculator
 statutes:
   - cite: "Cal. Code Civ. Proc. § 1161(2)"
     url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161"
@@ -14,9 +14,9 @@ statutes:
 
 i18n:
   en:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "What to Do After Receiving a 3-Day Notice to Pay or Quit in California"
     description: "Got a 3-day notice to pay rent or quit in California? Learn what it means, how the 3 days are counted, your options to respond, and the deadlines that protect you."
     lead: "A 3-day notice to pay or quit is the first step a landlord takes toward eviction — but it is not an eviction, and you still have rights and time to act."
@@ -41,9 +41,9 @@ i18n:
         a_md: "No. If you don't pay or move, the landlord must file an unlawful detainer lawsuit and win a court judgment before the sheriff can carry out an eviction. You will have a chance to respond in court."
 
   es:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "Qué hacer después de recibir un aviso de 3 días para pagar o desalojar en California"
     description: "¿Recibió un aviso de 3 días para pagar el alquiler o desalojar en California? Conozca qué significa, cómo se cuentan los 3 días, sus opciones para responder y los plazos que lo protegen."
     lead: "Un aviso de 3 días para pagar o desalojar es el primer paso que da el propietario hacia un desalojo, pero no es un desalojo: usted todavía tiene derechos y tiempo para actuar."
@@ -69,9 +69,9 @@ i18n:
         a_md: "No. Si no paga ni se muda, el propietario debe presentar una demanda de desalojo y ganar una sentencia antes de que el alguacil pueda ejecutar el desalojo. Usted tendrá la oportunidad de responder en el tribunal."
 
   zh:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "在加州收到 3 天付款或搬离通知后该怎么办"
     description: "在加州收到 3 天付款或搬离通知？了解它的含义、如何计算这 3 天、您的回应选项，以及保护您的截止期限。"
     lead: "3 天付款或搬离通知是房东走向驱逐的第一步，但它本身并不是驱逐——您仍然有权利，也有时间采取行动。"

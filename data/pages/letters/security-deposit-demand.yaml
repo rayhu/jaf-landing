@@ -6,16 +6,16 @@ slug: security-deposit-demand
 jurisdiction: california
 issue: security-deposit
 upl_sensitive: true
-legalReview: pending        # counsel sign-off gate (see adapter dual-gate)
+legalReview: pending # counsel sign-off gate (see adapter dual-gate)
 statutes:
   - cite: "Cal. Civ. Code § 1950.5"
     url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
 
 i18n:
   en:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "Security Deposit Demand Letter (California)"
     description: "A free template California renters can adapt to demand the return of a security deposit wrongfully withheld after move-out, under Civil Code § 1950.5."
     lead: "Under California law your landlord must return your deposit, or an itemized statement of deductions, within 21 days of move-out. If they haven't, this template can help you make a written demand."
@@ -57,9 +57,9 @@ i18n:
       [Your Name]
 
   es:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "Carta de reclamo del depósito de seguridad (California)"
     description: "Una plantilla gratuita que los inquilinos de California pueden adaptar para exigir la devolución de un depósito de seguridad retenido indebidamente tras la mudanza, según el Código Civil § 1950.5."
     lead: "Según la ley de California, su propietario debe devolver su depósito, o una declaración detallada de las deducciones, dentro de los 21 días de la mudanza. Si no lo ha hecho, esta plantilla puede ayudarle a hacer un reclamo por escrito."
@@ -101,9 +101,9 @@ i18n:
       [Su Nombre]
 
   zh:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "押金索还信（加州）"
     description: "一份免费模板，供加州租客修改使用，依据《民法典》第 1950.5 条，要求退还搬离后被不当扣留的押金。"
     lead: "根据加州法律，房东必须在您搬离后 21 天内退还押金，或提供逐项扣款说明。如果尚未退还，本模板可帮助您提出书面索还。"
@@ -133,7 +133,7 @@ i18n:
       尊敬的 [房东姓名]：
 
       我租住于 [单元地址]，并于 [搬离日期] 搬离。我支付了 [押金金额] 的押金。根据加州《民法典》第
-      1950.5 条，您应在我搬离后 21 天内退还押金，或提供逐项扣款说明。截至今日，我尚未收到
+      1950.5 条，您应在我搬离后 21 天内退还押金，提供书面的逐项扣款说明。截至今日，我尚未收到
       [我的押金／妥当的逐项扣款说明]。
 
       我要求您在本信日期起 14 天内，将全额 [押金金额]，或合法的逐项扣款说明及任何剩余余额，寄至上述

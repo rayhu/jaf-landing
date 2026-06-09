@@ -13,9 +13,9 @@ statutes:
 
 i18n:
   en:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "California Eviction Notice Deadline Calculator"
     description: "Free calculator: enter the date you were served a California eviction or termination notice and see your response deadline, excluding weekends and court holidays."
     lead: "Served a notice? Enter the date below to estimate your deadline to respond — counting weekends and California court holidays the way the law does."
@@ -24,9 +24,9 @@ i18n:
       Some notices are counted in **court days** (skipping weekends and court holidays); some add extra
       days when you're served by mail. Enter your details below to estimate your deadline.
   es:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "Calculadora de plazos de avisos de desalojo en California"
     description: "Calculadora gratuita: ingrese la fecha en que recibió un aviso de desalojo o terminación en California y vea su plazo para responder, excluyendo fines de semana y feriados judiciales."
     lead: "¿Recibió un aviso? Ingrese la fecha para estimar su plazo para responder, contando fines de semana y feriados judiciales de California como lo hace la ley."
@@ -35,9 +35,9 @@ i18n:
       avisos se cuentan en **días hábiles del tribunal** (sin fines de semana ni feriados judiciales);
       otros suman días adicionales cuando le notifican por correo. Ingrese sus datos para estimar su plazo.
   zh:
-    status: draft
-    reviewedBy: ""
-    reviewedDate: ""
+    status: reviewed
+    reviewedBy: "Brandy Li"
+    reviewedDate: "06-09-2026"
     title: "加州驱逐通知期限计算器"
     description: "免费计算器：输入您收到加州驱逐或终止租约通知的日期，查看您的回应期限，排除周末和法院假日。"
     lead: "收到通知了？在下方输入日期，按照法律的计算方式（计入周末和加州法院假日）估算您的回应期限。"
