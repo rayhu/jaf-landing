@@ -16,7 +16,7 @@ i18n:
   en:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "What to Do After Receiving a 3-Day Notice to Pay or Quit in California"
     description: "Got a 3-day notice to pay rent or quit in California? Learn what it means, how the 3 days are counted, your options to respond, and the deadlines that protect you."
     lead: "A 3-day notice to pay or quit is the first step a landlord takes toward eviction — but it is not an eviction, and you still have rights and time to act."
@@ -43,7 +43,7 @@ i18n:
   es:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "Qué hacer después de recibir un aviso de 3 días para pagar o desalojar en California"
     description: "¿Recibió un aviso de 3 días para pagar el alquiler o desalojar en California? Conozca qué significa, cómo se cuentan los 3 días, sus opciones para responder y los plazos que lo protegen."
     lead: "Un aviso de 3 días para pagar o desalojar es el primer paso que da el propietario hacia un desalojo, pero no es un desalojo: usted todavía tiene derechos y tiempo para actuar."
@@ -71,7 +71,7 @@ i18n:
   zh:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "在加州收到 3 天付款或搬离通知后该怎么办"
     description: "在加州收到 3 天付款或搬离通知？了解它的含义、如何计算这 3 天、您的回应选项，以及保护您的截止期限。"
     lead: "3 天付款或搬离通知是房东走向驱逐的第一步，但它本身并不是驱逐——您仍然有权利，也有时间采取行动。"

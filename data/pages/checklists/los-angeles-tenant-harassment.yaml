@@ -12,7 +12,7 @@ i18n:
   en:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "Los Angeles Tenant Harassment Checklist"
     description: "A step-by-step checklist for Los Angeles renters who believe their landlord is harassing them — what to document, your rights under the LA Tenant Anti-Harassment Ordinance, and where to report."
     lead: "If your landlord is pressuring, threatening, or trying to force you out, the Los Angeles Tenant Anti-Harassment Ordinance (TAHO) may protect you. Use this checklist to document what's happening and take action."
@@ -31,7 +31,7 @@ i18n:
   es:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "Lista de verificación de acoso al inquilino en Los Ángeles"
     description: "Una lista paso a paso para inquilinos de Los Ángeles que creen que su propietario los está acosando: qué documentar, sus derechos bajo la Ordenanza contra el Acoso al Inquilino de LA y dónde denunciar."
     lead: "Si su propietario lo presiona, amenaza o intenta obligarlo a irse, la Ordenanza contra el Acoso al Inquilino de Los Ángeles (TAHO) puede protegerlo. Use esta lista para documentar lo que ocurre y actuar."
@@ -50,7 +50,7 @@ i18n:
   zh:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "洛杉矶租客骚扰核查清单"
     description: "为认为房东在骚扰自己的洛杉矶租客提供的分步核查清单——应记录什么、您在洛杉矶《反租客骚扰条例》下的权利，以及向何处举报。"
     lead: "如果房东施压、威胁或试图迫使您搬走，洛杉矶《反租客骚扰条例》（TAHO）可能保护您。请用此清单记录事件并采取行动。"

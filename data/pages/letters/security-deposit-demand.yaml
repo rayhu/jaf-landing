@@ -15,7 +15,7 @@ i18n:
   en:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "Security Deposit Demand Letter (California)"
     description: "A free template California renters can adapt to demand the return of a security deposit wrongfully withheld after move-out, under Civil Code § 1950.5."
     lead: "Under California law your landlord must return your deposit, or an itemized statement of deductions, within 21 days of move-out. If they haven't, this template can help you make a written demand."
@@ -59,7 +59,7 @@ i18n:
   es:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "Carta de reclamo del depósito de seguridad (California)"
     description: "Una plantilla gratuita que los inquilinos de California pueden adaptar para exigir la devolución de un depósito de seguridad retenido indebidamente tras la mudanza, según el Código Civil § 1950.5."
     lead: "Según la ley de California, su propietario debe devolver su depósito, o una declaración detallada de las deducciones, dentro de los 21 días de la mudanza. Si no lo ha hecho, esta plantilla puede ayudarle a hacer un reclamo por escrito."
@@ -103,7 +103,7 @@ i18n:
   zh:
     status: reviewed
     reviewedBy: "Brandy Li"
-    reviewedDate: "06-09-2026"
+    reviewedDate: "2026-06-09"
     title: "押金索还信（加州）"
     description: "一份免费模板，供加州租客修改使用，依据《民法典》第 1950.5 条，要求退还搬离后被不当扣留的押金。"
     lead: "根据加州法律，房东必须在您搬离后 21 天内退还押金，或提供逐项扣款说明。如果尚未退还，本模板可帮助您提出书面索还。"
