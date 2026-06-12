@@ -27,6 +27,7 @@ This is a **Hugo** static site (Extended v0.162.1) with completely custom layout
 **Rendering model**: All layouts are custom-built under `layouts/`. Goldmark is set to `unsafe = true`, which allows raw HTML in Markdown files. Content pages use `lead` + `toc` in front matter for page hero intro text and table-of-contents sidebar; the Markdown body renders as prose.
 
 **CSS**: Three custom stylesheets loaded via Hugo Pipes with minification and fingerprinting:
+
 - `assets/css/brand.css` — shared base: CSS variables (warm palette), nav, buttons, form cards, footer
 - `assets/css/home.css` — homepage-specific: hero, mission, programs grid, governance, support CTA
 - `assets/css/page.css` — inner pages: page-hero, TOC sidebar, prose typography, shortcode styles
@@ -34,6 +35,7 @@ This is a **Hugo** static site (Extended v0.162.1) with completely custom layout
 **Design system**: Warm palette (`#E8E4D9` base, `#C8842A` warm accent, `#1E1A13` dark), Inter + JetBrains Mono fonts. Static assets in `static/assets/`: lighthouse.png, logo-circle.png, logo-seal-emboss.png, jaf-bg-glow.mp4.
 
 **Multilingual setup**: Three languages in `hugo.toml`:
+
 - `en` (weight 1, default, no subdirectory in URL)
 - `es` (weight 2, under `/es/`)
 - `zh` (weight 3, under `/zh/`)
@@ -41,6 +43,7 @@ This is a **Hugo** static site (Extended v0.162.1) with completely custom layout
 Each language has `contentDir` (`content/en/`, `content/es/`, `content/zh/`) and its own menu file (`config/_default/menus.{en,es,zh}.toml`). Pages use `slug` for consistent URLs across languages.
 
 **Templates** (`layouts/`):
+
 - `_default/baseof.html` — shell (head, header, main, footer, scripts)
 - `_default/single.html` — inner pages: page-hero + optional TOC sidebar + prose content
 - `_default/list.html` — taxonomy/list pages
@@ -51,11 +54,12 @@ Each language has `contentDir` (`content/en/`, `content/es/`, `content/zh/`) and
 - `partials/scripts.html` — nav scroll, mobile menu, TOC scrollspy, video background handling
 
 **Shortcodes** (`layouts/shortcodes/`):
+
 - `section.html`, `callout.html` — structured content blocks
 - `subgrid.html`/`subcard.html` — card grids within prose
 - `facts.html`/`fact-row.html` — key-value fact lists
 - `page-cta.html` — CTA banner (title, text, button link)
-- `typeform-embed.html` — Typeform Live embed (contact, rental-dispute-intake). The `rental-dispute-intake` page (formerly `campus-study`; old URL 301-redirected in `netlify.toml`) embeds Typeform **"JAF Leasing 2026-04-01 v1"** (id `01KN5BAR1DGSR69TEAKK1JMEKK`); the `contact` page embeds a separate form (id `01KQTPVGPNE1S3XAGQZGEMSE8E`)
+- `typeform-embed.html` — Typeform Live embed (contact, rental-dispute-intake). The `rental-dispute-intake` page (formerly `campus-study`; old URL 301-redirected in `netlify.toml`) embeds Typeform **"Intake Form 0611"** (id `01KTWK5NCMHXV131ES9HAVK8W0`); the `contact` page embeds a separate form (id `01KQTPVGPNE1S3XAGQZGEMSE8E`)
 - `contact-form.html` — trilingual Netlify Forms contact form with honeypot
 - `donate-form.html` — trilingual Zeffy donation iframe
 
