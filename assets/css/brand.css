@@ -233,16 +233,21 @@ section { padding:clamp(72px,10vw,132px) 0; }
   }
 }
 
-/* Mobile: full-bleed to the screen edges and full viewport height */
+/* Mobile: full-bleed to the screen edges, near-full-screen height.
+   width:auto lets the negative margins stretch the box to the viewport (the shortcode's
+   w-full class is a no-op here, but this keeps the full-bleed robust if that ever changes).
+   Height is 90svh, not 100 — a strip of the page plus the fixed nav stay grabbable, so the
+   Typeform (which captures swipe gestures to move between questions) can't trap page scroll. */
 @media (max-width:760px) {
   .jaf-typeform-outer {
+    width:auto !important;
     margin-left:calc(50% - 50vw);
     margin-right:calc(50% - 50vw);
   }
   .jaf-typeform,
   .jaf-typeform iframe {
-    min-height:100svh !important;
-    height:100svh !important;
+    min-height:90svh !important;
+    height:90svh !important;
   }
 }
 
