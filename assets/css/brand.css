@@ -209,12 +209,42 @@ section { padding:clamp(72px,10vw,132px) 0; }
 
 /* Typeform embed */
 .jaf-typeform-outer { margin-top:1rem; margin-bottom:0.5rem; }
-.jaf-typeform { width:100%; min-height:var(--jaf-tf-h,500px); }
+.jaf-typeform { width:100%; min-height:var(--jaf-tf-h,620px); }
 .jaf-typeform iframe {
-  width:100% !important; min-height:var(--jaf-tf-h,500px) !important;
-  height:var(--jaf-tf-h,500px) !important; max-width:100% !important; border:0;
+  width:100% !important; min-height:var(--jaf-tf-h,620px) !important;
+  height:var(--jaf-tf-h,620px) !important; max-width:100% !important; border:0;
 }
 .prose .jaf-typeform-outer { max-width:none; }
+
+/* Desktop: break the form out of the 760px prose column — wider, taller, viewport-centered.
+   .page-body.no-toc is an 840px centered band; .prose is pinned to its left content edge
+   (band-left + horizontal padding), so the form is shifted left to re-center on the viewport:
+   margin-left = 840/2 − form½ − page-body horizontal padding.
+   (The 420px and clamp() below mirror .page-body max-width/padding in page.css.) */
+@media (min-width:980px) {
+  .prose .jaf-typeform-outer {
+    width:min(1040px, 92vw);
+    margin-left:calc(420px - min(1040px, 92vw) / 2 - clamp(24px, 5vw, 64px));
+  }
+  .jaf-typeform,
+  .jaf-typeform iframe {
+    min-height:720px !important;
+    height:720px !important;
+  }
+}
+
+/* Mobile: full-bleed to the screen edges and full viewport height */
+@media (max-width:760px) {
+  .jaf-typeform-outer {
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+  }
+  .jaf-typeform,
+  .jaf-typeform iframe {
+    min-height:100svh !important;
+    height:100svh !important;
+  }
+}
 
 @media (max-width:520px) {
   .jaf-card-header { padding:1.5rem 1.25rem 1.25rem; }
