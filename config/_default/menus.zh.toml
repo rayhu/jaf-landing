@@ -62,22 +62,14 @@
   parent     = "leadership"
 
 [[main]]
-  name       = "联系我们"
-  url        = "/zh/contact/"
-  weight     = 80
-  identifier = "contact"
+  name   = "联系我们"
+  url    = "/zh/contact/"
+  weight = 80
 
 [[main]]
-  name       = "联系信息"
-  url        = "/zh/contact/"
-  weight     = 81
-  parent     = "contact"
-
-[[main]]
-  name       = "租房纠纷登记"
-  url        = "/zh/rental-dispute-intake/"
-  weight     = 82
-  parent     = "contact"
+  name   = "租房纠纷登记"
+  url    = "/zh/rental-dispute-intake/"
+  weight = 81
 
 # ─── Footer links ─────────────────────────────────────────────────────────────
 
