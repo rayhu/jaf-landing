@@ -19,6 +19,9 @@ cta_title = "遇到租房问题？"
 cta_text = "告诉我们您的情况，我们会帮助您了解可行的选择。免费且保密。"
 cta_button = "获取帮助"
 
+get_evaluation = "免费评估"
+explore_programs = "了解我们的项目"
+
 calc_notice_type = "通知类型"
 calc_service_date = "您被送达的日期"
 calc_service_method = "您是如何被送达的？"

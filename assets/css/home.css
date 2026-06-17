@@ -110,32 +110,12 @@
 .support .ein { font-family:var(--mono); font-size:12px; color:var(--warm-deep); background:rgba(200,132,42,0.12); padding:3px 8px; border-radius:5px; }
 .support-actions { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 
-/* ===================== NEED HELP ===================== */
-.need-help { background:var(--bg-warm); }
-.need-help .container { max-width:1080px; }
-.need-help-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(40px,6vw,72px); align-items:start; }
-.need-help-copy h2 { margin-bottom:18px; }
-.need-help-copy p { font-size:15px; color:var(--muted); line-height:1.65; }
-.need-help-extra { margin-top:14px; font-size:14px; color:var(--hint); }
-.intake-form { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:28px 24px; display:flex; flex-direction:column; gap:14px; }
-.intake-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-.intake-form input[type="text"],
-.intake-form input[type="email"],
-.intake-form input[type="tel"] { width:100%; padding:12px 15px; border:1px solid var(--line); border-radius:10px; font-family:var(--sans); font-size:14px; background:var(--bg); color:var(--fg); outline:none; transition:border-color .2s ease; }
-.intake-form input:focus,
-.intake-form textarea:focus { border-color:var(--warm); }
-.intake-form textarea { width:100%; padding:12px 15px; border:1px solid var(--line); border-radius:10px; font-family:var(--sans); font-size:14px; background:var(--bg); color:var(--fg); outline:none; resize:vertical; }
-.intake-form .btn { align-self:flex-start; }
-.intake-disclaimer { font-size:11px; color:var(--hint); line-height:1.5; margin:0; }
-
 /* ===================== RESPONSIVE ===================== */
 @media (max-width:1600px){ .hero-inner{margin-left:-120px;} }
 @media (max-width:1320px){ .hero-inner{margin-left:-40px;} }
 @media (max-width:1024px){ .hero-inner{margin-left:0;} .mission-text{padding-left:200px;} }
-@media (max-width:920px){ .gov-layout{grid-template-columns:1fr;gap:32px;} .impact-grid{grid-template-columns:1fr;gap:32px;} .need-help-grid{grid-template-columns:1fr;gap:32px;} .mission-text{padding-left:120px;} }
+@media (max-width:920px){ .gov-layout{grid-template-columns:1fr;gap:32px;} .impact-grid{grid-template-columns:1fr;gap:32px;} .mission-text{padding-left:120px;} }
 @media (max-width:760px){
-  .intake-row{grid-template-columns:1fr;}
-  .intake-form .btn{align-self:stretch;justify-content:center;}
   .hero::after{ background:linear-gradient(to bottom, rgba(232,228,217,0.55) 0%, rgba(232,228,217,0.30) 42%, rgba(232,228,217,0.05) 100%); }
   .hero{ align-items:flex-end; padding-bottom:120px; }
   .scroll-cue{ display:none; }

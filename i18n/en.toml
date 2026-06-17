@@ -24,6 +24,10 @@ cta_title = "Facing a rental problem?"
 cta_text = "Tell us what's happening and we'll help you understand your options. Free and confidential."
 cta_button = "Get help"
 
+# Hero CTAs (homepage)
+get_evaluation = "Get a Free Evaluation"
+explore_programs = "Explore our programs"
+
 # Deadline calculator
 calc_notice_type = "Notice type"
 calc_service_date = "Date you were served"

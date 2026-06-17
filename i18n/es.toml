@@ -19,6 +19,9 @@ cta_title = "¿Enfrenta un problema de alquiler?"
 cta_text = "Cuéntenos qué ocurre y le ayudaremos a entender sus opciones. Gratis y confidencial."
 cta_button = "Obtener ayuda"
 
+get_evaluation = "Evaluación gratuita"
+explore_programs = "Explorar nuestros programas"
+
 calc_notice_type = "Tipo de aviso"
 calc_service_date = "Fecha en que le notificaron"
 calc_service_method = "¿Cómo le notificaron?"
