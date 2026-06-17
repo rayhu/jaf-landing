@@ -8,7 +8,7 @@
       <h1>{{ .Params.hero.title | default "Justice Access<br/>Foundation" | safeHTML }}</h1>
       <p class="lede">{{ .Params.hero.lede | default "Expanding Access to Civil Justice in California" }}</p>
       <div class="cta-row">
-        <a href="#need-help" class="btn btn-primary">{{ i18n "get_evaluation" | default "Get a Free Evaluation" }} <span>&rarr;</span></a>
+        <a href="{{ "rental-dispute-intake" | relLangURL }}" class="btn btn-primary">{{ i18n "get_evaluation" | default "Get a Free Evaluation" }} <span>&rarr;</span></a>
         <a href="{{ "programs" | relLangURL }}" class="btn btn-ghost">{{ i18n "explore_programs" | default "Explore our programs" }}</a>
       </div>
       <div class="pillars">
@@ -104,32 +104,6 @@
         {{ end }}
       </article>
       {{ end }}
-    </div>
-  </div>
-</section>
-
-<!-- ======================= NEED HELP ======================= -->
-<section class="need-help" id="need-help" data-screen-label="Need Help">
-  <div class="container">
-    <div class="need-help-grid">
-      <div class="need-help-copy">
-        <span class="eyebrow">{{ .Params.intake.eyebrow | default "Get Help" }}</span>
-        <h2>{{ .Params.intake.title | default "Need Help?" }}</h2>
-        <p>{{ .Params.intake.text | default "Tell us about your situation. Our team will review your case and follow up with you — at no cost and with no obligation." }}</p>
-        <p class="need-help-extra">{{ .Params.intake.extra | default "We are here to listen, evaluate your legal issue, and guide you toward the right next step. Whether it's a housing dispute, unpaid wages, or any other civil legal matter — start here." }}</p>
-      </div>
-      <form name="intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ "thank-you" | relLangURL }}" class="intake-form">
-        <input type="hidden" name="form-name" value="intake" />
-        <p hidden><input name="bot-field" /></p>
-        <div class="intake-row">
-          <input type="text" name="name" placeholder="{{ .Params.intake.name_placeholder | default "Your name" }}" required />
-          <input type="email" name="email" placeholder="{{ .Params.intake.email_placeholder | default "Email address" }}" required />
-        </div>
-        <input type="tel" name="phone" placeholder="{{ .Params.intake.phone_placeholder | default "Phone number" }}" />
-        <textarea name="message" rows="5" placeholder="{{ .Params.intake.message_placeholder | default "Tell us about your situation. What legal issue are you facing?" }}" required></textarea>
-        <button type="submit" class="btn btn-primary">Get Help <span>&rarr;</span></button>
-        <p class="intake-disclaimer">{{ .Params.intake.disclaimer | default "Free and confidential. No obligation. By submitting, you agree to our Privacy Policy and Terms of Use." }}</p>
-      </form>
     </div>
   </div>
 </section>

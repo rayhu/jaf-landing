@@ -23,7 +23,6 @@
         {{ end }}
       {{ end }}
     </nav>
-    <a href="{{ "" | relLangURL }}#need-help" class="nav-cta">{{ i18n "get_help" | default "Get Help" }}</a>
     <div class="nav-lang">
       {{ $currentLang := .Language.Lang }}
       {{ range site.Home.AllTranslations }}
@@ -53,7 +52,6 @@
     </button>
   </div>
   <div class="drawer-links"></div>
-  <a href="{{ "" | relLangURL }}#need-help" class="drawer-cta">{{ i18n "get_help" | default "Get Help" }}</a>
   <div class="drawer-langs">
     {{ $currentLang := .Language.Lang }}
     {{ range site.Home.AllTranslations }}
