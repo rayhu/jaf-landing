@@ -28,10 +28,11 @@ With JAF, you do not need to hire an expensive, hourly rated lawyer. You simply 
 
 Your home is your sanctuary, and a housing dispute can threaten your fundamental stability. We provide step-by-step guidance to help you protect your living situation and your finances. We help you navigate:
 
-- **Security Deposit Disputes:** Drafting demand letters and filing claims to recover wrongfully withheld deposits.
-- **Eviction Defense (Unlawful Detainer):** Understanding court notices, summons, and exactly how and when to file your response.
+- **Security Deposit Disputes:** Drafting demand letters and filing claims to recover wrongfully withheld deposits. Free template: <a class="inline" href="/letters/security-deposit-demand/">security deposit demand letter</a>.
+- **Eviction Defense (Unlawful Detainer):** Understanding court notices, summons, and exactly how and when to file your response. Start with <a class="inline" href="/guides/3-day-notice-pay-or-quit/">what to do after a 3-day notice to pay or quit</a> and the <a class="inline" href="/tools/notice-deadline-calculator/">notice deadline calculator</a>.
 - **Rent and Lease Disputes:** Clarifying your rights regarding illegal rent increases, lease violations, and hidden fees.
 - **Habitability Issues:** Forcing landlords to address unsafe living conditions, lack of heat, or severe maintenance failures.
+- **Landlord Harassment:** Recognizing and documenting harassment, especially in cities with their own protections — see the <a class="inline" href="/checklists/los-angeles-tenant-harassment/">Los Angeles tenant harassment checklist</a>.
 
 ---
 

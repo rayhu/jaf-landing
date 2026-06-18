@@ -29,8 +29,8 @@ programs:
       title: "Vivienda y Disputas de Arrendamiento"
       description: "Su hogar es su santuario, y una disputa de vivienda puede amenazar su estabilidad fundamental. Brindamos orientación paso a paso para ayudarle a proteger su situación de vivienda y sus finanzas."
       bullets:
-        - "<strong>Disputas de Depósito de Garantía:</strong> Redacción de cartas de demanda y presentación de reclamos para recuperar depósitos retenidos indebidamente."
-        - "<strong>Defensa contra Desalojo:</strong> Comprensión de notificaciones judiciales, citaciones y exactamente cómo y cuándo presentar su respuesta."
+        - "<strong>Disputas de Depósito de Garantía:</strong> Redacción de cartas de demanda y presentación de reclamos para recuperar depósitos retenidos indebidamente. <a href='/es/letters/security-deposit-demand/'>Plantilla gratuita →</a>"
+        - "<strong>Defensa contra Desalojo:</strong> Comprensión de notificaciones judiciales, citaciones y exactamente cómo y cuándo presentar su respuesta. <a href='/es/guides/3-day-notice-pay-or-quit/'>Ver la guía →</a>"
         - "<strong>Disputas de Alquiler y Contrato:</strong> Aclaración de sus derechos sobre aumentos ilegales de alquiler, violaciones de contrato y tarifas ocultas."
         - "<strong>Problemas de Habitabilidad:</strong> Exigir a los propietarios que aborden condiciones de vida inseguras, falta de calefacción o fallas graves de mantenimiento."
       link: "/es/programs/#housing"

@@ -29,8 +29,8 @@ programs:
       title: "住房与租赁纠纷"
       description: "您的家是您的避风港，而住房纠纷可能威胁您的基本稳定。我们提供循序渐进的指导，帮助您保护居住状况和财务状况。"
       bullets:
-        - "<strong>押金纠纷：</strong>起草要求函并提交索赔，追回被不当扣留的押金。"
-        - "<strong>驱逐辩护（非法滞留）：</strong>理解法院通知、传票，以及如何、何时提交您的答辩。"
+        - "<strong>押金纠纷：</strong>起草要求函并提交索赔，追回被不当扣留的押金。<a href='/zh/letters/security-deposit-demand/'>免费模板 →</a>"
+        - "<strong>驱逐辩护（非法滞留）：</strong>理解法院通知、传票，以及如何、何时提交您的答辩。<a href='/zh/guides/3-day-notice-pay-or-quit/'>查看指南 →</a>"
         - "<strong>租金与租约纠纷：</strong>明确您在非法涨租、租约违约和隐性费用方面的权利。"
         - "<strong>居住性问题：</strong>迫使房东解决不安全居住条件、缺乏供暖或严重维修问题。"
       link: "/zh/programs/#housing"
