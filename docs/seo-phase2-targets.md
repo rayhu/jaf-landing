@@ -16,11 +16,14 @@ trilingual attorney review.
 
 ## ⚠️ Fix before expanding (found during research)
 
-- **Unlawful-detainer response deadline is now 10 court days, not 5.** `data/rules/notice-periods.yaml`
-  has `summons-unlawful-detainer: days: 5`, but California extended the UD Answer deadline to **10 court
-  days** for personal service (AB 2347, effective Jan 1 2025; ~15 days if served by post-and-mail). The
-  calculator is live and reviewed — **please have the attorney confirm and correct this number.** A
-  wrong deadline here is exactly the kind of error that harms a renter.
+- **Unlawful-detainer Answer deadline — REMOVED from the calculator pending counsel.** The prior value
+  (5 court days) was outdated: AB 2347 (eff. Jan 1 2025) extended the Answer deadline to **10 court days**
+  for personal service, and posted/substituted service differs (~15 days per the CA Courts self-help
+  guide) in a way the calculator's simple personal/mail model can't represent. Because this is the
+  highest-stakes deadline (a miss = default judgment), the `summons-unlawful-detainer` option was removed
+  from `data/rules/notice-periods.yaml` until **counsel confirms the exact rule** (and any calculator
+  change for the personal-vs-substituted distinction). The "How to respond to an eviction" guide
+  (Tier 1 #4) is the right home for this deadline.
 - **AB 1482 / rent-cap numbers change annually** (5% + regional CPI). Any rent-increase page or
   calculator needs the same "annual maintenance + fail-safe" treatment as the court-holiday table.
 
