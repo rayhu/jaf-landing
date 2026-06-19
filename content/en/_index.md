@@ -29,8 +29,8 @@ programs:
       title: "Housing & Tenancy Disputes"
       description: "Your home is your sanctuary, and a housing dispute can threaten your fundamental stability. We provide step-by-step guidance to help you protect your living situation and your finances."
       bullets:
-        - "<strong>Security Deposit Disputes:</strong> Drafting demand letters and filing claims to recover wrongfully withheld deposits."
-        - "<strong>Eviction Defense (Unlawful Detainer):</strong> Understanding court notices, summons, and exactly how and when to file your response."
+        - "<strong>Security Deposit Disputes:</strong> Drafting demand letters and filing claims to recover wrongfully withheld deposits. <a href='/letters/security-deposit-demand/'>Free template →</a>"
+        - "<strong>Eviction Defense (Unlawful Detainer):</strong> Understanding court notices, summons, and exactly how and when to file your response. <a href='/guides/3-day-notice-pay-or-quit/'>Read the guide →</a>"
         - "<strong>Rent and Lease Disputes:</strong> Clarifying your rights regarding illegal rent increases, lease violations, and hidden fees."
         - "<strong>Habitability Issues:</strong> Forcing landlords to address unsafe living conditions, lack of heat, or severe maintenance failures."
       link: "/programs/#housing"

@@ -50,12 +50,11 @@
     es: "Aviso de 60 días para terminar (inquilinato de 1 año o más)"
     zh: "60 天终止租约通知（租期满 1 年或以上）"
 
-summons-unlawful-detainer:
-  days: 5
-  basis: court
-  mailExtension: null
-  statute: "Cal. Code Civ. Proc. § 1167"
-  label:
-    en: "Summons & Complaint (unlawful detainer) — time to respond"
-    es: "Citación y demanda (desalojo) — plazo para responder"
-    zh: "传票与起诉书（非法滞留）— 回应期限"
+# summons-unlawful-detainer (deadline to ANSWER an eviction lawsuit) intentionally removed.
+# The prior value (5 court days) is outdated: AB 2347 (eff. 2025-01-01) extended the Answer deadline to
+# 10 court days for PERSONAL service, while posted/substituted service differs (~15 days per the CA Courts
+# self-help guide) in a way this simple personal/mail model cannot represent. An eviction-lawsuit deadline
+# is the highest-stakes one to get wrong (a miss = default judgment), so it is left OUT of the calculator
+# until counsel confirms the exact rule and any calculator change needed for the personal-vs-substituted
+# distinction. The forthcoming "How to respond to an eviction" guide is the right home for this deadline.
+# See docs/seo-phase2-targets.md.

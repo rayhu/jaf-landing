@@ -28,10 +28,11 @@ Con JAF, no necesita contratar un abogado costoso por hora. Simplemente díganos
 
 Su hogar es su santuario, y una disputa de vivienda puede amenazar su estabilidad fundamental. Brindamos orientación paso a paso para ayudarle a proteger su situación de vivienda y sus finanzas. Le ayudamos a navegar:
 
-- **Disputas de Depósito de Garantía:** Redacción de cartas de demanda y presentación de reclamos para recuperar depósitos retenidos indebidamente.
-- **Defensa contra Desalojo:** Comprensión de notificaciones judiciales, citaciones y exactamente cómo y cuándo presentar su respuesta.
+- **Disputas de Depósito de Garantía:** Redacción de cartas de demanda y presentación de reclamos para recuperar depósitos retenidos indebidamente. Plantilla gratuita: <a class="inline" href="/es/letters/security-deposit-demand/">carta de reclamo del depósito de garantía</a>.
+- **Defensa contra Desalojo:** Comprensión de notificaciones judiciales, citaciones y exactamente cómo y cuándo presentar su respuesta. Comience con <a class="inline" href="/es/guides/3-day-notice-pay-or-quit/">qué hacer después de un aviso de 3 días para pagar o desalojar</a> y la <a class="inline" href="/es/tools/notice-deadline-calculator/">calculadora de plazos</a>.
 - **Disputas de Alquiler y Contrato:** Aclaración de sus derechos sobre aumentos ilegales de alquiler, violaciones de contrato y tarifas ocultas.
 - **Problemas de Habitabilidad:** Exigir a los propietarios que aborden condiciones de vida inseguras, falta de calefacción o fallas graves de mantenimiento.
+- **Acoso del Propietario:** Reconocer y documentar el acoso, especialmente en ciudades con sus propias protecciones — vea la <a class="inline" href="/es/checklists/los-angeles-tenant-harassment/">lista de verificación de acoso al inquilino en Los Ángeles</a>.
 
 ---
 
